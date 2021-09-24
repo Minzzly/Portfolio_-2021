@@ -1,0 +1,29 @@
+/* ==========================================================================
+   LINKS / ELEMENTS
+   Style de base de tous les liens et bouton du site
+   ========================================================================== */
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-size: var(--font-size-liens);
+    font-weight: 500;
+    transition: all 0.8s $ease-out-expo;
+
+    &:hover {
+        color: var(--color-primary);
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: inherit;
+    }
+
+    &:focus {
+        color: inherit;
+    }
+
+    &.pageActif {
+        text-decoration: underline;
+    }
+}
