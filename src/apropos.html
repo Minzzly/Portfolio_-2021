@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audrey Langlois - Portfolio</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+    <script src="scripts/main.js" defer></script>
+
+    <style>
+        .parallelogram {
+            width: 100px;
+            height: 50px;
+            transform: skew(20deg);
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navPrincipal">
+        <img src="assets/images/decorations/DecoNav.png" alt="">
+        <ul class="navPrincipal__liste">
+            <li> <a href="index.html"><img src="assets/images/Logo.png" alt=""></a> </li>
+            <li> <a href="apropos.html">À propos</a> </li>
+            <li> <a href="projets.html">Projets</a> </li>
+            <li> <a href="contact.html">Contact</a> </li>
+            <li> <a href="">Télécharger mon CV</a> </li>
+        </ul>
+        <img src="assets/images/decorations/DecoNav.png" alt="">
+    </nav>
+
+    <section class="titreAccueil">
+        <div class="parallelogram"></div>
+
+        <!-- 3D objsect -->
+        <!-- This inserts the 3D object inside the aside container -->
+        <model-viewer src="assets/object3d/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar
+            ios-src="assets/HTC_Vive_Headset.gltf"></model-viewer>
+    </section>
+
+    <footer class="footer">
+        <p class=""> AudreyLanglois©TousDroitsReservés</p>
+    </footer>
+</body>
+
+</html>
