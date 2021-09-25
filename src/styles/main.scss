@@ -23,14 +23,13 @@
 @import 'elements/headings';
 @import 'elements/links';
 @import 'elements/wrapper';
+@import 'elements/nav.scss';
 
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
 @import '../../node_modules/swiper/swiper.scss';
 @import '../../node_modules/swiper/components/pagination/pagination.scss';
-
-@import 'components/objet3D';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page

@@ -1,0 +1,22 @@
+.navPrincipal {
+    background-color: var(--color-background-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navPrincipal__logo {
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navPrincipal__liste {
+        margin: 0;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            list-style-type: none;
+        }
+    }
+}

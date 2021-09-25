@@ -7,19 +7,32 @@
 
         <link rel="stylesheet" href="styles/main.css" />
 
-        <!--Imports a model-viewer JavaScript code -->
-        <!--It helps to handle how the 3D Object would be displayed -->
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-
         <script src="scripts/main.js" defer></script>
 
         <style>
-            .parallelogram {
-                width: 100px;
-                height: 50px;
-                transform: skew(20deg);
-                background: #555;
+            .parallelogram__info__general {
+                margin: auto;
+                width: 80vw;
+                height: 80vh;
+                clip-path: polygon(0 0%, 90% 0, 100% 100%, 10% 100%);
+                background: #a1d4f0;
+            }
+
+            .parallelogram__bonjour {
+                margin: auto;
+                width: 80vw;
+                height: 80vh;
+                clip-path: polygon(0 0%, 90% 0, 100% 100%, 10% 100%);
+                background: #a1d4f0;
+            }
+            .contenuAPropos {
+                display: flex;
+            }
+
+            section[class] {
+                display: flex;
+                justify-content: center;
+                filter: url(#round);
             }
         </style>
     </head>
@@ -39,20 +52,54 @@
             <img src="assets/images/decorations/DecoNav.png" alt="" />
         </nav>
 
-        <section class="titreAccueil">
-            <div class="parallelogram"></div>
-
-            <!-- 3D objsect -->
-            <!-- This inserts the 3D object inside the aside container -->
-            <model-viewer
-                src="assets/object3d/scene.gltf"
-                alt="VR Headset"
-                auto-rotate
-                camera-controls
-                ar
-                ios-src="assets/object3d/scene.gltf"
-            ></model-viewer>
+        <section class="infoGeneral">
+            <div class="parallelogram__info__general">
+                <div class="contenuAPropos">
+                    <img class="photoPortfolio" src="assets/images/aPropos/photoPortfolio.png" alt="" />
+                    <p>
+                        Je m’appelle <span class="nom__aPropos">Audrey Langlois.</span>
+                        Je suis étudiante en technique d’intégration multimédia. Depuis que je suis toute petite je suis
+                        passionnée par les jeux vidéos. Ma curiosité sur le développement des jeux vidéo est la raison
+                        pour laquelle je suis dans ce domaine.
+                    </p>
+                    <h2>Je suis:</h2>
+                    <ul>
+                        <li>Créative</li>
+                        <li>Débrouillarde</li>
+                        <li>Minutieuse</li>
+                        <li>Organisée</li>
+                    </ul>
+                </div>
+            </div>
         </section>
+        <div class="parallelogram__bonjour">
+            <h1>Bonjour!</h1>
+        </div>
+
+        <div class="flèche__scroll1">
+            <h3>Scroll</h3>
+        </div>
+
+        <svg
+            style="visibility: hidden; position: absolute"
+            width="0"
+            height="0"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+        >
+            <defs>
+                <filter id="round">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                    <feColorMatrix
+                        in="blur"
+                        mode="matrix"
+                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                        result="goo"
+                    />
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                </filter>
+            </defs>
+        </svg>
 
         <footer class="footer">
             <p class="">AudreyLanglois©TousDroitsReservés</p>
