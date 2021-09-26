@@ -5,16 +5,24 @@
 :root {
     // Couleur de base
     --color-white: #fff;
-    --color-black: #0c0f0a;
+    --color-black: #220927;
 
     // Couleurs du projet
-    --color-primary: #f57c78;
-    --color-secondary: #a5a886;
+    --color-primary: #b50a34;
+    --color-secondary: #4d84a3;
+    --color-tertiary: #bca88e;
+    --color-quaterny: #e43460;
+    --color-quinary: #ec991c;
 
     //couleur-background
     --color-background-primary: #f0cea1;
     --color-background-secondary: #faead5;
+    --color-background-tertiary: #ffc3d5;
+    --color-background-quaterny: #ffba52;
+    --color-background-quinary: #e7f8ff;
+    --color-background-senary: #746577;
+    --color-background-septenary: #611125;
 
     //couleur Forms
-    --color-fail: #f13a3a;
+    --color-fail: #b50a34;
 }

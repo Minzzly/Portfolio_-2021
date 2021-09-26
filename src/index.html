@@ -7,6 +7,13 @@
 
         <link rel="stylesheet" href="styles/main.css" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Comfortaa:wght@400;700&family=Telex&display=swap"
+            rel="stylesheet"
+        />
+
         <!--Imports a model-viewer JavaScript code -->
         <!--It helps to handle how the 3D Object would be displayed -->
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -15,7 +22,7 @@
         <script src="scripts/main.js" defer></script>
     </head>
 
-    <body>
+    <body class="accueil">
         <nav class="navPrincipal">
             <div class="navPrincipal__logo">
                 <img src="assets/images/decorations/DecoNav.png" alt="" />
@@ -44,9 +51,11 @@
 
             <article>
                 <h1>Audrey Langlois</h1>
-                <button class="BouttonAccueil">
-                    Explorer mes projets<img src="assets/images/decorations/BouttonAccueil.png" alt="" />
-                </button>
+                <a href="projets.html">
+                    <button class="BouttonAccueil">
+                        Explorer mes projets<img src="assets/images/decorations/BouttonAccueil.png" alt="" />
+                    </button>
+                </a>
             </article>
         </section>
 

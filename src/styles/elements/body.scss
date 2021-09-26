@@ -5,15 +5,19 @@
    ========================================================================== */
 
 body {
-    font-family: var(--font-tertiary);
+    font-family: var(--font-primary);
     font-size: var(--font-size-content);
     color: var(--color-black);
     line-height: 1.6;
     background-color: var(--color-background-primary);
-    background-image: url(../../assets/images/DecorRetroBackground.png);
+    background-image: url(../../assets/images/DecoRetroBackground.png);
     background-repeat: repeat-y;
 
     @media screen and (max-width: $breakpoint-sm) {
         font-size: var(--font-size-content-responsive);
     }
+}
+
+.accueil {
+    background-image: url(../../assets/images/DecorRetroBackgroundAccueil.png);
 }
