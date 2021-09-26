@@ -3,6 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1;
     .navPrincipal__logo {
         height: 90px;
         display: flex;
@@ -18,5 +24,8 @@
         li {
             list-style-type: none;
         }
+    }
+    img:nth-child(3) {
+        transform: scaleY(-1) scaleX(-1);
     }
 }

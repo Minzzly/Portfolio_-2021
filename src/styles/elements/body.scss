@@ -12,6 +12,7 @@ body {
     background-color: var(--color-background-primary);
     background-image: url(../../assets/images/DecoRetroBackground.png);
     background-repeat: repeat-y;
+    position: relative;
 
     @media screen and (max-width: $breakpoint-sm) {
         font-size: var(--font-size-content-responsive);

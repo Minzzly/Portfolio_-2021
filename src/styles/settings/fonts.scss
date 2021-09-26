@@ -8,14 +8,14 @@
     --font-secondary: 'Telex', sans-serif;
     --font-tertiary: 'Bungee shade';
 
-    --font-size-content: 1.125rem;
+    --font-size-content: 1.88rem;
 
     --font-size-button: 1.4rem;
 
     --font-size-liens: 1.25rem;
 
     /// Grosseur des textes
-    --font-size-h1: 12rem;
+    --font-size-h1: 6.25rem;
     --font-size-h2: 5rem;
     --font-size-h3: 3rem;
     --font-size-h4: 2.25rem;
@@ -35,4 +35,8 @@
     --font-size-h4-mobile: 1.25rem;
 
     --font-size-content-mobile: 0.75rem;
+
+    //font-weight
+    --fw-regular: 400;
+    --fw-bold: 700;
 }

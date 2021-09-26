@@ -1,0 +1,71 @@
+.hero {
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    .queen {
+        display: flex;
+        padding-top: 230px;
+        justify-content: space-between;
+        align-items: center;
+        width: 35%;
+        div {
+            width: 20px;
+            height: 20px;
+            background-color: var(--color-background-senary);
+            border-radius: 100%;
+            &:nth-child(2),
+            &:nth-child(6) {
+                background-color: var(--color-quaterny);
+            }
+            &:nth-child(3),
+            &:nth-child(5) {
+                background-color: var(--color-quinary);
+            }
+        }
+        .slogan {
+            font-weight: var(--fw-bold);
+            text-transform: uppercase;
+        }
+    }
+
+    .textAccueil {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .bouttonAccueil {
+            margin-top: var(--spacing-lg);
+            background-color: var(--color-quaterny);
+            border: dashed 5px var(--color-primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            font-family: var(--font-secondary);
+            color: var(--color-white);
+            text-transform: uppercase;
+            padding: 32px 43px 32px 31px;
+        }
+        a {
+            position: relative;
+        }
+        img {
+            position: absolute;
+            top: 35%;
+            left: 90%;
+        }
+    }
+}
+
+.model3D {
+    model-viewer {
+        height: 80%;
+        width: 30%;
+        position: absolute;
+        bottom: -250px;
+        right: 0;
+    }
+}
