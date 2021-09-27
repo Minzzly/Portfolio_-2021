@@ -1,13 +1,14 @@
 .hero {
-    margin-top: 95px;
+    height:100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 85%;
+    background-image: url(../../assets/images/DecorRetroBackgroundAccueil.png);
+    background-clip: border-box;
     .queen {
         display: flex;
-        padding-top: 230px;
         justify-content: space-between;
         align-items: center;
         width: 35%;
@@ -65,7 +66,7 @@
         height: 80%;
         width: 30%;
         position: absolute;
-        bottom: -250px;
+        bottom: -100px;
         right: 0;
     }
 }

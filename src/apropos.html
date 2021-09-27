@@ -1,109 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Audrey Langlois - Portfolio</title>
 
-        <link rel="stylesheet" href="styles/main.css" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audrey Langlois - Portfolio</title>
 
-        <script src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="styles/main.css" />
 
-        <style>
-            .parallelogram__info__general {
-                margin: auto;
-                width: 80vw;
-                height: 80vh;
-                clip-path: polygon(0 0%, 90% 0, 100% 100%, 10% 100%);
-                background: #a1d4f0;
-            }
+    <script src="scripts/main.js" defer></script>
+</head>
 
-            .parallelogram__bonjour {
-                margin: auto;
-                width: 80vw;
-                height: 80vh;
-                clip-path: polygon(0 0%, 90% 0, 100% 100%, 10% 100%);
-                background: #a1d4f0;
-            }
-            .contenuAPropos {
-                display: flex;
-            }
-
-            section[class] {
-                display: flex;
-                justify-content: center;
-                filter: url(#round);
-            }
-        </style>
-    </head>
-
-    <body>
-        <nav class="navPrincipal">
-            <div class="navPrincipal__logo">
-                <img src="assets/images/decorations/DecoNav.png" alt="" />
-                <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
-            </div>
-            <ul class="navPrincipal__liste">
-                <li><a href="apropos.html">À propos</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="">Télécharger mon CV</a></li>
-            </ul>
-
+<body>
+    <nav class="navPrincipal">
+        <div class="navPrincipal__logo">
             <img src="assets/images/decorations/DecoNav.png" alt="" />
-        </nav>
+            <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+        </div>
+        <ul class="navPrincipal__liste">
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="">Télécharger mon CV</a></li>
+        </ul>
 
-        <section class="infoGeneral">
-            <div class="parallelogram__info__general">
-                <div class="contenuAPropos">
-                    <img class="photoPortfolio" src="assets/images/aPropos/photoPortfolio.png" alt="" />
-                    <p>
-                        Je m’appelle <span class="nom__aPropos">Audrey Langlois.</span>
-                        Je suis étudiante en technique d’intégration multimédia. Depuis que je suis toute petite je suis
-                        passionnée par les jeux vidéos. Ma curiosité sur le développement des jeux vidéo est la raison
-                        pour laquelle je suis dans ce domaine.
-                    </p>
-                    <h2>Je suis:</h2>
-                    <ul>
-                        <li>Créative</li>
-                        <li>Débrouillarde</li>
-                        <li>Minutieuse</li>
-                        <li>Organisée</li>
-                    </ul>
-                </div>
+        <img src="assets/images/decorations/DecoNav.png" alt="" />
+    </nav>
+
+    <section class="infoGeneral">
+        <div class="parallelogram__info__general">
+            <div class="contenuAPropos">
+                <img class="photoPortfolio" src="assets/images/aPropos/photoPortfolio.png" alt="" />
+                <p>
+                    Je m’appelle <span class="nom__aPropos">Audrey Langlois.</span>
+                    Je suis étudiante en technique d’intégration multimédia. Depuis que je suis toute petite je suis
+                    passionnée par les jeux vidéos. Ma curiosité sur le développement des jeux vidéo est la raison
+                    pour laquelle je suis dans ce domaine.
+                </p>
+                <h2>Je suis:</h2>
+                <ul>
+                    <li>Créative</li>
+                    <li>Débrouillarde</li>
+                    <li>Minutieuse</li>
+                    <li>Organisée</li>
+                </ul>
             </div>
-        </section>
-        <div class="parallelogram__bonjour">
-            <h1>Bonjour!</h1>
         </div>
+    </section>
+    <div class="parallelogram__bonjour">
+        <h1>Bonjour!</h1>
+    </div>
 
-        <div class="flèche__scroll1">
-            <h3>Scroll</h3>
-        </div>
+    <div class="flèche__scroll1">
+        <h3>Scroll</h3>
+    </div>
 
-        <svg
-            style="visibility: hidden; position: absolute"
-            width="0"
-            height="0"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-        >
-            <defs>
-                <filter id="round">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                    <feColorMatrix
-                        in="blur"
-                        mode="matrix"
-                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                        result="goo"
-                    />
-                    <feComposite in="SourceGraphic" in2="goo" operator="atop" />
-                </filter>
-            </defs>
-        </svg>
+    <svg style="visibility: hidden; position: absolute" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+        version="1.1">
+        <defs>
+            <filter id="round">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                    result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
+        </defs>
+    </svg>
 
-        <footer class="footer">
-            <p class="">AudreyLanglois©TousDroitsReservés</p>
-        </footer>
-    </body>
+    <footer class="footer">
+        <p class="">AudreyLanglois©TousDroitsReservés</p>
+    </footer>
+</body>
+
 </html>

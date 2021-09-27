@@ -1,0 +1,27 @@
+.parallelogram__info__general {
+    margin: auto;
+    width: 80vw;
+    height: 80vh;
+    clip-path: polygon(0 0%, 90% 0, 100% 100%, 10% 100%);
+    background: #a1d4f0;
+}
+
+.parallelogram__bonjour {
+    margin: auto;
+    width: 10vw;
+    height: 5vh;
+    clip-path: polygon(0 0%, 90% 0, 100% 100%, 10% 100%);
+    background: #a1d4f0;
+}
+.contenuAPropos {
+    display: flex;
+}
+
+section[class] {
+    display: flex;
+    justify-content: center;
+    filter: url(#round);
+}
+
+// writing-mode: vertical-rl;
+// text-orientation: upright;

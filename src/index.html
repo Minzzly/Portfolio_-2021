@@ -1,80 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Audrey Langlois - Portfolio</title>
 
-        <link rel="stylesheet" href="styles/main.css" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audrey Langlois - Portfolio</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Comfortaa:wght@400;700&family=Telex&display=swap"
-            rel="stylesheet"
-        />
+    <link rel="stylesheet" href="styles/main.css" />
 
-        <!--Imports a model-viewer JavaScript code -->
-        <!--It helps to handle how the 3D Object would be displayed -->
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Comfortaa:wght@400;700&family=Telex&display=swap"
+        rel="stylesheet" />
 
-        <script src="scripts/main.js" defer></script>
-    </head>
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
-    <body class="accueil">
-        <nav class="navPrincipal">
-            <div class="navPrincipal__logo">
-                <img src="assets/images/decorations/DecoNav.png" alt="" />
-                <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
-            </div>
-            <ul class="navPrincipal__liste">
-                <li><a href="apropos.html">À propos</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="">Télécharger mon CV</a></li>
-            </ul>
+    <script src="scripts/main.js" defer></script>
+</head>
 
-            <img class="navPrincipal__decorDroite" src="assets/images/decorations/DecoNav.png" alt="" />
-        </nav>
+<body class="accueil">
+    <nav class="navPrincipal">
+        <div class="navPrincipal__logo">
+            <img src="assets/images/decorations/DecoNav.png" alt="" />
+            <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+        </div>
+        <ul class="navPrincipal__liste">
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="">Télécharger mon CV</a></li>
+        </ul>
 
-        <section class="hero">
-            <article class="queen">
-                <div></div>
-                <div></div>
-                <div></div>
-                <p class="slogan">La queen de la 3D</p>
-                <div></div>
-                <div></div>
-                <div></div>
-            </article>
+        <img class="navPrincipal__decorDroite" src="assets/images/decorations/DecoNav.png" alt="" />
+    </nav>
 
-            <article class="textAccueil">
-                <h1>Audrey Langlois</h1>
+    <section class="hero">
+        <article class="queen">
+            <div></div>
+            <div></div>
+            <div></div>
+            <p class="slogan">La queen de la 3D</p>
+            <div></div>
+            <div></div>
+            <div></div>
+        </article>
 
-                <a href="projets.html">
-                    <button class="bouttonAccueil">Explorer mes projets</button>
-                    <img src="assets/images/decorations/BouttonAccueil.png" alt=""
-                /></a>
-            </article>
-        </section>
+        <article class="textAccueil">
+            <h1>Audrey Langlois</h1>
 
-        <section class="model3D">
-            <!-- 3D object -->
-            <!-- This inserts the 3D object inside the aside container -->
-            <model-viewer
-                src="assets/objet3d/garford_antique/scene.gltf"
-                alt="VR Headset"
-                camera-controls
-                disable-zoom
-                camera-orbit="30deg 90deg 15m"
-                ar
-                ios-src="assets/objet3d/garford_antique/scene.gltf"
-            ></model-viewer>
-        </section>
+            <a href="projets.html">
+                <button class="bouttonAccueil">Explorer mes projets</button>
+                <img src="assets/images/decorations/BouttonAccueil.png" alt="" /></a>
+        </article>
+    </section>
 
-        <footer class="footer">
-            <p class="">AudreyLanglois©TousDroitsReservés</p>
-        </footer>
-    </body>
+    <section class="model3D">
+        <!-- 3D object -->
+        <!-- This inserts the 3D object inside the aside container -->
+        <model-viewer class="3d-accueil" src="assets/objet3d/garford_antique/scene.gltf" alt="VR Headset"
+            camera-controls disable-zoom camera-orbit="30deg 90deg 15m" ar
+            ios-src="assets/objet3d/garford_antique/scene.gltf">
+        </model-viewer>
+    </section>
+
+    <footer class="footer">
+        <p class="">AudreyLanglois©TousDroitsReservés</p>
+    </footer>
+</body>
+
 </html>
