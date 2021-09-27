@@ -1,20 +1,26 @@
-.parallelogram__info__general {
-    margin: auto;
-    width: 80vw;
-    height: 80vh;
-    clip-path: polygon(0 0%, 90% 0, 100% 100%, 10% 100%);
-    background: #a1d4f0;
-}
+.infoGeneral{
+    margin-top:95px;
+    .parallelogram__info__general {
+        margin: auto;
+        width: 80vw;
+        clip-path: polygon(0 0%, 90% 10%, 100% 100%, 10% 100%);
+        background: #a1d4f0;
 
-.parallelogram__bonjour {
-    margin: auto;
-    width: 10vw;
-    height: 5vh;
-    clip-path: polygon(0 0%, 90% 0, 100% 100%, 10% 100%);
-    background: #a1d4f0;
+        .contenuAPropos {
+            display: flex;
+
+            .contenuAPropos__text{
+                width:50%;
+            }
+        }
+    }
 }
-.contenuAPropos {
-    display: flex;
+.trapeze_bonjour {
+    margin: auto;
+    width: 18vw;
+    height: 10vh;
+    clip-path: polygon(0 0%, 100% 0, 90% 100%, 15% 100%);
+    background: #a1d4f0;
 }
 
 section[class] {

@@ -8,7 +8,15 @@
 
     <link rel="stylesheet" href="styles/main.css" />
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Comfortaa:wght@400;700&family=Telex&display=swap"
+        rel="stylesheet" />
+
     <script src="scripts/main.js" defer></script>
+
 </head>
 
 <body>
@@ -24,48 +32,54 @@
             <li><a href="">Télécharger mon CV</a></li>
         </ul>
 
-        <img src="assets/images/decorations/DecoNav.png" alt="" />
+        <img class="navPrincipal__decorDroite" src="assets/images/decorations/DecoNav.png" alt="" />
     </nav>
 
-    <section class="infoGeneral">
-        <div class="parallelogram__info__general">
-            <div class="contenuAPropos">
-                <img class="photoPortfolio" src="assets/images/aPropos/photoPortfolio.png" alt="" />
-                <p>
-                    Je m’appelle <span class="nom__aPropos">Audrey Langlois.</span>
-                    Je suis étudiante en technique d’intégration multimédia. Depuis que je suis toute petite je suis
-                    passionnée par les jeux vidéos. Ma curiosité sur le développement des jeux vidéo est la raison
-                    pour laquelle je suis dans ce domaine.
-                </p>
-                <h2>Je suis:</h2>
-                <ul>
-                    <li>Créative</li>
-                    <li>Débrouillarde</li>
-                    <li>Minutieuse</li>
-                    <li>Organisée</li>
-                </ul>
+    <div class="contenant">
+        <section class="infoGeneral">
+            <div class="parallelogram__info__general">
+                <div class="contenuAPropos">
+                    <img class="photoPortfolio" src="assets/images/aPropos/photoPortfolio.png" alt="" />
+                    <div class="contenuAPropos__text">
+                        <p>
+                            Je m’appelle <span class="nom__aPropos">Audrey Langlois.</span>
+                            Je suis étudiante en technique d’intégration multimédia. Depuis que je suis toute petite je
+                            suis
+                            passionnée par les jeux vidéos. Ma curiosité sur le développement des jeux vidéo est la
+                            raison
+                            pour laquelle je suis dans ce domaine.
+                        </p>
+                        <h2>Je suis:</h2>
+                        <ul>
+                            <li>Créative</li>
+                            <li>Débrouillarde</li>
+                            <li>Minutieuse</li>
+                            <li>Organisée</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </section>
+        <section class="trapeze_bonjour">
+            <h1>Bonjour!</h1>
+        </section>
+
+        <div class="flèche__scroll1">
+            <h3>Scroll</h3>
         </div>
-    </section>
-    <div class="parallelogram__bonjour">
-        <h1>Bonjour!</h1>
-    </div>
 
-    <div class="flèche__scroll1">
-        <h3>Scroll</h3>
+        <svg style="visibility: hidden; position: absolute" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+            version="1.1">
+            <defs>
+                <filter id="round">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                        result="goo" />
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                </filter>
+            </defs>
+        </svg>
     </div>
-
-    <svg style="visibility: hidden; position: absolute" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
-        version="1.1">
-        <defs>
-            <filter id="round">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                    result="goo" />
-                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
-            </filter>
-        </defs>
-    </svg>
 
     <footer class="footer">
         <p class="">AudreyLanglois©TousDroitsReservés</p>
