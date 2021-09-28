@@ -1,5 +1,5 @@
 .hero {
-    height: 100vh;
+    height: calc(100vh - 32px);
     display: flex;
     flex-direction: column;
     justify-content: center;
