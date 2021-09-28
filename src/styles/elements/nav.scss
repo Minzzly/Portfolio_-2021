@@ -7,6 +7,12 @@
     top: 0;
     left: 0;
     width: 100%;
+    .navPoint {
+        width: 9px;
+        height: 9px;
+        background-color: var(--color-black);
+        border-radius: 100%;
+    }
 
     z-index: 1;
     .navPrincipal__logo {

@@ -1,41 +1,82 @@
-.contenant {
-    background-image: url(../../assets/images/aPropos/poteaux.png);
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    .infoGeneral {
-        margin-top: 95px;
-        .parallelogram__info__general {
-            margin: auto;
-            width: 80vw;
-            clip-path: polygon(0 0%, 90% 10%, 100% 100%, 10% 100%);
-            background: var(--color-background-octonary);
+.infoGeneral {
+    margin-top: 7%;
+    .parallelogram__info__general {
+        background-image: url(../../assets/images/aPropos/affiche1Desktop.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: auto;
+        width: 100%;
+        height: 860px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-            .contenuAPropos {
-                display: flex;
+        .contenuAPropos {
+            width: 87.8%;
+            margin-top: -2.3%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                width: 501px;
+                height: 762px;
+            }
+            .contenuAPropos__text {
+                // margin-top: 8%;
+                // padding-right: 15%;
+                // width: 50%;
+                padding: 0 5%;
 
-                .contenuAPropos__text {
-                    width: 55%;
-                    margin-top: 8%;
-                    padding-left: 5%;
+                h2 {
+                    background-image: url(../../assets/images/aPropos/sousTitreBleu.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    text-align: center;
+                    font-family: var(--font-primary);
+                    font-size: var(--font-size-h4);
+                    color: var(--color-white);
+
+                    height: 73px;
+                    padding: 2% 2% 0 0;
+                }
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style-image: url('../../assets/images/bullets.png');
+                    li {
+                        width: 49%;
+                        padding-bottom: 2%;
+                    }
                 }
             }
         }
     }
-    .trapeze_bonjour {
-        background-image: url(../../assets/images/aPropos/backgroundBonjour.png);
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        position: relative;
-    }
+}
+.trapeze_bonjour {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../../assets/images/aPropos/backgroundBonjour.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    section[class] {
-        display: flex;
-        justify-content: center;
-        filter: url(#round);
+    h1 {
+        font-size: var(--font-size-h2);
+        color: var(--color-white);
     }
+}
 
-    // writing-mode: vertical-rl;
-    // text-orientation: upright;
+.poteaux {
+    z-index: -999;
+    position: absolute;
+    top: 25%;
+    left: 50%;
 }
