@@ -11,7 +11,12 @@
             href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Comfortaa:wght@400;700&family=Telex&display=swap"
             rel="stylesheet"
         />
-        <!-- <link rel="shortcut icon" type="image/jpg" href="assets/images/Logo.png" /> -->
+        <link rel="shortcut icon" type="image/jpg" href="assets/images/Logo.png" />
+
+        <!--Imports a model-viewer JavaScript code -->
+        <!--It helps to handle how the 3D Object would be displayed -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
         <link rel="stylesheet" href="styles/main.css" />
         <script src="scripts/main.js" defer></script>
@@ -60,74 +65,158 @@
                 <h1>Bonjour!</h1>
             </div>
 
-            <div class="fleche__scroll1">
+            <div class="fleche__scroll">
                 <h3 class="fleche__scroll__text">Scroll</h3>
             </div>
         </section>
 
         <section class="peuxFaire">
-            <div class="parallelogram__info__general">
+            <div class="parallelogram__peuxFaire">
                 <div class="contenuAPropos">
                     <div class="contenuPeuxFaire__text1">
                         <h2>Artistique:</h2>
-                        <div class="blocText">
-                            <svg class="icon icon--lg">
-                                <use xlink:href="#icon-blender"></use>
-                            </svg>
-                            <h3>Blender</h3>
-                            <p>Une platforme gratuite pour faire du modelage 3D.</p>
-                        </div>
-                        <div class="blocText">
-                            <svg class="icon">
-                                <use xlink:href="#icon-photoshop"></use>
-                            </svg>
-                            <h3>Photoshop</h3>
-                            <p>L'application Adobe où je fais mes illustrations pour des affiches ou des sketchs.</p>
-                        </div>
-                        <div class="blocText">
-                            <svg class="icon">
-                                <use xlink:href="#icon-illustrator"></use>
-                            </svg>
-                            <h3>Illustrator</h3>
-                            <p>L'application Adobe où je fais mes illustrations pour des logos ou icones.</p>
+                        <div class="bloc">
+                            <div class="blocText">
+                                <svg class="icon icon--xl">
+                                    <use xlink:href="#icon-blender"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>Blender</h3>
+                                    <p>Une platforme gratuite pour faire du modelage 3D.</p>
+                                </div>
+                            </div>
+                            <div class="blocText">
+                                <svg class="icon icon--xl">
+                                    <use xlink:href="#icon-photoshop"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>Photoshop</h3>
+                                    <p>
+                                        L'application Adobe où je fais mes illustrations pour des affiches ou des
+                                        sketchs.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="blocText">
+                                <svg class="icon icon--xl">
+                                    <use xlink:href="#icon-illustrator"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>Illustrator</h3>
+                                    <p>L'application Adobe où je fais mes illustrations pour des logos ou icones.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="contenuPeuxFaire__text2">
                         <h2>Logique:</h2>
-                        <div class="blocText">
-                            <svg class="icon icon--stroke">
-                                <use xlink:href="#icon-htmlfive"></use>
-                            </svg>
+                        <div class="bloc">
+                            <div class="blocText">
+                                <svg class="icon icon--stroke icon--lg">
+                                    <use xlink:href="#icon-htmlfive"></use>
+                                </svg>
 
-                            <svg class="icon icon--stroke">
-                                <use xlink:href="#icon-css3"></use>
-                            </svg>
-                            <h3>Html/Css</h3>
-                            <p>Le language de base pour faire un site avec du style.</p>
-                        </div>
-                        <div class="blocText">
-                            <svg class="icon">
-                                <use xlink:href="#icon-js"></use>
-                            </svg>
-                            <h3>JavaScript</h3>
-                            <p>La langue le plus populaire pour ajouter d'avantage de l'intéractivité dans un site.</p>
+                                <svg class="icon icon--stroke icon--xl">
+                                    <use xlink:href="#icon-css3"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>Html/Css</h3>
+                                    <p>Le language de base pour faire un site avec du style.</p>
+                                </div>
+                            </div>
+                            <div class="blocText">
+                                <svg class="icon icon--xl">
+                                    <use xlink:href="#icon-js"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>JavaScript</h3>
+                                    <p>
+                                        La langue le plus populaire pour ajouter d'avantage de l'intéractivité dans un
+                                        site.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="trapeze_bonjour">
+            <div class="trapeze_peuxFaire">
                 <h1>Qu'es ce que je peux Faire:</h1>
             </div>
 
-            <div class="fleche__scroll1">
+            <div class="fleche__scroll">
                 <h3 class="fleche__scroll__text">Scroll</h3>
             </div>
 
             <div class="sticker">
                 <p class="brefDescription">
-                    Bref, je fais de la modélisation 3D, de l’illustration et de la programmation web.
+                    Bref, je fais de la modélisation <span>3D</span>, de <span>l’illustration</span> et de la
+                    programmation <span>web</span>.
                 </p>
+            </div>
+        </section>
+
+        <section class="passion">
+            <div class="losange__passion">
+                <div class="contenu__passion">
+                    <div class="contenuPeuxFaire__text1">
+                        <div class="bloc">
+                            <div class="blocText">
+                                <svg class="icon icon--xl">
+                                    <use xlink:href="#icon-3d"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>Impression 3D</h3>
+                                    <p>Une platforme gratuite pour faire du modelage 3D.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenuPeuxFaire__text2">
+                        <div class="bloc">
+                            <div class="blocText">
+                                <svg class="icon icon--xl">
+                                    <use xlink:href="#icon-dessin"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>Dessin</h3>
+                                    <p>Le language de base pour faire un site avec du style.</p>
+                                </div>
+                            </div>
+                            <div class="blocText">
+                                <svg class="icon icon--xl">
+                                    <use xlink:href="#icon-peinture"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>Peinture</h3>
+                                    <p>
+                                        La langue le plus populaire pour ajouter d'avantage de l'intéractivité dans un
+                                        site.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenuPeuxFaire__text3">
+                        <div class="bloc">
+                            <div class="blocText">
+                                <svg class="icon icon--xl">
+                                    <use xlink:href="#icon-gaming"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>Jeux vidéo</h3>
+                                    <p>Une platforme gratuite pour faire du modelage 3D.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parallelogram_passion">
+                <h1>Mes passe-temps</h1>
             </div>
         </section>
 
