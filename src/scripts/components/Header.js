@@ -1,8 +1,9 @@
 export default class Header {
   constructor(element) {
     this.element = element;
+    this.scrollLimit = this.element.dataset.scrollLimit || 0.1;
+    this.isHidden = false;
     this.scrollPosition = 0;
-    this.scrollLimit = 0.1;
     this.lastScrollPosition = 0;
     this.html = document.documentElement;
 
@@ -11,33 +12,39 @@ export default class Header {
   }
 
   init() {
-    window.addEventListener('scroll', this.onScroll.bind(this));
+    console.log('this');
+
+    if (this.element.dataset.autoHide != 'false') {
+      window.addEventListener('scroll', this.onScroll.bind(this));
+    }
   }
 
   onScroll(event) {
     this.lastScrollPosition = this.scrollPosition;
     this.scrollPosition = document.scrollingElement.scrollTop;
-    this.setHeaderState();
-    this.setDirectionState();
-  }
-  setHeaderState() {
-    const scrollHeight = document.scrollingElement.scrollHeight;
 
-    if (this.scrollPosition > scrollHeight * this.scrollLimit) {
+    this.setHeaderState();
+    this.setDirections();
+  }
+
+  setHeaderState() {
+    if (
+      this.scrollPosition >
+      document.scrollingElement.scrollHeight * this.scrollLimit
+    ) {
       this.html.classList.add('header-is-hidden');
-      this.html.classList.remove('nav-is-active');
-    } else {
+    } else if (this.scrollPosition < this.lastScrollPosition) {
       this.html.classList.remove('header-is-hidden');
     }
   }
 
-  setDirectionState() {
+  setDirections() {
     if (this.scrollPosition >= this.lastScrollPosition) {
-      this.html.classList.add('is-scrolling-down');
       this.html.classList.remove('is-scrolling-up');
+      this.html.classList.add('is-scrolling-down');
     } else {
-      this.html.classList.remove('is-scrolling-down');
       this.html.classList.add('is-scrolling-up');
+      this.html.classList.remove('is-scrolling-down');
     }
   }
 

@@ -11,22 +11,19 @@ export default class Carousel {
 
     // Options par défaut pour la librairie Swiper
     this.defaultOptions = {
-      slidesPerView: 1,
-      spaceBetween: 20,
+      slidesPerView: 1
+      ,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
       },
-      breakpoints: {
-        769: {
-          slidesPerView: 4,
-          direction: 'horizontal',
-        },
-        376: {
-          slidesPerView: 2,
-          direction: 'horizontal',
-        },
-      },
+
     };
 
     this.init();
@@ -40,23 +37,33 @@ export default class Carousel {
 
     // Gestion des paramètres différents lorsqu'on veut avoir
     // 2 slides visibles sur grand écran et une seule sur petit écran
-    if (this.element.dataset.carousel == 'coverflow') {
+    if (this.element.dataset.carousel == 'split') {
       options = {
         ...this.defaultOptions,
         ...{
-          slidesPerView: 3,
-          direction: 'vertical',
-          effect: 'coverflow',
+          slidesPerView: 1,
           breakpoints: {
             768: {
-              slidesPerView: 3,
-              direction: 'horizontal',
+              slidesPerView: 2,
             },
           },
-          coverflowEffect: {
-            rotate: 10,
-            slideShadows: false,
+        },
+      };
+    }
+
+    // Gestion des paramètres différents lorsqu'on veut avoir
+    // 2 slides visibles sur grand écran et une seule sur petit écran
+    if (this.element.dataset.carousel == 'scroll') {
+      options = {
+        ...this.defaultOptions,
+        ...{
+          // slidesPerView: 1,
+          scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
           },
+          navigation: false,
+          pagination: false,
         },
       };
     }

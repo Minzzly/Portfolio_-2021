@@ -2,86 +2,114 @@ import Utils from '../utils/Utils';
 
 export default class Modal {
   constructor(element) {
-    this.element = element; /** va chercher les datas dans l'html */
-    this.modalId = this.element.dataset.modalId; /** chercher les data avec le nom modalId */
-    this.init(); /** appelle la méthode init */
+    this.element = element;
+    this.modalId = this.element.dataset.modalId;
+
+    this.init();
   }
 
   init() {
-    /** ajoute un événement clique sur les éléments qui appelle la méthode open*/
     this.element.addEventListener('click', this.open.bind(this));
 
-    this.close = this.close.bind(this); /** appelle la méthode close dans une variable */
+    this.close = this.close.bind(this);
   }
 
-  updateContent() {
-    /** ajoute les informations dans la modal (title et source)  */
-    if (this.modalId == 'tpl-modal-partenaires') {
-      /** si la modal c'est celle de tpl-modal-partenaires */
-      this.modalElement.innerHTML = Utils.parseTemplate(this.modalElement.innerHTML, {
-        title: this.element.dataset.modalTitle /** modifie le titre de la modal */,
-        source: this.element.dataset.modalSource /** modifie la source de l'image de la modal */,
-      });
-    } else if (this.modalId == 'tpl-modal-calendrier') {
-      /** si la modal c'est celle de tpl-modal-calendrier */
-      this.modalElement.innerHTML = Utils.parseTemplate(this.modalElement.innerHTML, {
-        title: this.element.dataset.modalTitle /** modifie le titre de la modal */,
-        source: this.element.dataset.modalSource /** modifie la source de l'image de la modal */,
-        salle: this.element.dataset.modalSalle /** modifie la salle de la modal */,
-        description: this.element.dataset.modalDescription /** modifie la description de la modal */,
-      });
+  updateContent(data) {
+    const bgClass = this.getColorClass(this.element);
+    if (this.modalId == 'tpl-modal-cards') {
+      this.modalElement.innerHTML = Utils.parseTemplate(
+        this.modalElement.innerHTML,
+        {
+          title: this.element.querySelector('.js-title').innerText,
+          image: this.element.querySelector('.js-image').src,
+          bgClass: bgClass ? bgClass : '',
+        }
+      );
+    } else if (this.modalId == 'tpl-modal-news') {
+      this.modalElement.innerHTML = Utils.parseTemplate(
+        this.modalElement.innerHTML,
+        {
+          title: this.element.querySelector('.js-title').innerText,
+          description: this.element.querySelector('.js-description').innerText,
+        }
+      );
     }
+  }
+
+  getColorClass(html) {
+    const bgClasses = [
+      'card--primary',
+      'card--secondary',
+      'card--tertiary',
+      'card--quaternary',
+      'card--quinary',
+      'swiper-slide-primary',
+      'swiper-slide-secondary',
+      'swiper-slide-tertiary',
+      'swiper-slide-quaternary',
+      'swiper-slide-quinary',
+    ];
+    const classes = html.className.split(' ');
+    console.log(classes);
+    for (let i = 0; i < classes.length; i++) {
+      const cssClass = classes[i];
+      const indexOf = bgClasses.indexOf(cssClass);
+      if (indexOf !== -1) {
+        return bgClasses[indexOf];
+      }
+    }
+    return null;
   }
 
   open(event) {
     event.preventDefault();
-
-    this.appendModal(); //affiche le modal
+    this.appendModal();
   }
 
   close(event) {
-    /** si la touche appuiyer et égal à nul et que ce n'est pas la touche ESC, la méthode va etre ignorer */
-    if (event.keyCode != null && event.keyCode != 27) {
-      return;
-    }
+    if (event.key && event.key !== 'Escape') return;
 
-    /** enleve la class modal-is-active, l'événement clique et de keydown */
     document.documentElement.classList.remove('modal-is-active');
-    this.closeButton.removeEventListener('click', this.close.bind(this));
-    document.removeEventListener('keydown', this.close);
+    this.closeButton.removeEventListener('click', this.close);
+    this.scrim.removeEventListener('click', this.close);
+    document.removeEventListener('keyup', this.close);
 
-    /** appelle la méthode destroy après 1 seconde */
+    // We wait 1 sec for the css transition to end on modal, then we remove it from DOM
     setTimeout(this.destroy.bind(this), 1000);
   }
 
   destroy() {
-    /** enleve la modal du html */
     this.modalElement.parentElement.removeChild(this.modalElement);
   }
 
   appendModal() {
-    const template = document.querySelector(`#${this.modalId}`); /** va chercher la template */
+    const template = document.querySelector(`#${this.modalId}`);
 
+    // We valide that a template with this ID actually exists
     if (template) {
-      this.modalElement =
-        template.content.firstElementChild.cloneNode(true); /** va chercher la modal dans le template */
+      this.modalElement = template.content.firstElementChild.cloneNode(true);
 
-      this.content =
-        this.modalElement.querySelector('.modal_content'); /** va chercher le modal_content qui est dans la modal */
+      // Update modal content
+      this.updateContent();
 
-      this.updateContent(); /** update la modal */
-
+      // We append the modal to the DOM
       document.body.appendChild(this.modalElement);
 
+      // This forces the browser to redraw (and execute from A to Z the css transition)
       this.element.getBoundingClientRect();
-      document.documentElement.classList.add('modal-is-active'); /** ajoute la class modal-is-active dans le html */
+      document.documentElement.classList.add('modal-is-active');
 
-      this.closeButton =
-        this.modalElement.querySelector('.js-close'); /** va chercher le boutton pour fermer la modal */
-      this.closeButton.addEventListener('click', this.close); /** ajoute un événement lorsque le bouton est cliquer */
+      // We add behavior to our close button
+      this.closeButton = this.modalElement.querySelector('.js-close');
+      this.closeButton.addEventListener('click', this.close);
+
+      // We add behavior to our scrim
+      this.scrim = this.modalElement.querySelector('.js-scrim');
+      this.scrim.addEventListener('click', this.close);
+
+      document.addEventListener('keyup', this.close);
     } else {
-      console.log(`La <template> avec le id ${this.modalId} n'existe pas`); /** si le modal n'est pas trouver */
+      console.log(`Le <template> avec le id ${this.modalId} n'existe pas`);
     }
-    document.addEventListener('keydown', this.close); /** ajoute unn événement quand une touche est appuyer */
   }
 }
