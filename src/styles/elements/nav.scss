@@ -30,8 +30,20 @@
         li {
             list-style-type: none;
         }
+        a{
+            &:nth-child(1):hover{
+                color:var(--color-quinary);
+            }
+            &:nth-child(5):hover{
+                color:var(--color-secondary);
+            }
+            &:nth-child(7):hover{
+                color:var(--color-background-senary);
+            }
+        }
     }
     img:nth-child(3) {
         transform: scaleY(-1) scaleX(-1);
     }
+
 }
