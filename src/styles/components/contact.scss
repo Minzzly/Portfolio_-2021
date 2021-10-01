@@ -1,0 +1,91 @@
+.contact {
+    background-image: url(../../assets/images/aPropos/affiche3Desktop.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    width: 80%;
+    height: calc(100vh - 32px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    .informations {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // flex-direction: column;
+
+        width: 45%;
+        .titre {
+            background-image: url(../../assets/images/aPropos/titrePasseTemps.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            position: absolute;
+            top: 15%;
+            left: 0;
+            height: 20%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: var(--font-size-h3);
+            }
+        }
+
+        a {
+            margin-top: 40%;
+            &:nth-child(2) {
+                padding: var(--spacing-lg) 0;
+                font-family: var(--font-secondary);
+            }
+            span {
+                font-weight: var(--fw-bold);
+                font-family: var(--font-primary);
+            }
+        }
+    }
+
+    .reseaux {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 15%;
+
+        h2 {
+            font-size: var(--font-size-h4);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .medias__icones {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+
+            width: 130%;
+            margin-top: var(--spacing-sm);
+            div {
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+                &:nth-child(2) {
+                    width: 30%;
+                    margin-top: 3%;
+                }
+                svg {
+                    transition: all 0.3s $ease-out-expo;
+                    &:hover {
+                        cursor: pointer;
+                        fill: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+}

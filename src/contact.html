@@ -36,281 +36,65 @@
             <img class="navPrincipal__decorDroite" src="assets/images/decorations/DecoNav.png" alt="" />
         </nav>
 
-        <section class="formulaire" data-scrolly="FlipfromLeft">
-            <div class="formulaire__content wrapper">
-                <form action="" class="form" autocomplete="off" data-component="Form">
-                    <div class="form__body">
-                        <h2>Contactez-nous</h2>
-                        <p>Nous répondrons dans les plus bref délais!</p>
-                        <fieldset class="grid">
-                            <div class="input">
-                                <label class="input__label" for="nom"> Nom</label>
-                                <input
-                                    class="input__element"
-                                    type="text"
-                                    name="fullname"
-                                    id="nom"
-                                    placeholder="ex.: Langlois"
-                                    required
-                                />
-                            </div>
-                            <div class="input">
-                                <label class="input__label" for="prenom"> Prénom</label>
-                                <input
-                                    class="input__element"
-                                    type="text"
-                                    name="fullname"
-                                    id="prenom"
-                                    placeholder="ex.:Audrey"
-                                    required
-                                />
-                            </div>
+        <section class="contact">
+            <article class="informations">
+                <div class="titre">
+                    <h1>Contactez-moi!</h1>
+                </div>
 
-                            <div class="input">
-                                <label class="input__label" for="email"> Courriel </label>
-                                <input
-                                    class="input__element"
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    placeholder="ex.: exemple@exemple.com"
-                                    required
-                                />
-                            </div>
+                <a href="mailto:azpmaggie@gmail.com"><span>Adresse courriel :</span> azpmaggie@gmail.com</a>
+                <a href="tel:514-561-6500"><span>Téléphone :</span> 514-561-6500</a>
+            </article>
+            <article class="reseaux">
+                <h2>Mes réseaux sociaux :</h2>
+                <div class="medias__icones">
+                    <div>
+                        <svg class="icon icon--md">
+                            <a href="https://www.youtube.com/channel/UC3BDgnqoChG4TBcuHe1_4vw">
+                                <use xlink:href="#icon-youtube"></use>
+                            </a>
+                        </svg>
 
-                            <div class="input">
-                                <label class="input__label" for="phone"> Téléphone </label>
-                                <input
-                                    class="input__element"
-                                    type="tel"
-                                    name="phone"
-                                    id="phone"
-                                    placeholder="(555) 666-7777"
-                                    pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
-                                    required
-                                />
-                            </div>
+                        <svg class="icon icon--md">
+                            <a href="https://twitter.com/MinzzlyLanglois">
+                                <use xlink:href="#icon-twitter"></use>
+                            </a>
+                        </svg>
 
-                            <div class="form__list data-input-container">
-                                <label class="input__label" for="phone"> Quel est votre sexe? </label>
-                                <div class="input radio">
-                                    <input
-                                        class="input__element"
-                                        type="radio"
-                                        name="sexe[]"
-                                        id="sexe1"
-                                        value="femme"
-                                        required
-                                    />
-                                    <label class="input__label" for="sexe1"> Femme </label>
-                                </div>
+                        <svg class="icon icon--md">
+                            <a href="https://www.instagram.com/audreylanglois13/">
+                                <use xlink:href="#icon-instagram"></use>
+                            </a>
+                        </svg>
 
-                                <div class="input radio">
-                                    <input
-                                        class="input__element"
-                                        type="radio"
-                                        name="sexe[]"
-                                        id="sexe2"
-                                        value="homme"
-                                        required
-                                    />
-                                    <label class="input__label" for="sexe2"> Homme </label>
-                                </div>
-
-                                <div class="input radio">
-                                    <input
-                                        class="input__element"
-                                        type="radio"
-                                        name="sexe[]"
-                                        id="sexe3"
-                                        value="autre"
-                                        required
-                                    />
-                                    <label class="input__label" for="sexe3"> Autre </label>
-                                </div>
-                            </div>
-                        </fieldset>
-
-                        <hr />
-
-                        <fieldset class="grid">
-                            <div class="input select">
-                                <br />
-                                <label class="input__label" for="journee">
-                                    Quelle journée vous intéresse le plus?
-                                </label>
-                                <select name="" id="journee" class="input__element" required>
-                                    <option value="" hidden>Choisir une journée</option>
-                                    <option value="qc">9 juillet</option>
-                                    <option value="on">10 juillet</option>
-                                    <option value="al">11 juillet</option>
-                                </select>
-                            </div>
-                        </fieldset>
-
-                        <fieldset class="form__list data-input-container">
-                            <label class="input__label" for="journee"> Quel est votre invité préféré? </label>
-                            <div class="form__list" data-input-container>
-                                <div class="input radio">
-                                    <input
-                                        class="input__element"
-                                        type="radio"
-                                        name="invité[]"
-                                        id="invité1"
-                                        value="lacy"
-                                        required
-                                    />
-                                    <label class="input__label" for="invité1"> Lacy Hobbs </label>
-                                </div>
-
-                                <div class="input radio">
-                                    <input
-                                        class="input__element"
-                                        type="radio"
-                                        name="invité[]"
-                                        id="invité2"
-                                        value="cathy"
-                                        required
-                                    />
-                                    <label class="input__label" for="invité2"> Cathy Ponce </label>
-                                </div>
-
-                                <div class="input radio">
-                                    <input
-                                        class="input__element"
-                                        type="radio"
-                                        name="invité[]"
-                                        id="invité3"
-                                        value="jem"
-                                        required
-                                    />
-                                    <label class="input__label" for="invité3"> Jem Vincent </label>
-                                </div>
-
-                                <div class="input radio">
-                                    <input
-                                        class="input__element"
-                                        type="radio"
-                                        name="invité[]"
-                                        id="invité4"
-                                        value="jovan"
-                                        required
-                                    />
-                                    <label class="input__label" for="invité4"> Jovan Khan </label>
-                                </div>
-
-                                <div class="input radio">
-                                    <input
-                                        class="input__element"
-                                        type="radio"
-                                        name="invité[]"
-                                        id="invité5"
-                                        value="samuel"
-                                        required
-                                    />
-                                    <label class="input__label" for="invité5"> Samuel Wood </label>
-                                </div>
-
-                                <div class="input radio">
-                                    <input
-                                        class="input__element"
-                                        type="radio"
-                                        name="invité[]"
-                                        id="invité6"
-                                        value="jack"
-                                        required
-                                    />
-                                    <label class="input__label" for="invité6"> Jack Daniel </label>
-                                </div>
-
-                                <div class="input radio">
-                                    <input
-                                        class="input__element"
-                                        type="radio"
-                                        name="invité[]"
-                                        id="invité7"
-                                        value="bobby"
-                                        required
-                                    />
-                                    <label class="input__label" for="invité7"> Bobby Jackson </label>
-                                </div>
-
-                                <div class="input radio">
-                                    <input
-                                        class="input__element"
-                                        type="radio"
-                                        name="invité[]"
-                                        id="invité8"
-                                        value="logan"
-                                        required
-                                    />
-                                    <label class="input__label" for="invité8"> Logan Reeve </label>
-                                </div>
-
-                                <div class="input radio">
-                                    <input
-                                        class="input__element"
-                                        type="radio"
-                                        name="invité[]"
-                                        id="invité9"
-                                        value="mike"
-                                        required
-                                    />
-                                    <label class="input__label" for="invité9"> Mike Woodley </label>
-                                </div>
-                            </div>
-                        </fieldset>
-
-                        <fieldset class="grid">
-                            <div class="input textarea u-grid-fullwidth">
-                                <label class="input__label" for="comment"> Commentaire </label> <br />
-                                <textarea class="input__element" name="comment" id="comment" required></textarea>
-                            </div>
-
-                            <div class="input checkbox">
-                                <input class="input__element" type="checkbox" name="optin[]" id="optin" value="true" />
-                                <label class="input__label" for="optin"> Je veux être abonné à l'infolettre </label>
-                            </div>
-                        </fieldset>
-                        <footer class="form__footer">
-                            <button class="button">Envoyer</button>
-                        </footer>
+                        <svg class="icon icon--md">
+                            <a href="https://github.com/Minzzly">
+                                <use xlink:href="#icon-github"></use>
+                            </a>
+                        </svg>
                     </div>
-                    <div class="form__confirmation">
-                        <div class="contenuConfirmation">
-                            <h2>Merci</h2>
-                            <p>Votre formulaire a bien été envoyé!</p>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
 
-        <section class="medias">
-            <h1>Mes réseaux sociaux</h1>
-            <div class="medias__icones">
-                <svg class="icon">
-                    <use xlink:href="#icon-youtube"></use>
-                </svg>
-                <svg class="icon">
-                    <use xlink:href="#icon-twitter"></use>
-                </svg>
-                <svg class="icon">
-                    <use xlink:href="#icon-instagram"></use>
-                </svg>
-                <svg class="icon">
-                    <use xlink:href="#icon-github"></use>
-                </svg>
-                <svg class="icon">
-                    <use xlink:href="#icon-linkedin"></use>
-                </svg>
-                <svg class="icon">
-                    <use xlink:href="#icon-sketchfab"></use>
-                </svg>
-                <svg class="icon">
-                    <use xlink:href="#icon-artstation"></use>
-                </svg>
-            </div>
+                    <div>
+                        <svg class="icon icon--md">
+                            <a href="https://www.linkedin.com/in/audrey-langlois-9487b7220/">
+                                <use xlink:href="#icon-linkedin"></use>
+                            </a>
+                        </svg>
+
+                        <svg class="icon icon--md">
+                            <a href="https://sketchfab.com/AudreyLanglois">
+                                <use xlink:href="#icon-sketchfab"></use>
+                            </a>
+                        </svg>
+
+                        <svg class="icon icon--md">
+                            <a href="https://www.artstation.com/audreylanglois">
+                                <use xlink:href="#icon-artstation"></use>
+                            </a>
+                        </svg>
+                    </div>
+                </div>
+            </article>
         </section>
 
         <footer class="footer">
