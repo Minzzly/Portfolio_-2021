@@ -1,0 +1,125 @@
+.projets {
+    h1 {
+        text-align: center;
+        margin-top: 10%;
+        font-size: var(--font-size-h3);
+    }
+    .card {
+        display: flex;
+        align-items: center;
+        width: 70%;
+        height: 460px;
+        margin-bottom: 10.5%;
+
+        color: var(--color-white);
+
+        img {
+            border-radius: 10px;
+        }
+
+        &:nth-child(odd) {
+            img {
+                margin-right: 17%;
+            }
+        }
+        &:nth-child(even) {
+            margin-left: auto;
+
+            img {
+                margin-left: 4%;
+            }
+        }
+
+        .card__texte {
+            width: 40%;
+            p {
+                margin: 0;
+            }
+            .card__info {
+                font-size: var(--font-size-content-responsive);
+                font-family: var(--font-primary);
+                font-weight: var(--fw-regular);
+                padding: 2% 0 5% 0;
+            }
+
+            .card__resume {
+                font-size: var(--font-size-h4-mobile);
+            }
+
+            &:nth-child(odd) {
+                text-align: right;
+                margin-right: 2%;
+                margin-left: auto;
+                a {
+                    margin-right: 10%;
+                }
+            }
+            &:nth-child(even) {
+                margin-left: 2%;
+                a {
+                    margin-left: 10%;
+                }
+            }
+
+            .button {
+                background-image: url(../../assets/images/projets/BouttonCard.png);
+                background-position: 50% 65%;
+                background-repeat: no-repeat;
+                padding: 20px 100px;
+                border: none;
+                text-align: center;
+
+                transition: all 0.3s $ease-out-expo;
+
+                &:hover {
+                    background-position: 50% 70%;
+                    a {
+                        color: var(--color-black);
+                    }
+                }
+                a {
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-size: var(--font-size-content-responsive);
+                }
+            }
+        }
+    }
+    .card--1 {
+        background-image: url(../../assets/images/projets/Card1.png);
+        background-repeat: no-repeat;
+        margin-top: 10%;
+    }
+
+    .card--2 {
+        background-image: url(../../assets/images/projets/Card2.png);
+        background-repeat: no-repeat;
+    }
+
+    .card--3 {
+        background-image: url(../../assets/images/projets/Card3.png);
+        background-repeat: no-repeat;
+    }
+
+    .card--4 {
+        background-image: url(../../assets/images/projets/Card4.png);
+        background-repeat: no-repeat;
+    }
+
+    .card--5 {
+        background-image: url(../../assets/images/projets/Card5.png);
+        background-repeat: no-repeat;
+    }
+
+    .card--6 {
+        background-image: url(../../assets/images/projets/Card6.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.poteaux {
+    z-index: -999;
+    position: absolute;
+    top: 3%;
+    left: 48.5%;
+}
