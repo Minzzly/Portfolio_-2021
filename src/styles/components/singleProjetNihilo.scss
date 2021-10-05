@@ -1,58 +1,161 @@
-.test {
-    overflow: hidden;
-    width: 500px;
-    height: 500px;
-}
+.nihilo {
+    background-image: url(../../assets/images/singleNihilo/chaines.png);
+    background-position: center;
+    background-repeat: repeat-y;
+    .outer {
+        position: relative;
+        overflow: hidden;
+        width: 80vw;
+        margin: auto;
+        margin-bottom: 5%;
+        &:nth-child(1) {
+            margin-top: 10%;
+        }
+        .inner {
+            border: 20px solid var(--color-white);
+            background-color: var(--color-secondary);
+        }
+        .inner i {
+            width: 80px;
+            height: 80px;
+            border: 20px solid var(--color-white);
+            border-radius: 50%;
+            background-color: var(--color-background-primary);
+        }
+        .inner .top {
+            position: absolute;
+            top: -30px;
+        }
+        .inner .bottom {
+            position: absolute;
+            bottom: -30px;
+        }
+        .inner .left {
+            left: -30px;
+        }
+        .inner .right {
+            right: -30px;
+        }
+    }
 
-div.inverted-corner {
-    box-sizing: border-box;
-    position: relative;
-    background-color: #3e2a4f;
-    height: 500px;
-    width: 500px;
-    border: solid grey 7px;
-}
+    //--------------------------Section Titre---------------------------------------------------
+    .nihilo__hero {
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-.top,
-.bottom {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
+            .content__text {
+                text-align: right;
+                p {
+                    margin: 0;
+                }
+                .description__projet {
+                    padding-top: 5%;
+                    letter-spacing: 3px;
+                    font-weight: var(--fw-regular);
+                }
+                .description__nom {
+                    font-size: var(--font-size-liens);
+                    font-family: var(--font-secondary);
+                }
+            }
+            .video {
+                width: 50%;
+                padding-bottom: 25%;
+            }
+        }
+    }
 
-.top:before,
-.top:after,
-.bottom:before,
-.bottom:after {
-    content: ' ';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: var(--color-background-primary);
-    border: solid grey 7px;
-    border-radius: 100%;
-}
+    //--------------------------SECTION STORYBOARD---------------------------------------------------
+    .nihilo__storyboard {
+        img {
+            margin-bottom: 5%;
+        }
+    }
 
-.top:before {
-    top: -35px;
-    left: -35px;
-}
+    //-------------------------SECTION MOODBOARD------------------------------------------------------
+    .nihilo__moodboard {
+        .wrapper {
+            margin-bottom: 5%;
+        }
+        img {
+            width: 50%;
+            height: 500px;
+            object-fit: cover;
+        }
+    }
+    //-------------------------SECTION MODELISATION---------------------------------------------------
+    .nihilo__modelisation {
+        h2 {
+            padding-top: 3%;
+        }
+        img {
+            width: 50%;
+            &:nth-child(3) {
+                height: 450px;
+                object-fit: cover;
+            }
+        }
+        a {
+            span {
+                text-decoration: underline;
+            }
+        }
 
-.top:after {
-    top: -35px;
-    right: -35px;
-    box-shadow: inset 1px 1px 1px grey;
-}
+        .swiper-container {
+            padding-bottom: 10px;
+            .swiper-pagination {
+                bottom: 0px;
+            }
+        }
+    }
 
-.bottom:before {
-    bottom: -35px;
-    left: -35px;
-}
+    //-------------------------SECTION ANIMATION FINAL-------------------------------------------
+    .nihilo__animFinal {
+        .video {
+            width: 50%;
+            padding-bottom: 25%;
+        }
+    }
 
-.bottom:after {
-    bottom: -35px;
-    right: -35px;
-    box-shadow: inset 1px 1px 1px grey;
+    //--------------------------STYLE GENERAL---------------------------------------------------
+
+    .content {
+        color: var(--color-white);
+        text-align: center;
+        h3 {
+            font-family: var(--font-primary);
+            font-weight: var(--fw-regular);
+        }
+        p {
+            width: 40%;
+            margin: auto;
+            font-family: var(--font-secondary);
+            font-size: var(--font-size-content-responsive);
+            padding: 2% 0;
+
+            span {
+                color: var(--color-quinary);
+                font-family: var(--font-primary);
+                font-weight: var(--fw-bold);
+            }
+        }
+        img {
+            border-radius: 10px;
+        }
+    }
+    h2 {
+        background-image: url(../../assets/images/singleNihilo/soustitre.png);
+        background-repeat: no-repeat;
+        height: 200px;
+        margin: 5% 2% 0 2%;
+        padding-top: 3.5%;
+
+        text-align: center;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: var(--color-primary);
+    }
 }
