@@ -1,0 +1,58 @@
+.test {
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+}
+
+div.inverted-corner {
+    box-sizing: border-box;
+    position: relative;
+    background-color: #3e2a4f;
+    height: 500px;
+    width: 500px;
+    border: solid grey 7px;
+}
+
+.top,
+.bottom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.top:before,
+.top:after,
+.bottom:before,
+.bottom:after {
+    content: ' ';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-background-primary);
+    border: solid grey 7px;
+    border-radius: 100%;
+}
+
+.top:before {
+    top: -35px;
+    left: -35px;
+}
+
+.top:after {
+    top: -35px;
+    right: -35px;
+    box-shadow: inset 1px 1px 1px grey;
+}
+
+.bottom:before {
+    bottom: -35px;
+    left: -35px;
+}
+
+.bottom:after {
+    bottom: -35px;
+    right: -35px;
+    box-shadow: inset 1px 1px 1px grey;
+}
