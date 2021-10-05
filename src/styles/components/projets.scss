@@ -74,14 +74,14 @@
 
                 &:hover {
                     background-position: 50% 70%;
-                    a {
-                        color: var(--color-black);
-                    }
                 }
-                a {
-                    text-transform: uppercase;
-                    margin: 0;
-                    font-size: var(--font-size-content-responsive);
+            }
+            a {
+                text-transform: uppercase;
+                margin: 0;
+                font-size: var(--font-size-content-responsive);
+                &:hover {
+                    color: var(--color-black);
                 }
             }
         }
