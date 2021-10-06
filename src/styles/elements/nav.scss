@@ -1,12 +1,32 @@
-.navPrincipal {
-    background-color: var(--color-background-secondary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 999;
+
+    transition: all 0.4s $ease-out-expo;
+    nav {
+        background-color: var(--color-background-secondary);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    .header-is-hidden.is-scrolling-down & {
+        transform: translateY(-100%) translateY(4px);
+    }
+}
+
+/* ==========================================================================
+     NAVIGATION PRINCIPALE
+     ========================================================================== */
+
+.navPrincipal {
     .navPoint {
         width: 9px;
         height: 9px;
@@ -14,7 +34,6 @@
         border-radius: 100%;
     }
 
-    z-index: 999;
     .navPrincipal__logo {
         height: 90px;
         display: flex;
@@ -27,9 +46,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        li {
-            list-style-type: none;
-        }
+
         a {
             &:nth-child(1):hover {
                 color: var(--color-quinary);
@@ -44,5 +61,130 @@
     }
     img:nth-child(3) {
         transform: scaleY(-1) scaleX(-1);
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        display: none;
+    }
+
+    .header-is-hidden.is-scrolling-down & {
+        background-color: var(--color-primary);
+    }
+}
+
+/* ==========================================================================
+     NAVIGATION MOBILE
+     ========================================================================== */
+
+.navMobile,
+.mobileModal {
+    display: none;
+
+    @media screen and (max-width: $breakpoint-md) {
+        display: block;
+    }
+
+    .header-is-hidden.is-scrolling-down & {
+        background-color: var(--color-primary);
+    }
+}
+
+.navMobile {
+    position: relative;
+
+    .hamburgerEtLogo {
+        padding: var(--spacing-sm) 0;
+        background-color: var(--color-background-secondary);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+        z-index: 2;
+
+        .header-is-hidden.is-scrolling-down & {
+            background-color: var(--color-primary);
+        }
+    }
+
+    .mobileModal {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-out;
+
+        z-index: 1;
+        background-color: var(--color-white);
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul {
+                width: 40%;
+                flex-direction: column;
+
+                li {
+                    padding-top: var(--spacing-xs);
+                }
+            }
+
+            .languePrincipale {
+                margin-top: -10%;
+            }
+        }
+
+        .nav-is-active & {
+            transform: translateY(0);
+        }
+    }
+
+    .menu-hamburger {
+        cursor: pointer;
+
+        span {
+            background-color: var(--color-primary);
+            display: block;
+            height: 10px;
+            width: 50px;
+            border-radius: 5px;
+            margin-bottom: 6.5px;
+
+            transition: 0.3s transform;
+
+            &:nth-child(1) {
+                transform-origin: left top;
+            }
+            &:nth-child(2) {
+                transform-origin: left top;
+            }
+            &:nth-child(3) {
+                transform-origin: left bottom;
+            }
+        }
+
+        .nav-is-active & {
+            span {
+                top: calc(50% - var(--bar-height) / 2);
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    transform: scaleX(0);
+                }
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        &:hover {
+            span {
+                border: var(--color-primary) 2px solid;
+                background-color: transparent;
+            }
+        }
     }
 }

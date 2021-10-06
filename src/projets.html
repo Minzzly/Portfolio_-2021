@@ -18,22 +18,50 @@
     </head>
 
     <body>
-        <nav class="navPrincipal">
-            <div class="navPrincipal__logo">
-                <img src="assets/images/decorations/DecoNav.png" alt="" />
-                <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
-            </div>
-            <ul class="navPrincipal__liste">
-                <a href="apropos.html"><li>À propos</li></a>
-                <li class="navPoint"></li>
-                <a href="projets.html"><li>Projets</li></a>
-                <li class="navPoint"></li>
-                <a href="contact.html"><li>Contact</li></a>
-                <li class="navPoint"></li>
-                <a href="assets/CV_Audrey_Langlois.pdf" target="blank"><li>Télécharger mon CV</li></a>
-            </ul>
-            <img class="navPrincipal__decorDroite" src="assets/images/decorations/DecoNav.png" alt="" />
-        </nav>
+        <header class="header" data-component="Header">
+            <nav class="navPrincipal">
+                <div class="navPrincipal__logo">
+                    <img src="assets/images/decorations/DecoNav.png" alt="" />
+                    <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+                </div>
+                <ul class="navPrincipal__liste">
+                    <a href="apropos.html"><li>À propos</li></a>
+                    <li class="navPoint"></li>
+                    <a href="projets.html"><li>Projets</li></a>
+                    <li class="navPoint"></li>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <li class="navPoint"></li>
+                    <a href="assets/CV_Audrey_Langlois.pdf" target="blank"><li>Télécharger mon CV</li></a>
+                </ul>
+
+                <img class="navPrincipal__decorDroite" src="assets/images/decorations/DecoNav.png" alt="" />
+            </nav>
+
+            <nav class="navMobile">
+                <div class="hamburgerEtLogo wrapper">
+                    <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+                    <div class="menu-hamburger js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <nav class="mobileModal">
+                    <div class="wrapper">
+                        <ul class="navPrincipal__liste">
+                            <a href="apropos.html"><li>À propos</li></a>
+                            <li class="navPoint"></li>
+                            <a href="projets.html"><li>Projets</li></a>
+                            <li class="navPoint"></li>
+                            <a href="contact.html"><li>Contact</li></a>
+                            <li class="navPoint"></li>
+                            <a href="assets/CV_Audrey_Langlois.pdf" target="blank"><li>Télécharger mon CV</li></a>
+                        </ul>
+                    </div>
+                </nav>
+            </nav>
+        </header>
 
         <section class="projets">
             <h1>Bienvenue dans mon royaume!</h1>

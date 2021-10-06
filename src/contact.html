@@ -18,94 +18,119 @@
     </head>
 
     <body>
-        <nav class="navPrincipal">
-            <div class="navPrincipal__logo">
-                <img src="assets/images/decorations/DecoNav.png" alt="" />
-                <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
-            </div>
-            <ul class="navPrincipal__liste">
-                <a href="apropos.html"><li>À propos</li></a>
-                <li class="navPoint"></li>
-                <a href="projets.html"><li>Projets</li></a>
-                <li class="navPoint"></li>
-                <a href="contact.html"><li>Contact</li></a>
-                <li class="navPoint"></li>
-                <a href="assets/CV_Audrey_Langlois.pdf" target="blank"><li>Télécharger mon CV</li></a>
-            </ul>
+        <header class="header" data-component="Header">
+            <nav class="navPrincipal">
+                <div class="navPrincipal__logo">
+                    <img src="assets/images/decorations/DecoNav.png" alt="" />
+                    <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+                </div>
+                <ul class="navPrincipal__liste">
+                    <a href="apropos.html"><li>À propos</li></a>
+                    <li class="navPoint"></li>
+                    <a href="projets.html"><li>Projets</li></a>
+                    <li class="navPoint"></li>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <li class="navPoint"></li>
+                    <a href="assets/CV_Audrey_Langlois.pdf" target="blank"><li>Télécharger mon CV</li></a>
+                </ul>
 
-            <img class="navPrincipal__decorDroite" src="assets/images/decorations/DecoNav.png" alt="" />
-        </nav>
+                <img class="navPrincipal__decorDroite" src="assets/images/decorations/DecoNav.png" alt="" />
+            </nav>
+
+            <nav class="navMobile">
+                <div class="hamburgerEtLogo wrapper">
+                    <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+                    <div class="menu-hamburger js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <nav class="mobileModal">
+                    <div class="wrapper">
+                        <ul class="navPrincipal__liste">
+                            <a href="apropos.html"><li>À propos</li></a>
+                            <li class="navPoint"></li>
+                            <a href="projets.html"><li>Projets</li></a>
+                            <li class="navPoint"></li>
+                            <a href="contact.html"><li>Contact</li></a>
+                            <li class="navPoint"></li>
+                            <a href="assets/CV_Audrey_Langlois.pdf" target="blank"><li>Télécharger mon CV</li></a>
+                        </ul>
+                    </div>
+                </nav>
+            </nav>
+        </header>
 
         <section class="contact">
             <div class="contenuContact">
                 <article class="informations">
-                <div class="titre">
-                    <h1>Contactez-moi!</h1>
-                </div>
-
-                <a href="mailto:azpmaggie@gmail.com"><span>Adresse courriel :</span> azpmaggie@gmail.com</a>
-                <a href="tel:514-561-6500"><span>Téléphone :</span> 514-561-6500</a>
-            </article>
-
-            <div class="separations">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            
-            
-            <article class="reseaux">
-                <h2>Mes réseaux sociaux :</h2>
-                <div class="medias__icones">
-                    <div>
-                        <svg class="icon icon--md">
-                            <a href="https://www.youtube.com/channel/UC3BDgnqoChG4TBcuHe1_4vw">
-                                <use xlink:href="#icon-youtube"></use>
-                            </a>
-                        </svg>
-
-                        <svg class="icon icon--md">
-                            <a href="https://twitter.com/MinzzlyLanglois">
-                                <use xlink:href="#icon-twitter"></use>
-                            </a>
-                        </svg>
-
-                        <svg class="icon icon--md">
-                            <a href="https://www.instagram.com/audreylanglois13/">
-                                <use xlink:href="#icon-instagram"></use>
-                            </a>
-                        </svg>
-
-                        <svg class="icon icon--md">
-                            <a href="https://github.com/Minzzly">
-                                <use xlink:href="#icon-github"></use>
-                            </a>
-                        </svg>
+                    <div class="titre">
+                        <h1>Contactez-moi!</h1>
                     </div>
 
-                    <div>
-                        <svg class="icon icon--md">
-                            <a href="https://www.linkedin.com/in/audrey-langlois-9487b7220/">
-                                <use xlink:href="#icon-linkedin"></use>
-                            </a>
-                        </svg>
+                    <a href="mailto:azpmaggie@gmail.com"><span>Adresse courriel :</span> azpmaggie@gmail.com</a>
+                    <a href="tel:514-561-6500"><span>Téléphone :</span> 514-561-6500</a>
+                </article>
 
-                        <svg class="icon icon--md">
-                            <a href="https://sketchfab.com/AudreyLanglois">
-                                <use xlink:href="#icon-sketchfab"></use>
-                            </a>
-                        </svg>
-
-                        <svg class="icon icon--md">
-                            <a href="https://www.artstation.com/audreylanglois">
-                                <use xlink:href="#icon-artstation"></use>
-                            </a>
-                        </svg>
-                    </div>
+                <div class="separations">
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
-            </article>
+
+                <article class="reseaux">
+                    <h2>Mes réseaux sociaux :</h2>
+                    <div class="medias__icones">
+                        <div>
+                            <svg class="icon icon--md">
+                                <a href="https://www.youtube.com/channel/UC3BDgnqoChG4TBcuHe1_4vw">
+                                    <use xlink:href="#icon-youtube"></use>
+                                </a>
+                            </svg>
+
+                            <svg class="icon icon--md">
+                                <a href="https://twitter.com/MinzzlyLanglois">
+                                    <use xlink:href="#icon-twitter"></use>
+                                </a>
+                            </svg>
+
+                            <svg class="icon icon--md">
+                                <a href="https://www.instagram.com/audreylanglois13/">
+                                    <use xlink:href="#icon-instagram"></use>
+                                </a>
+                            </svg>
+
+                            <svg class="icon icon--md">
+                                <a href="https://github.com/Minzzly">
+                                    <use xlink:href="#icon-github"></use>
+                                </a>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <svg class="icon icon--md">
+                                <a href="https://www.linkedin.com/in/audrey-langlois-9487b7220/">
+                                    <use xlink:href="#icon-linkedin"></use>
+                                </a>
+                            </svg>
+
+                            <svg class="icon icon--md">
+                                <a href="https://sketchfab.com/AudreyLanglois">
+                                    <use xlink:href="#icon-sketchfab"></use>
+                                </a>
+                            </svg>
+
+                            <svg class="icon icon--md">
+                                <a href="https://www.artstation.com/audreylanglois">
+                                    <use xlink:href="#icon-artstation"></use>
+                                </a>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
             </div>
-            
         </section>
 
         <footer class="footer">
