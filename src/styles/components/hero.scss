@@ -9,14 +9,12 @@
     background-clip: border-box;
     background-position: bottom;
     background-repeat: no-repeat;
+    background-size: cover;
 
     @media screen and (max-width: $breakpoint-sm) {
         margin: 0;
     }
 
-    @media screen and (max-width: $breakpoint-xs) {
-        justify-content: flex-start;
-    }
     .queen {
         display: flex;
         justify-content: space-between;
@@ -144,8 +142,7 @@
         }
 
         @media screen and (max-width: $breakpoint-sm) {
-            height: 60%;
-            width: 90%;
+            display: none;
         }
     }
 }
