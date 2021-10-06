@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Audrey Langlois - Portfolio</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Comfortaa:wght@400;700&family=Telex&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" type="image/jpg" href="assets/images/Logo.png" />
+
+        <!--Imports a model-viewer JavaScript code -->
+        <!--It helps to handle how the 3D Object would be displayed -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header" data-component="Header">
+            <nav class="navPrincipal">
+                <div class="navPrincipal__logo">
+                    <img src="assets/images/decorations/DecoNav.png" alt="" />
+                    <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+                </div>
+                <ul class="navPrincipal__liste">
+                    <a href="apropos.html"><li>À propos</li></a>
+                    <li class="navPoint"></li>
+                    <a href="projets.html"><li>Projets</li></a>
+                    <li class="navPoint"></li>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <li class="navPoint"></li>
+                    <a href="assets/CV_Audrey_Langlois.pdf" target="blank"><li>Télécharger mon CV</li></a>
+                </ul>
+
+                <img class="navPrincipal__decorDroite" src="assets/images/decorations/DecoNav.png" alt="" />
+            </nav>
+
+            <nav class="navMobile">
+                <div class="hamburgerEtLogo wrapper">
+                    <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+                    <div class="menu-hamburger js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <nav class="mobileModal">
+                    <div class="wrapper">
+                        <ul class="navPrincipal__liste">
+                            <a href="apropos.html"><li>À propos</li></a>
+                            <li class="navPoint"></li>
+                            <a href="projets.html"><li>Projets</li></a>
+                            <li class="navPoint"></li>
+                            <a href="contact.html"><li>Contact</li></a>
+                            <li class="navPoint"></li>
+                            <a href="assets/CV_Audrey_Langlois.pdf" target="blank"><li>Télécharger mon CV</li></a>
+                        </ul>
+                    </div>
+                </nav>
+            </nav>
+        </header>
+
+        <section class="monty">
+            <article class="monty__hero">
+                <div class="outer">
+                    <div class="inner">
+                        <i class="top left"></i>
+                        <i class="top right"></i>
+                        <div class="content">
+                            <img src="assets/images/singleMonty/LogoMontysAardvark.png" alt="" />
+                            <div class="content__text">
+                                <h1>Ex Nihilo</h1>
+                                <div class="description">
+                                    <p class="description__projet">Un projet d'animation par:</p>
+                                    <p class="description__nom">Audrey Langlois</p>
+                                    <p class="description__nom">Jean-Marie Gariépy</p>
+                                    <p class="description__nom">Roméo Girard</p>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="bottom right"></i>
+                        <i class="bottom left"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="monty__sketch">
+                <div class="outer">
+                    <div class="inner">
+                        <i class="top left"></i>
+                        <i class="top right"></i>
+                        <div class="content">
+                            <div class="content__text">
+                                <h2>Étape 1: Sketch</h2>
+                                <div class="description">
+                                    <h3 class="soustitre__storyboard">Un sketch à partir de trois images</h3>
+                                    <p class="description__nom">
+                                        Voici le sketch <span>finale</span>. Le nom m’as été donné par mon père et il
+                                        m’as donné trois images qui étaient nécéssaire d'intégré dans le style du logo:
+                                        des <span>spatules</span>, un <span>oryctérope</span> et un style
+                                        <a
+                                            href="https://www.google.com/search?q=monty+python+logo&hl=en&sxsrf=AOaemvKtUkl9Sphmj1jV22MI0L-o4XmQwQ:1633548994730&source=lnms&tbm=isch&sa=X&ved=2ahUKEwig1LacxLbzAhV-M1kFHbGYB58Q_AUoAXoECAEQAw&biw=1920&bih=969&dpr=1"
+                                            ><span>Monty Python</span></a
+                                        >.
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="assets/images/singleMonty/sketchMonty.jpg" alt="" />
+                        </div>
+                        <i class="bottom right"></i>
+                        <i class="bottom left"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="monty__lineart">
+                <div class="outer">
+                    <div class="inner">
+                        <i class="top left"></i>
+                        <i class="top right"></i>
+                        <div class="content">
+                            <div class="wrapper">
+                                <h2>
+                                    Étape 2: Lineart <br />
+                                    et organisation
+                                </h2>
+
+                                <div class="swiper-container" data-component="Carousel" data-carousel="coverflow">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <h3>Des améliorations pour un meilleur résultats:</h3>
+                                            <p class="descriptio">
+                                                Après avoir fini le sketch, l’illustration n’était
+                                                <span>pas parfait</span>, c’est-à-dire que les lettres n’était pas droit
+                                                et l’animal était trop petit.
+                                            </p>
+                                            <img src="assets/images/singleMonty/Lineart.png" alt="" />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <h3>On se perd facilement sans l’organisation!</h3>
+                                            <p class="description">
+                                                Dès le début, il faut que j’<span>organise</span> mes
+                                                <span>calques</span> pour que je me retrouve facilement dans mon projet,
+                                                car le plus que j’avance dans mon oeuvre, le plus de calque que je vais
+                                                avoir et c’est pour celà que je dois les <span>renommer</span> et les
+                                                <span>regrouper</span>.
+                                            </p>
+                                            <img src="assets/images/singleMonty/calques.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="bottom right"></i>
+                        <i class="bottom left"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="monty__final">
+                <div class="outer">
+                    <div class="inner">
+                        <i class="top left"></i>
+                        <i class="top right"></i>
+                        <div class="content">
+                            <div class="content__text">
+                                <h2>
+                                    Étape 3: couleurs et <br />
+                                    produit final
+                                </h2>
+                                <div class="description">
+                                    <h3 class="soustitre__storyboard">Les couleurs:</h3>
+                                    <p class="description__nom">
+                                        Pour ce logo, j’ai été dans un style avec pas trop de<span> détail</span> , mais
+                                        en même temps pas trop<span> simple </span>. Donc, j’ai mis un peu de
+                                        <span></span>texture sur les lettres sur satisfaire la demande de mon père. De
+                                        <span>l’ombrage</span> sur l’animal pour lui donner plus de vie, mais
+                                        <span>rien de plus</span>.
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="assets/images/singleMonty/LogoMontysAardvark.png" alt="" />
+                        </div>
+                        <i class="bottom right"></i>
+                        <i class="bottom left"></i>
+                    </div>
+                </div>
+            </article>
+
+            <footer class="footer">
+                <p class="">AudreyLanglois©TousDroitsReservés</p>
+            </footer>
+        </section>
+    </body>
+</html>

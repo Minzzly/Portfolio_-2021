@@ -1,340 +1,344 @@
-// ------------------------SECTION 1-----------------------------
-.infoGeneral {
-    margin-top: 7%;
-    .parallelogram__info__general {
-        background-image: url(../../assets/images/aPropos/affiche1Desktop.gif);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        margin: auto;
-        width: 100%;
-        height: 860px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .contenuGeneral {
-            width: 87.8%;
-            margin-top: -2.3%;
+.aPropos {
+    // ------------------------SECTION 1-----------------------------
+    .infoGeneral {
+        margin-top: 7%;
+        .parallelogram__info__general {
+            background-image: url(../../assets/images/aPropos/affiche1Desktop.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin: auto;
+            width: 100%;
+            height: 860px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            img {
-                height: 100%;
+
+            .contenuGeneral {
+                width: 87.8%;
+                margin-top: -2.3%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                img {
+                    height: 100%;
+                }
+                .contenuGeneral__text {
+                    margin-top: 8%;
+                    // padding-right: 15%;
+                    // width: 50%;
+                    padding: 0 8% 0 5%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    h2 {
+                        background-image: url(../../assets/images/aPropos/sousTitreBleu.png);
+                        background-repeat: no-repeat;
+                        // background-position: center;
+                        text-align: center;
+                        font-family: var(--font-primary);
+                        font-size: var(--font-size-h4);
+                        color: var(--color-white);
+
+                        width: 100%;
+                        height: 73px;
+                        padding: 2% 12% 0 0;
+                    }
+                    p {
+                        width: 100%;
+                        span {
+                            font-family: var(--font-primary);
+                            color: var(--color-primary);
+                            font-weight: var(--fw-bold);
+                        }
+                        .nom__aPropos {
+                            font-size: var(--font-size-h4);
+                        }
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        list-style-image: url('../../assets/images/bullets.png');
+                        li {
+                            font-family: var(--font-primary);
+                            width: 49%;
+                            padding-bottom: 2%;
+                        }
+                    }
+                }
             }
-            .contenuGeneral__text {
-                margin-top: 8%;
-                // padding-right: 15%;
-                // width: 50%;
-                padding: 0 8% 0 5%;
+        }
+        .trapeze_bonjour {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url(../../assets/images/aPropos/backgroundBonjour.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            // margin: auto;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                font-size: var(--font-size-h2);
+                color: var(--color-white);
+            }
+        }
+
+        .fleche__scroll {
+            position: absolute;
+            top: 10%;
+            right: 0;
+            display: flex;
+            justify-content: flex-end;
+            background-image: url(../../assets/images/aPropos/FlecheScroll1.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 450px;
+            height: 600px;
+        }
+    }
+
+    // ------------------------SECTION 2-----------------------------
+
+    .peuxFaire {
+        margin: 8%;
+        position: relative;
+        .parallelogram__peuxFaire {
+            background-image: url(../../assets/images/aPropos/affiche2Desktop.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin: auto;
+            width: 100%;
+            height: 860px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .contenuPeuxFaire__text1,
+            .contenuPeuxFaire__text2 {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-
                 h2 {
-                    background-image: url(../../assets/images/aPropos/sousTitreBleu.png);
+                    background-image: url(../../assets/images/aPropos/sousTitreBeige.png);
                     background-repeat: no-repeat;
-                    // background-position: center;
+                    background-position: center;
                     text-align: center;
-                    font-family: var(--font-primary);
-                    font-size: var(--font-size-h4);
-                    color: var(--color-white);
-
                     width: 100%;
                     height: 73px;
-                    padding: 2% 12% 0 0;
+                    padding: 1.25%;
+                    font-family: var(--font-primary);
+                    color: var(--color-white);
+                    font-weight: var(--regular);
+                    font-size: var(--font-size-content);
+                }
+            }
+
+            .contenuPeuxFaire__text2 {
+                margin-top: 5%;
+                .bloc {
+                    justify-content: space-between;
+                    width: 40%;
+                }
+            }
+
+            .bloc {
+                margin-top: 2%;
+                display: flex;
+                justify-content: space-between;
+
+                width: 65%;
+
+                h3 {
+                    font-family: var(--font-primary);
+                    color: var(--color-primary);
                 }
                 p {
-                    width: 100%;
-                    span {
-                        font-family: var(--font-primary);
-                        color: var(--color-primary);
-                        font-weight: var(--fw-bold);
-                    }
-                    .nom__aPropos {
-                        font-size: var(--font-size-h4);
-                    }
+                    margin: 0;
+                    font-size: var(--font-size-content-responsive);
                 }
-
-                ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    list-style-image: url('../../assets/images/bullets.png');
-                    li {
-                        font-family: var(--font-primary);
-                        width: 49%;
-                        padding-bottom: 2%;
-                    }
+                h3,
+                p {
+                    margin-left: 5%;
                 }
-            }
-        }
-    }
-    .trapeze_bonjour {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url(../../assets/images/aPropos/backgroundBonjour.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        // margin: auto;
-        height: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        h1 {
-            font-size: var(--font-size-h2);
-            color: var(--color-white);
-        }
-    }
-
-    .fleche__scroll {
-        position: absolute;
-        top: 10%;
-        right: 0;
-        display: flex;
-        justify-content: flex-end;
-        background-image: url(../../assets/images/aPropos/FlecheScroll1.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 450px;
-        height: 600px;
-    }
-}
-
-// ------------------------SECTION 2-----------------------------
-
-.peuxFaire {
-    margin: 8%;
-    position: relative;
-    .parallelogram__peuxFaire {
-        background-image: url(../../assets/images/aPropos/affiche2Desktop.gif);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        margin: auto;
-        width: 100%;
-        height: 860px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .contenuPeuxFaire__text1,
-        .contenuPeuxFaire__text2 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            h2 {
-                background-image: url(../../assets/images/aPropos/sousTitreBeige.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                text-align: center;
-                width: 100%;
-                height: 73px;
-                padding: 1.25%;
-                font-family: var(--font-primary);
-                color: var(--color-white);
-                font-weight: var(--regular);
-                font-size: var(--font-size-content);
-            }
-        }
-
-        .contenuPeuxFaire__text2 {
-            margin-top: 5%;
-            .bloc {
-                justify-content: space-between;
-                width: 40%;
-            }
-        }
-
-        .bloc {
-            margin-top: 2%;
-            display: flex;
-            justify-content: space-between;
-
-            width: 65%;
-
-            h3 {
-                font-family: var(--font-primary);
-                color: var(--color-primary);
-            }
-            p {
-                margin: 0;
-                font-size: var(--font-size-content-responsive);
-            }
-            h3,
-            p {
-                margin-left: 5%;
-            }
-
-            .blocText {
-                display: flex;
-                align-items: center;
-                width: 22%;
-            }
-        }
-    }
-    .trapeze_peuxFaire {
-        position: absolute;
-        top: -2%;
-        left: 0;
-        background-image: url(../../assets/images/aPropos/titrePeuxFaire.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        // margin: auto;
-        height: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        h1 {
-            font-size: var(--font-size-h2);
-            color: var(--color-black);
-        }
-    }
-
-    .fleche__scroll {
-        position: absolute;
-        top: -16%;
-        left: -5%;
-        display: flex;
-        justify-content: flex-end;
-        background-image: url(../../assets/images/aPropos/FlecheScroll2.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 600px;
-        height: 1100px;
-
-        .fleche__scroll__text {
-            transform: rotate(-28deg);
-            margin-right: 54%;
-        }
-    }
-    .sticker {
-        position: absolute;
-        bottom: -15%;
-        right: -20%;
-        height: 350px;
-
-        display: flex;
-        background-image: url(../../assets/images/aPropos/sticker.png);
-        background-repeat: no-repeat;
-        background-position: center;
-
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        p {
-            width: 30%;
-            margin-right: 32%;
-            font-size: var(--font-size-button);
-            span {
-                font-family: var(--font-primary);
-                font-weight: var(--fw-bold);
-                color: var(--color-primary);
-            }
-        }
-    }
-}
-
-//-------------------------SECTION 3--------------------------------
-
-.passion {
-    // margin-left: 3%;
-    position: relative;
-    .losange__passion {
-        background-image: url(../../assets/images/aPropos/affiche3Desktop.gif);
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: auto;
-        width: 80%;
-        height: 860px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .contenuPeuxFaire__text1,
-        .contenuPeuxFaire__text2,
-        .contenuPeuxFaire__text3 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contenuPeuxFaire__text2 {
-            .bloc {
-                justify-content: space-between;
-                width: 80%;
 
                 .blocText {
-                    width: 35%;
+                    display: flex;
+                    align-items: center;
+                    width: 22%;
                 }
             }
         }
-
-        .bloc {
+        .trapeze_peuxFaire {
+            position: absolute;
+            top: -2%;
+            left: 0;
+            background-image: url(../../assets/images/aPropos/titrePeuxFaire.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            // margin: auto;
+            height: 150px;
             display: flex;
+            align-items: center;
             justify-content: center;
 
-            h3 {
-                font-family: var(--font-primary);
-                color: var(--color-primary);
+            h1 {
+                font-size: var(--font-size-h2);
+                color: var(--color-black);
             }
-            p {
-                margin: 0;
-                font-size: var(--font-size-content-responsive);
+        }
+
+        .fleche__scroll {
+            position: absolute;
+            top: -16%;
+            left: -5%;
+            display: flex;
+            justify-content: flex-end;
+            background-image: url(../../assets/images/aPropos/FlecheScroll2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 600px;
+            height: 1100px;
+
+            .fleche__scroll__text {
+                transform: rotate(-28deg);
+                margin-right: 54%;
             }
-            h3,
+        }
+        .sticker {
+            position: absolute;
+            bottom: -15%;
+            right: -20%;
+            height: 350px;
+
+            display: flex;
+            background-image: url(../../assets/images/aPropos/sticker.png);
+            background-repeat: no-repeat;
+            background-position: center;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
             p {
-                margin-left: 5%;
+                width: 30%;
+                margin-right: 32%;
+                font-size: var(--font-size-button);
+                span {
+                    font-family: var(--font-primary);
+                    font-weight: var(--fw-bold);
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+
+    //-------------------------SECTION 3--------------------------------
+
+    .passion {
+        // margin-left: 3%;
+        position: relative;
+        .losange__passion {
+            background-image: url(../../assets/images/aPropos/affiche3Desktop.gif);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: auto;
+            width: 80%;
+            height: 860px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .contenuPeuxFaire__text1,
+            .contenuPeuxFaire__text2,
+            .contenuPeuxFaire__text3 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
-            .blocText {
+            .contenuPeuxFaire__text2 {
+                .bloc {
+                    justify-content: space-between;
+                    width: 80%;
+
+                    .blocText {
+                        width: 35%;
+                    }
+                }
+            }
+
+            .bloc {
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                width: 75%;
+
+                h3 {
+                    font-family: var(--font-primary);
+                    color: var(--color-primary);
+                }
+                p {
+                    margin: 0;
+                    font-size: var(--font-size-content-responsive);
+                }
+                h3,
+                p {
+                    margin-left: 5%;
+                }
+
+                .blocText {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 75%;
+                }
+            }
+        }
+        .parallelogram_passion {
+            position: absolute;
+            top: 1%;
+            left: 0;
+            background-image: url(../../assets/images/aPropos/titrePasseTemps.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            // margin: auto;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                font-size: var(--font-size-h2);
+                color: var(--color-black);
             }
         }
     }
-    .parallelogram_passion {
-        position: absolute;
-        top: 1%;
-        left: 0;
-        background-image: url(../../assets/images/aPropos/titrePasseTemps.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        // margin: auto;
-        height: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
 
-        h1 {
-            font-size: var(--font-size-h2);
-            color: var(--color-black);
-        }
+    // ------------------------ INFO GENERAL ----------------------------
+    .fleche__scroll__text {
+        color: var(--color-white);
+        margin-right: 53%;
+        transform: rotate(25deg);
+        writing-mode: vertical-rl;
+        text-align: center;
+        text-orientation: upright;
+        letter-spacing: -50px;
     }
-}
+    .poteaux {
+        z-index: -999;
+        position: fixed;
+        top: -30%;
+        left: 48.5%;
 
-// ------------------------ INFO GENERAL ----------------------------
-.fleche__scroll__text {
-    color: var(--color-white);
-    margin-right: 53%;
-    transform: rotate(25deg);
-    writing-mode: vertical-rl;
-    text-align: center;
-    text-orientation: upright;
-    letter-spacing: -50px;
-}
-.poteaux {
-    z-index: -999;
-    position: absolute;
-    top: -9%;
-    left: 48.5%;
+        height: 200vh;
+    }
 }

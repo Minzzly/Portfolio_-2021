@@ -1,14 +1,14 @@
-.nihilo {
+.monty {
     background-image: url(../../assets/images/singleNihilo/chaines.png);
     background-position: center;
     background-repeat: repeat-y;
 
     .inner {
-        background-color: var(--color-secondary);
+        background-color: var(--color-background-senary);
     }
 
     //--------------------------Section Titre---------------------------------------------------
-    .nihilo__hero {
+    .monty__hero {
         .content {
             display: flex;
             justify-content: flex-start;
@@ -33,56 +33,24 @@
                     padding: 1% 0;
                 }
             }
-            .video {
+            img {
                 width: 50%;
-                padding-bottom: 25%;
+                margin: 2%;
             }
         }
     }
 
-    //--------------------------SECTION STORYBOARD---------------------------------------------------
-    .nihilo__storyboard {
-        img {
-            margin-bottom: 5%;
+    .monty__sketch {
+        .content {
+            img {
+                width: 30%;
+            }
         }
     }
 
-    //-------------------------SECTION MOODBOARD------------------------------------------------------
-    .nihilo__moodboard {
-        .wrapper {
-            margin-bottom: 5%;
-        }
-        img {
-            width: 50%;
-            height: 500px;
-            object-fit: cover;
-        }
-    }
-    //-------------------------SECTION MODELISATION---------------------------------------------------
-    .nihilo__modelisation {
+    .monty__lineart {
         h2 {
             padding-top: 3%;
-        }
-        img {
-            width: 50%;
-            &:nth-child(3) {
-                height: 450px;
-                object-fit: cover;
-            }
-        }
-        .swiper-container {
-            padding-bottom: 10px;
-            .swiper-pagination {
-                bottom: 0px;
-            }
-        }
-    }
-
-    //-------------------------SECTION ANIMATION FINAL-------------------------------------------
-    .nihilo__animFinal {
-        .video {
-            width: 50%;
-            padding-bottom: 25%;
         }
     }
 
@@ -107,7 +75,6 @@
                 font-family: var(--font-primary);
                 font-weight: var(--fw-bold);
             }
-
             a {
                 span {
                     text-decoration: underline;
@@ -116,6 +83,7 @@
         }
         img {
             border-radius: 10px;
+            width: 50%;
         }
     }
     h2 {

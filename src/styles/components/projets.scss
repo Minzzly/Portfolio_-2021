@@ -2,7 +2,7 @@
     h1 {
         text-align: center;
         margin-top: 10%;
-        font-size: var(--font-size-h3);
+        font-size: var(--font-size-h1-responsive);
 
         @media screen and (max-width: $breakpoint-md) {
             margin-top: 15%;
@@ -52,7 +52,7 @@
 
         img {
             border-radius: 10px;
-            width: 35%;
+            width: 30%;
 
             @media screen and (max-width: $breakpoint-lg) {
                 width: 40%;
@@ -112,12 +112,15 @@
                 text-align: right;
                 margin-right: 2%;
                 margin-left: auto;
+
+                align-items: flex-end;
                 a {
                     margin-right: 10%;
                 }
             }
             &:nth-child(even) {
                 margin-left: 2%;
+                align-items: flex-start;
                 a {
                     margin-left: 10%;
                 }
@@ -129,7 +132,7 @@
                 background-position: 50% 65%;
                 background-repeat: no-repeat;
                 background-size: contain;
-                padding: 20px 100px;
+                padding: 20px 50px;
                 border: none;
                 text-align: center;
 
@@ -147,6 +150,8 @@
                 text-transform: uppercase;
                 margin: 0;
                 font-size: var(--font-size-content-responsive);
+
+                width: 50%;
 
                 @media screen and (max-width: $breakpoint-md) {
                     font-size: var(--font-size-content-mobile);
@@ -185,12 +190,9 @@
 
 .poteaux {
     z-index: -999;
-    position: aboslute;
-    top: 3%;
+    position: absolute;
+    top: 5%;
     left: 48.5%;
-    height: 100%;
 
-    @media screen and (max-width: $breakpoint-lg) {
-        height: 97%;
-    }
+    height: 95%;
 }
