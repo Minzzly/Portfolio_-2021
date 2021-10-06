@@ -3,6 +3,10 @@
         text-align: center;
         margin-top: 10%;
         font-size: var(--font-size-h3);
+
+        @media screen and (max-width: $breakpoint-md) {
+            margin-top: 15%;
+        }
     }
     .card {
         display: flex;
@@ -13,13 +17,55 @@
 
         color: var(--color-white);
 
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            height: 400px;
+            margin-bottom: 8%;
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            height: 290px;
+            margin-bottom: 5%;
+        }
+
+        @media screen and (max-width: 950px) {
+            height: 250px;
+            margin-bottom: 5%;
+        }
+
+        @media screen and (max-width: 800px) {
+            height: 225px;
+            margin-bottom: 4%;
+        }
+
+        @media screen and (max-width: 700px) {
+            height: 200px;
+            margin-bottom: 4%;
+        }
+
+        @media screen and (max-width: 700px) {
+            height: 200px;
+            margin-bottom: 4%;
+        }
+
         img {
             border-radius: 10px;
+            width: 35%;
+
+            @media screen and (max-width: $breakpoint-lg) {
+                width: 40%;
+            }
         }
 
         &:nth-child(odd) {
             img {
                 margin-right: 17%;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    margin-right: 5%;
+                }
             }
         }
         &:nth-child(even) {
@@ -31,19 +77,35 @@
         }
 
         .card__texte {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
             width: 40%;
             p {
                 margin: 0;
+            }
+            h2 {
+                @media screen and (max-width: $breakpoint-md) {
+                    font-size: var(--font-size-h3-responsive);
+                }
             }
             .card__info {
                 font-size: var(--font-size-content-responsive);
                 font-family: var(--font-primary);
                 font-weight: var(--fw-regular);
                 padding: 2% 0 5% 0;
+
+                @media screen and (max-width: $breakpoint-md) {
+                    font-size: var(--font-size-infocard);
+                }
             }
 
             .card__resume {
                 font-size: var(--font-size-h4-mobile);
+
+                @media screen and (max-width: $breakpoint-md) {
+                    display: none;
+                }
             }
 
             &:nth-child(odd) {
@@ -66,11 +128,16 @@
                 background-image: url(../../assets/images/projets/BouttonCard.png);
                 background-position: 50% 65%;
                 background-repeat: no-repeat;
+                background-size: contain;
                 padding: 20px 100px;
                 border: none;
                 text-align: center;
 
                 transition: all 0.3s $ease-out-expo;
+
+                @media screen and (max-width: $breakpoint-md) {
+                    padding: 10px 50px;
+                }
 
                 &:hover {
                     background-position: 50% 70%;
@@ -80,6 +147,10 @@
                 text-transform: uppercase;
                 margin: 0;
                 font-size: var(--font-size-content-responsive);
+
+                @media screen and (max-width: $breakpoint-md) {
+                    font-size: var(--font-size-content-mobile);
+                }
                 &:hover {
                     color: var(--color-black);
                 }
@@ -88,39 +159,38 @@
     }
     .card--1 {
         background-image: url(../../assets/images/projets/Card1.png);
-        background-repeat: no-repeat;
         margin-top: 10%;
     }
 
     .card--2 {
         background-image: url(../../assets/images/projets/Card2.png);
-        background-repeat: no-repeat;
     }
 
     .card--3 {
         background-image: url(../../assets/images/projets/Card3.png);
-        background-repeat: no-repeat;
     }
 
     .card--4 {
         background-image: url(../../assets/images/projets/Card4.png);
-        background-repeat: no-repeat;
     }
 
     .card--5 {
         background-image: url(../../assets/images/projets/Card5.png);
-        background-repeat: no-repeat;
     }
 
     .card--6 {
         background-image: url(../../assets/images/projets/Card6.png);
-        background-repeat: no-repeat;
     }
 }
 
 .poteaux {
     z-index: -999;
-    position: absolute;
+    position: aboslute;
     top: 3%;
     left: 48.5%;
+    height: 100%;
+
+    @media screen and (max-width: $breakpoint-lg) {
+        height: 97%;
+    }
 }

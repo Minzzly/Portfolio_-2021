@@ -70,10 +70,6 @@ header {
     @media screen and (max-width: $breakpoint-md) {
         display: none;
     }
-
-    .header-is-hidden.is-scrolling-down & {
-        background-color: var(--color-primary);
-    }
 }
 
 /* ==========================================================================
