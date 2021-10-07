@@ -1,14 +1,14 @@
-.monty {
+.FaitEnUn {
     background-image: url(../../assets/images/singleNihilo/chaines.png);
     background-position: center;
     background-repeat: repeat-y;
 
     .inner {
-        background-color: var(--color-background-senary);
+        background-color: var(--color-quinary);
     }
 
     //--------------------------Section Titre---------------------------------------------------
-    .monty__hero {
+    .FaitEnUn__hero {
         .content {
             display: flex;
             justify-content: flex-start;
@@ -33,6 +33,7 @@
                     padding: 1% 0;
                 }
             }
+
             img {
                 width: 50%;
                 margin: 2%;
@@ -40,20 +41,47 @@
         }
     }
 
-    .monty__sketch {
-        .content {
-            img {
-                width: 30%;
+    .FaitEnUn__sketch {
+        img {
+            height: 500px;
+        }
+    }
+
+    .FaitEnUn__couleurs {
+        .pallettes {
+            display: flex;
+            justify-content: space-between;
+
+            width: 50%;
+            margin: auto;
+            padding-bottom: 5%;
+            .pallette {
+                width: 124px;
+                height: 274px;
+                border: 1px solid var(--color-white);
+                border-radius: 10px;
+            }
+            .mauve {
+                background-color: var(--color-palette-primary);
+            }
+
+            .jaune {
+                background-color: var(--color-palette-secondary);
+            }
+
+            .vert {
+                background-color: var(--color-palette-tertiary);
+            }
+
+            .bleu {
+                background-color: var(--color-palette-quaterny);
+            }
+
+            .beige {
+                background-color: var(--color-palette-quinary);
             }
         }
     }
-
-    .monty__lineart {
-        h2 {
-            padding-top: 3%;
-        }
-    }
-
     //--------------------------STYLE GENERAL---------------------------------------------------
 
     .content {
@@ -71,10 +99,11 @@
             padding: 2% 0;
 
             span {
-                color: var(--color-quinary);
+                color: var(--color-primary);
                 font-family: var(--font-primary);
                 font-weight: var(--fw-bold);
             }
+
             a {
                 span {
                     text-decoration: underline;
@@ -83,7 +112,6 @@
         }
         img {
             border-radius: 10px;
-            width: 50%;
         }
     }
 

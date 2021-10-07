@@ -28,7 +28,7 @@
                     letter-spacing: 3px;
                 }
                 .description__nom {
-                    font-size: var(--font-size-liens);
+                    font-size: var(--font-size-content-responsive);
                     font-family: var(--font-secondary);
                     padding: 1% 0;
                 }
@@ -92,6 +92,10 @@
         img {
             border-radius: 10px;
         }
+    }
+
+    h1 {
+        margin-right: 3%;
     }
     h2 {
         background-image: url(../../assets/images/singleNihilo/soustitre.png);
