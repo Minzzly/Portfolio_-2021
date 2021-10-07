@@ -1,0 +1,109 @@
+.temple {
+    background-image: url(../../assets/images/singleNihilo/chaines.png);
+    background-position: center;
+    background-repeat: repeat-y;
+
+    .inner {
+        background-color: var(--color-tertiary);
+    }
+
+    //--------------------------Section Titre---------------------------------------------------
+    .temple__hero {
+        .content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: right;
+
+            .content__text {
+                text-align: right;
+                p {
+                    width: 90%;
+                }
+                .description__projet {
+                    font-family: var(--font-primary);
+                    font-weight: var(--fw-regular);
+                    font-size: var(--font-size-h4-responsive);
+                    padding-top: 5%;
+                    letter-spacing: 3px;
+                }
+                .description__nom {
+                    font-size: var(--font-size-liens);
+                    font-family: var(--font-secondary);
+                    padding: 1% 0;
+                }
+            }
+            .sketchfab-embed-wrapper {
+                padding: 2% 2%;
+                iframe {
+                    border-radius: 10px;
+                    width: 795px;
+                    height: 447px;
+                }
+            }
+        }
+    }
+
+    .temple__produit {
+        .sketchfab-embed-wrapper {
+            padding: 2% 2%;
+            iframe {
+                border-radius: 10px;
+                width: 795px;
+                height: 447px;
+            }
+        }
+    }
+
+    //--------------------------STYLE GENERAL---------------------------------------------------
+
+    .content {
+        color: var(--color-white);
+        text-align: center;
+        h3 {
+            font-family: var(--font-primary);
+            font-weight: var(--fw-regular);
+
+            span {
+                color: var(--color-primary);
+                font-family: var(--font-primary);
+                font-weight: var(--fw-bold);
+            }
+        }
+        p {
+            width: 40%;
+            margin: auto;
+            font-family: var(--font-secondary);
+            font-size: var(--font-size-content-responsive);
+            padding: 2% 0;
+
+            span {
+                color: var(--color-primary);
+                font-family: var(--font-primary);
+                font-weight: var(--fw-bold);
+            }
+
+            a {
+                span {
+                    text-decoration: underline;
+                }
+            }
+        }
+        img {
+            border-radius: 10px;
+        }
+    }
+    h2 {
+        background-image: url(../../assets/images/singleNihilo/soustitre.png);
+        background-repeat: no-repeat;
+        height: 200px;
+        margin: 5% 2% 0 2%;
+        padding-top: 3.5%;
+
+        text-align: center;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: var(--color-primary);
+    }
+}
