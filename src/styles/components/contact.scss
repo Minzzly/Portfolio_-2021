@@ -26,18 +26,19 @@
         .informations {
             // width: 120%;
             .titre {
-                background-image: url(../../assets/images/aPropos/titrePasseTemps.png);
-                background-position: center;
-                background-repeat: no-repeat;
-                width: 100%;
-                position: absolute;
-                top: 15%;
-                left: 0;
-                height: 20%;
+                // background-image: url(../../assets/images/aPropos/titrePasseTemps.png);
+                // background-position: center;
+                // background-repeat: no-repeat;
+                // width: 100%;
+                // position: absolute;
+                // top: 15%;
+                // left: 0;
+                // height: 20%;
 
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                padding-bottom: 10%;
 
                 @media screen and (max-width: $breakpoint-lg) {
                     top: 20%;
@@ -100,16 +101,17 @@
     }
     img {
         position: absolute;
-        height: 80%;
 
         &:nth-child(2) {
-            top: 12%;
-            left: 10%;
+            height: 50%;
+            top: 25%;
+            left: 18%;
             z-index: -99;
         }
 
         &:nth-child(3),
         &:nth-child(4) {
+            height: 80%;
             top: 15%;
             left: 60%;
         }
