@@ -11,6 +11,24 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: $breakpoint-md) {
+        width: 90vw;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        width: 100vw;
+    }
+
+    @media screen and (max-width: 550px) {
+        background-image: url(../../assets/images/aPropos/affiche3_responsive.png);
+        width: 60vw;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        background-image: url(../../assets/images/aPropos/affiche3_responsive.png);
+        width: 80vw;
+    }
+
     .contenuContact {
         height: 20vh;
         width: 100vh;
@@ -23,38 +41,74 @@
             width: 70vh;
         }
 
+        @media screen and (max-width: 550px) {
+            height: 10vh;
+        }
+
         .informations {
             text-align: center;
             width: 100%;
             .titre {
                 padding-bottom: 5%;
 
-                @media screen and (max-width: $breakpoint-lg) {
-                    top: 20%;
-                }
-
                 h1 {
                     font-size: var(--font-size-h3);
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        font-size: var(--font-size-h4-responsive);
+                    }
+
+                    @media screen and (max-width: 550px) {
+                        font-size: var(--font-size-content-responsive);
+                        padding-bottom: 2%;
+                    }
                 }
             }
 
             .information__contact {
+                z-index: 99;
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 padding-bottom: 2%;
+
+                @media screen and (max-width: $breakpoint-md) {
+                    padding-bottom: 0;
+                }
+
+                @media screen and (max-width: 550px) {
+                    flex-direction: column;
+                }
+
+                a {
+                    @media screen and (max-width: $breakpoint-md) {
+                        font-size: var(--font-size-content-responsive);
+                    }
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        font-size: var(--font-size-infocard);
+                    }
+
+                    @media screen and (max-width: 550px) {
+                        padding-bottom: 2%;
+                    }
+                }
+                .separation {
+                    width: 2px;
+                    height: 20px;
+                    margin: 0 var(--spacing-sm);
+                    background-color: var(--color-black);
+
+                    @media screen and (max-width: 550px) {
+                        display: none;
+                    }
+                }
             }
         }
 
-        .separation {
-            width: 2px;
-            height: 20px;
-            margin: 0 var(--spacing-sm);
-            background-color: var(--color-black);
-        }
-
         .reseaux {
+            z-index: 99;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -73,6 +127,22 @@
             .medias__icones {
                 svg {
                     transition: all 0.3s $ease-out-expo;
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        height: 1em;
+                        width: 1em;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        height: 1.5em;
+                        width: 1.5em;
+                    }
+
+                    @media screen and (max-width: 550px) {
+                        height: 1.25em;
+                        width: 1.25em;
+                    }
+
                     &:hover {
                         cursor: pointer;
                         fill: var(--color-primary);
@@ -89,6 +159,27 @@
             top: 10%;
             left: 10%;
             z-index: -99;
+
+            @media screen and (max-width: $breakpoint-md) {
+                height: 60%;
+
+                top: 15%;
+                left: 5%;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                height: 55%;
+
+                top: 20%;
+                left: 0;
+            }
+
+            @media screen and (max-width: 550px) {
+                height: 50%;
+
+                top: 15%;
+                left: -5%;
+            }
         }
 
         &:nth-child(3),
@@ -96,6 +187,23 @@
             height: 80%;
             top: 15%;
             left: 60%;
+
+            @media screen and (max-width: $breakpoint-md) {
+                height: 65%;
+
+                top: 20%;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                height: 55%;
+
+                top: 24%;
+                left: 65%;
+            }
+
+            @media screen and (max-width: 550px) {
+                display: none;
+            }
         }
 
         &:nth-child(3) {
