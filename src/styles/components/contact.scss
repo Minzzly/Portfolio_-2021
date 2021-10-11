@@ -13,7 +13,7 @@
 
     .contenuContact {
         height: 20vh;
-        width: 90vh;
+        width: 100vh;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -24,21 +24,10 @@
         }
 
         .informations {
-            // width: 120%;
+            text-align: center;
+            width: 100%;
             .titre {
-                // background-image: url(../../assets/images/aPropos/titrePasseTemps.png);
-                // background-position: center;
-                // background-repeat: no-repeat;
-                // width: 100%;
-                // position: absolute;
-                // top: 15%;
-                // left: 0;
-                // height: 20%;
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding-bottom: 10%;
+                padding-bottom: 5%;
 
                 @media screen and (max-width: $breakpoint-lg) {
                     top: 20%;
@@ -49,27 +38,20 @@
                 }
             }
 
-            a {
+            .information__contact {
                 width: 100%;
-                // padding-left: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 2%;
             }
         }
 
-        .separations {
-            width: 2%;
-
-            display: flex;
-            justify-content: space-between;
-            div {
-                height: 30vh;
-                width: 2px;
-                border: none;
-                background-color: var(--color-primary);
-                margin: 0 2%;
-                @media screen and (max-width: $breakpoint-lg) {
-                    height: 20vh;
-                }
-            }
+        .separation {
+            width: 2px;
+            height: 20px;
+            margin: 0 var(--spacing-sm);
+            background-color: var(--color-black);
         }
 
         .reseaux {
@@ -103,9 +85,9 @@
         position: absolute;
 
         &:nth-child(2) {
-            height: 50%;
-            top: 25%;
-            left: 18%;
+            height: 70%;
+            top: 10%;
+            left: 10%;
             z-index: -99;
         }
 
