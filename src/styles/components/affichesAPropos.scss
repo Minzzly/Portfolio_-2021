@@ -2,41 +2,62 @@
     // ------------------------SECTION 1-----------------------------
     .infoGeneral {
         margin-top: 7%;
+
+        @media screen and (max-width: $breakpoint-md) {
+            margin-top: 20%;
+        }
         .parallelogram__info__general {
             background-image: url(../../assets/images/aPropos/affiche1Desktop.gif);
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
             margin: auto;
-            width: 100%;
-            height: 860px;
+            width: 90vw;
+            height: 90vh;
             display: flex;
             justify-content: center;
             align-items: center;
 
+            @media screen and (max-width: $breakpoint-md) {
+                height: 50%;
+            }
+
             .contenuGeneral {
-                width: 87.8%;
+                width: 87vw;
                 margin-top: -2.3%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                img {
-                    height: 100%;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    width: 97%;
+                }
+
+                .photoPortfolio {
+                    width: 30%;
+                }
+
+                .photoPortfolio--responsive {
+                    display: none;
                 }
                 .contenuGeneral__text {
                     margin-top: 8%;
-                    // padding-right: 15%;
-                    // width: 50%;
                     padding: 0 8% 0 5%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
 
+                    @media screen and (max-width: $breakpoint-md) {
+                        margin-top: 12%;
+                        padding: 0 5% 0 3%;
+                    }
+
                     h2 {
                         background-image: url(../../assets/images/aPropos/sousTitreBleu.png);
                         background-repeat: no-repeat;
-                        // background-position: center;
+                        background-size: contain;
+                        background-position: center;
                         text-align: center;
                         font-family: var(--font-primary);
                         font-size: var(--font-size-h4);
@@ -44,7 +65,16 @@
 
                         width: 100%;
                         height: 73px;
-                        padding: 2.5% 13.5% 0 0;
+                        padding: 2.5% 3% 0 0;
+
+                        @media screen and (max-width: $breakpoint-lg) {
+                            padding: 3% 4% 0 0;
+                        }
+
+                        @media screen and (max-width: $breakpoint-md) {
+                            font-size: var(--font-size-h4-responsive);
+                            padding: 4.3% 4% 0 0;
+                        }
                     }
                     p {
                         width: 100%;
@@ -54,18 +84,50 @@
                             font-weight: var(--fw-bold);
                         }
                         .nom__aPropos {
-                            font-size: var(--font-size-h4);
+                            font-size: var(--font-size-h3);
+
+                            @media screen and (max-width: $breakpoint-lg) {
+                                font-size: var(--font-size-h4);
+                            }
+                        }
+
+                        @media screen and (max-width: $breakpoint-lg) {
+                            margin: 5px;
+
+                            font-size: var(--font-size-h4-mobile);
                         }
                     }
 
                     ul {
                         display: flex;
                         flex-wrap: wrap;
-                        list-style-image: url('../../assets/images/bullets.png');
+                        list-style-type: none;
+
+                        @media screen and (max-width: $breakpoint-md) {
+                            margin-top: 0;
+                        }
                         li {
                             font-family: var(--font-primary);
                             width: 49%;
                             padding-bottom: 2%;
+
+                            &::before {
+                                content: '';
+                                display: inline-block;
+                                height: 35px;
+                                width: 35px;
+                                background-image: url(../../assets/images/bullets.png);
+                                background-size: contain;
+
+                                @media screen and (max-width: $breakpoint-lg) {
+                                    height: 20px;
+                                    width: 20px;
+                                }
+                            }
+
+                            @media screen and (max-width: $breakpoint-lg) {
+                                font-size: var(--font-size-h4-mobile);
+                            }
                         }
                     }
                 }
@@ -75,14 +137,24 @@
             position: absolute;
             top: 0;
             left: 0;
+
             background-image: url(../../assets/images/aPropos/backgroundBonjour.png);
             background-position: center;
             background-repeat: no-repeat;
+
             width: 100%;
             height: 150px;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @media screen and (max-width: $breakpoint-lg) {
+                top: 4vh;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                top: -2.3%;
+            }
 
             h1 {
                 font-size: var(--font-size-h2);
@@ -92,35 +164,48 @@
 
         .fleche__scroll {
             position: absolute;
-            top: 10%;
+            top: 13%;
             right: 0;
             display: flex;
             justify-content: flex-end;
+
             background-image: url(../../assets/images/aPropos/FlecheScroll1.png);
             background-repeat: no-repeat;
             background-position: center;
-            width: 450px;
-            height: 600px;
+            background-size: contain;
+
+            width: 25vw;
+            height: 45vh;
+
+            @media screen and (max-width: $breakpoint-md) {
+                top: 225px;
+                width: 20vw;
+                height: 40vh;
+            }
         }
     }
 
     // ------------------------SECTION 2-----------------------------
 
     .peuxFaire {
-        margin: 8%;
         position: relative;
+        margin-top: 8%;
+
         .parallelogram__peuxFaire {
             background-image: url(../../assets/images/aPropos/affiche2Desktop.gif);
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
+
             margin: auto;
-            width: 100%;
-            height: 860px;
+            width: 90vw;
+            height: 90vh;
             display: flex;
             justify-content: center;
             align-items: center;
-
+            .contenuPeuxFaire {
+                padding-top: 3%;
+            }
             .contenuPeuxFaire__text1,
             .contenuPeuxFaire__text2 {
                 display: flex;
@@ -131,22 +216,57 @@
                     background-image: url(../../assets/images/aPropos/sousTitreBeige.png);
                     background-repeat: no-repeat;
                     background-position: center;
+                    background-size: contain;
+
                     text-align: center;
+
                     width: 100%;
                     height: 73px;
-                    padding: 1.25%;
+
+                    padding-top: 1.25%;
                     font-family: var(--font-primary);
                     color: var(--color-white);
                     font-weight: var(--regular);
                     font-size: var(--font-size-content);
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        padding-top: 2%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        width: 65%;
+                        padding-top: 3%;
+                        font-size: var(--font-size-h4-mobile);
+                    }
+                }
+                svg {
+                    @media screen and (max-width: $breakpoint-lg) {
+                        height: 2.5em;
+                        width: 2.5em;
+                    }
                 }
             }
 
             .contenuPeuxFaire__text2 {
                 margin-top: 5%;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    margin-top: 1%;
+                }
                 .bloc {
                     justify-content: space-between;
                     width: 40%;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        width: 60%;
+                        margin-left: 15%;
+                    }
+
+                    .blocText {
+                        @media screen and (max-width: $breakpoint-lg) {
+                            width: 48%;
+                        }
+                    }
                 }
             }
 
@@ -157,13 +277,29 @@
 
                 width: 65%;
 
+                @media screen and (max-width: $breakpoint-lg) {
+                    width: 75%;
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 80%;
+                }
+
                 h3 {
                     font-family: var(--font-primary);
                     color: var(--color-primary);
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        font-size: var(--font-size-h4-responsive);
+                    }
                 }
                 p {
                     margin: 0;
                     font-size: var(--font-size-content-responsive);
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        font-size: var(--font-size-content-mobile);
+                    }
                 }
                 h3,
                 p {
@@ -174,6 +310,11 @@
                     display: flex;
                     align-items: center;
                     width: 22%;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        width: 35%;
+                        align-items: flex-start;
+                    }
                 }
             }
         }
@@ -181,33 +322,64 @@
             position: absolute;
             top: -2%;
             left: 0;
+
             background-image: url(../../assets/images/aPropos/titrePeuxFaire.png);
             background-position: center;
             background-repeat: no-repeat;
+            background-size: contain;
+
             width: 100%;
-            // margin: auto;
-            height: 150px;
+            height: 16%;
             display: flex;
             align-items: center;
             justify-content: center;
 
+            z-index: 2;
+
             h1 {
                 font-size: var(--font-size-h2);
                 color: var(--color-black);
+                @media screen and (max-width: $breakpoint-lg) {
+                    font-size: var(--font-size-h3-responsive);
+                }
+            }
+
+            @media screen and (max-width: $breakpoint-lg) {
+                top: 3%;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                top: 10%;
             }
         }
 
         .fleche__scroll {
             position: absolute;
-            top: -16%;
-            left: -5%;
+            top: -15%;
+            left: -7%;
+
+            width: 45%;
+            height: 125%;
             display: flex;
             justify-content: flex-end;
+
             background-image: url(../../assets/images/aPropos/FlecheScroll2.png);
             background-repeat: no-repeat;
             background-position: center;
-            width: 600px;
-            height: 1100px;
+            background-size: contain;
+
+            @media screen and (max-width: $breakpoint-lg) {
+                width: 30%;
+                height: 100%;
+
+                top: -1.8%;
+                left: 0;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                top: -0.7%;
+                left: 0;
+            }
 
             .fleche__scroll__text {
                 transform: rotate(-28deg);
@@ -216,22 +388,53 @@
         }
         .sticker {
             position: absolute;
-            bottom: -15%;
-            right: -20%;
+            bottom: -11%;
+            right: -10%;
             height: 350px;
 
             display: flex;
             background-image: url(../../assets/images/aPropos/sticker.png);
             background-repeat: no-repeat;
             background-position: center;
+            background-size: contain;
 
             display: flex;
             justify-content: flex-end;
             align-items: center;
+
+            @media screen and (max-width: $breakpoint-lg) {
+                width: 30%;
+                height: 30%;
+
+                bottom: -5%;
+                right: -3%;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                width: 25%;
+                height: 25%;
+
+                bottom: 3%;
+                right: 0;
+            }
+
             p {
                 width: 30%;
                 margin-right: 32%;
                 font-size: var(--font-size-button);
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    width: 35%;
+                    font-size: var(--font-size-content-responsive);
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 70%;
+                    margin-right: 12%;
+
+                    font-size: var(--font-size-content-mobile);
+                }
+
                 span {
                     font-family: var(--font-primary);
                     font-weight: var(--fw-bold);
@@ -244,18 +447,21 @@
     //-------------------------SECTION 3--------------------------------
 
     .passion {
-        // margin-left: 3%;
         position: relative;
         .losange__passion {
             background-image: url(../../assets/images/aPropos/affiche3Desktop.gif);
             background-repeat: no-repeat;
             background-size: contain;
             margin: auto;
-            width: 80%;
-            height: 860px;
+            width: 90vw;
+            height: 80vh;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @media screen and (max-width: $breakpoint-md) {
+                height: 60vh;
+            }
 
             .contenuPeuxFaire__text1,
             .contenuPeuxFaire__text2,
@@ -270,8 +476,20 @@
                     justify-content: space-between;
                     width: 80%;
 
+                    @media screen and (max-width: $breakpoint-lg) {
+                        width: 60%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        width: 80%;
+                    }
+
                     .blocText {
                         width: 35%;
+
+                        @media screen and (max-width: $breakpoint-md) {
+                            width: 40%;
+                        }
                     }
                 }
             }
@@ -280,13 +498,25 @@
                 display: flex;
                 justify-content: center;
 
+                @media screen and (max-width: $breakpoint-md) {
+                    margin-top: 2%;
+                }
+
                 h3 {
                     font-family: var(--font-primary);
                     color: var(--color-primary);
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        font-size: var(--font-size-h4-responsive);
+                    }
                 }
                 p {
                     margin: 0;
                     font-size: var(--font-size-content-responsive);
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        font-size: var(--font-size-content-mobile);
+                    }
                 }
                 h3,
                 p {
@@ -298,6 +528,22 @@
                     justify-content: center;
                     align-items: center;
                     width: 75%;
+
+                    svg {
+                        @media screen and (max-width: $breakpoint-lg) {
+                            height: 2.5em;
+                            width: 2.5em;
+                        }
+                    }
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        width: 60%;
+                        align-items: flex-start;
+                    }
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        width: 70%;
+                    }
                 }
             }
         }
@@ -305,15 +551,20 @@
             position: absolute;
             top: 1%;
             left: 0;
+
             background-image: url(../../assets/images/aPropos/titrePasseTemps.png);
             background-position: center;
             background-repeat: no-repeat;
+
             width: 100%;
-            // margin: auto;
             height: 150px;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @media screen and (max-width: $breakpoint-md) {
+                top: -2%;
+            }
 
             h1 {
                 font-size: var(--font-size-h2);
@@ -331,6 +582,19 @@
         text-align: center;
         text-orientation: upright;
         letter-spacing: -50px;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            font-size: var(--font-size-h4);
+            letter-spacing: -30px;
+            transform: rotate(27deg);
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            font-size: var(--font-size-h4-mobile);
+            letter-spacing: -25px;
+            transform: rotate(27deg);
+            margin-right: 52%;
+        }
     }
     .poteaux {
         z-index: -999;

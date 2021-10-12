@@ -93,7 +93,6 @@ header {
     position: relative;
 
     .hamburgerEtLogo {
-        padding: var(--spacing-sm) 0;
         background-color: var(--color-background-secondary);
 
         display: flex;
@@ -168,7 +167,6 @@ header {
 
         .nav-is-active & {
             span {
-                top: calc(50% - var(--bar-height) / 2);
                 &:nth-child(1) {
                     transform: rotate(45deg);
                 }
