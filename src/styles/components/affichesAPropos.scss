@@ -11,6 +11,7 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
+
             margin: auto;
             width: 90vw;
             height: 90vh;
@@ -20,6 +21,11 @@
 
             @media screen and (max-width: $breakpoint-md) {
                 height: 50%;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                background-image: url(../../assets/images/aPropos/affiche1_responsive.png);
+                height: 90vh;
             }
 
             .contenuGeneral {
@@ -33,12 +39,50 @@
                     width: 97%;
                 }
 
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 100%;
+                    height: 85%;
+                    margin-top: -15%;
+
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+
+                @media screen and (max-width: 414px) {
+                    width: 85%;
+                    height: 85%;
+                    margin-top: 2vh;
+                }
+
                 .photoPortfolio {
                     width: 30%;
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        display: none;
+                    }
                 }
 
                 .photoPortfolio--responsive {
                     display: none;
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        display: block;
+
+                        // width: 50%;
+                        height: 57%;
+                        margin: -1vh 0 0 -2.3%;
+                    }
+
+                    @media screen and (max-width: 414px) {
+                        height: 43vh;
+                        margin: -5vh 0 0 -5%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-xs) {
+                        height: 40vh;
+
+                        margin: -1vh 0 0 -5%;
+                    }
                 }
                 .contenuGeneral__text {
                     margin-top: 8%;
@@ -51,6 +95,16 @@
                     @media screen and (max-width: $breakpoint-md) {
                         margin-top: 12%;
                         padding: 0 5% 0 3%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 60%;
+
+                        margin-top: 0;
+                    }
+
+                    @media screen and (max-width: 414px) {
+                        width: 95%;
                     }
 
                     h2 {
@@ -75,7 +129,25 @@
                             font-size: var(--font-size-h4-responsive);
                             padding: 4.3% 4% 0 0;
                         }
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            font-size: var(--font-size-content-responsive);
+
+                            height: 40px;
+                            padding: 4% 4% 0 0;
+                        }
+
+                        @media screen and (max-width: 414px) {
+                            padding: 5% 4% 0 0;
+                            font-size: var(--font-size-content-mobile);
+                        }
+
+                        @media screen and (max-width: $breakpoint-xs) {
+                            font-size: var(--font-size-infocard);
+                            padding: 6% 4% 0 0;
+                        }
                     }
+
                     p {
                         width: 100%;
                         span {
@@ -89,12 +161,28 @@
                             @media screen and (max-width: $breakpoint-lg) {
                                 font-size: var(--font-size-h4);
                             }
+
+                            @media screen and (max-width: $breakpoint-md) {
+                                font-size: var(--font-size-h4-responsive);
+                            }
+
+                            @media screen and (max-width: 414px) {
+                                font-size: var(--font-size-h4-mobile);
+                            }
                         }
 
                         @media screen and (max-width: $breakpoint-lg) {
                             margin: 5px;
 
                             font-size: var(--font-size-h4-mobile);
+                        }
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            font-size: var(--font-size-content-responsive);
+                        }
+
+                        @media screen and (max-width: 414px) {
+                            font-size: var(--font-size-content-mobile);
                         }
                     }
 
@@ -105,6 +193,10 @@
 
                         @media screen and (max-width: $breakpoint-md) {
                             margin-top: 0;
+                        }
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            padding: 0;
                         }
                         li {
                             font-family: var(--font-primary);
@@ -123,10 +215,22 @@
                                     height: 20px;
                                     width: 20px;
                                 }
+                                @media screen and (max-width: $breakpoint-xs) {
+                                    height: 10px;
+                                    width: 10px;
+                                }
                             }
 
                             @media screen and (max-width: $breakpoint-lg) {
                                 font-size: var(--font-size-h4-mobile);
+                            }
+
+                            @media screen and (max-width: $breakpoint-sm) {
+                                font-size: var(--font-size-content-responsive);
+                            }
+
+                            @media screen and (max-width: $breakpoint-xs) {
+                                font-size: var(--font-size-content-mobile);
                             }
                         }
                     }
@@ -141,6 +245,7 @@
             background-image: url(../../assets/images/aPropos/backgroundBonjour.png);
             background-position: center;
             background-repeat: no-repeat;
+            background-size: contain;
 
             width: 100%;
             height: 150px;
@@ -153,12 +258,24 @@
             }
 
             @media screen and (max-width: $breakpoint-md) {
-                top: -2.3%;
+                top: -4%;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 50%;
+                height: 60px;
+
+                top: 14%;
+                left: 8%;
             }
 
             h1 {
                 font-size: var(--font-size-h2);
                 color: var(--color-white);
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    font-size: var(--font-size-h4-mobile);
+                }
             }
         }
 
@@ -182,6 +299,17 @@
                 width: 20vw;
                 height: 40vh;
             }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 30vw;
+
+                top: 580px;
+                right: 100px;
+            }
+
+            @media screen and (max-width: 414px) {
+                display: none;
+            }
         }
     }
 
@@ -203,8 +331,31 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                background-image: url(../../assets/images/aPropos/affiche2_responsive.png);
+
+                align-items: flex-start;
+                padding-top: 6%;
+            }
+
+            @media screen and (max-width: $breakpoint-xs) {
+                height: 100vh;
+                width: 100vw;
+            }
             .contenuPeuxFaire {
                 padding-top: 3%;
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    padding: 0;
+                }
+                @media screen and (max-width: 414px) {
+                    margin-top: 2vh;
+                }
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    margin-top: 8vh;
+                }
             }
             .contenuPeuxFaire__text1,
             .contenuPeuxFaire__text2 {
@@ -238,6 +389,22 @@
                         padding-top: 3%;
                         font-size: var(--font-size-h4-mobile);
                     }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 70%;
+                        padding-top: 6.5%;
+
+                        font-size: var(--font-size-content-mobile);
+                    }
+
+                    @media screen and (max-width: 414px) {
+                        width: 80%;
+                        height: 30px;
+                        margin: 3% 0;
+                        padding-top: 2.5%;
+
+                        font-size: var(--font-size-content-mobile);
+                    }
                 }
                 svg {
                     @media screen and (max-width: $breakpoint-lg) {
@@ -258,13 +425,21 @@
                     width: 40%;
 
                     @media screen and (max-width: $breakpoint-lg) {
-                        width: 60%;
+                        width: 45%;
                         margin-left: 15%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        margin-left: 0;
                     }
 
                     .blocText {
                         @media screen and (max-width: $breakpoint-lg) {
                             width: 48%;
+                        }
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            width: 80%;
                         }
                     }
                 }
@@ -285,12 +460,25 @@
                     width: 80%;
                 }
 
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 50%;
+                    margin: 0;
+
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+
                 h3 {
                     font-family: var(--font-primary);
                     color: var(--color-primary);
 
                     @media screen and (max-width: $breakpoint-lg) {
                         font-size: var(--font-size-h4-responsive);
+                    }
+
+                    @media screen and (max-width: 414px) {
+                        font-size: var(--font-size-content-responsive);
                     }
                 }
                 p {
@@ -314,6 +502,15 @@
                     @media screen and (max-width: $breakpoint-lg) {
                         width: 35%;
                         align-items: flex-start;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 100%;
+                        margin-top: 5%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        margin-top: 2%;
                     }
                 }
             }
@@ -339,8 +536,17 @@
             h1 {
                 font-size: var(--font-size-h2);
                 color: var(--color-black);
+                text-align: center;
                 @media screen and (max-width: $breakpoint-lg) {
                     font-size: var(--font-size-h3-responsive);
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    font-size: var(--font-size-h4-responsive);
+                }
+
+                @media screen and (max-width: 414px) {
+                    font-size: var(--font-size-content-responsive);
                 }
             }
 
@@ -350,6 +556,25 @@
 
             @media screen and (max-width: $breakpoint-md) {
                 top: 10%;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                top: -5%;
+                left: 25%;
+
+                width: 50%;
+            }
+
+            @media screen and (max-width: 414px) {
+                top: -5%;
+                left: 15%;
+
+                width: 70%;
+            }
+
+            @media screen and (max-width: $breakpoint-xs) {
+                top: 0;
+                left: 15%;
             }
         }
 
@@ -381,9 +606,27 @@
                 left: 0;
             }
 
+            @media screen and (max-width: $breakpoint-sm) {
+                background-image: url(../../assets/images/aPropos/fleche2_responsive.png);
+
+                width: 20%;
+
+                top: -7%;
+                left: 15%;
+            }
+
+            @media screen and (max-width: 414px) {
+                display: none;
+            }
+
             .fleche__scroll__text {
                 transform: rotate(-28deg);
                 margin-right: 54%;
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    transform: rotate(-10deg);
+                    margin-right: 65%;
+                }
             }
         }
         .sticker {
@@ -418,6 +661,26 @@
                 right: 0;
             }
 
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 40%;
+                height: 40%;
+
+                bottom: 0;
+                right: 5%;
+            }
+
+            @media screen and (max-width: 414px) {
+                width: 50%;
+                height: 50%;
+
+                bottom: -19%;
+                right: 0;
+            }
+
+            @media screen and (max-width: $breakpoint-xs) {
+                bottom: -13%;
+            }
+
             p {
                 width: 30%;
                 margin-right: 32%;
@@ -432,6 +695,16 @@
                     width: 70%;
                     margin-right: 12%;
 
+                    font-size: var(--font-size-content-mobile);
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    margin-right: 5%;
+                    font-size: var(--font-size-content-responsive);
+                }
+
+                @media screen and (max-width: 414px) {
+                    margin-right: 7%;
                     font-size: var(--font-size-content-mobile);
                 }
 
@@ -452,6 +725,7 @@
             background-image: url(../../assets/images/aPropos/affiche3Desktop.gif);
             background-repeat: no-repeat;
             background-size: contain;
+            background-position: center;
             margin: auto;
             width: 90vw;
             height: 80vh;
@@ -461,6 +735,28 @@
 
             @media screen and (max-width: $breakpoint-md) {
                 height: 60vh;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                background-image: url(../../assets/images/aPropos/affiche3_responsive.png);
+
+                width: 100vw;
+                height: 80vh;
+
+                align-items: flex-start;
+
+                margin-top: 10%;
+            }
+
+            .contenu__passion {
+                margin-top: 5vh;
+                @media screen and (max-width: $breakpoint-sm) {
+                    margin-top: 13%;
+                }
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    margin-top: 15%;
+                }
             }
 
             .contenuPeuxFaire__text1,
@@ -484,6 +780,19 @@
                         width: 80%;
                     }
 
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 48%;
+
+                        margin-top: 1%;
+                    }
+
+                    @media screen and (max-width: 414px) {
+                        width: 60%;
+
+                        align-items: flex-start;
+                        margin-top: 3%;
+                    }
+
                     .blocText {
                         width: 35%;
 
@@ -502,12 +811,20 @@
                     margin-top: 2%;
                 }
 
+                @media screen and (max-width: 414px) {
+                    margin-top: 4%;
+                }
+
                 h3 {
                     font-family: var(--font-primary);
                     color: var(--color-primary);
 
                     @media screen and (max-width: $breakpoint-lg) {
                         font-size: var(--font-size-h4-responsive);
+                    }
+
+                    @media screen and (max-width: 414px) {
+                        font-size: var(--font-size-h4-mobile);
                     }
                 }
                 p {
@@ -517,10 +834,22 @@
                     @media screen and (max-width: $breakpoint-md) {
                         font-size: var(--font-size-content-mobile);
                     }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        font-size: var(--font-size-content-responsive);
+                    }
+
+                    @media screen and (max-width: 414px) {
+                        font-size: var(--font-size-content-mobile);
+                    }
                 }
                 h3,
                 p {
                     margin-left: 5%;
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        margin-left: 0;
+                    }
                 }
 
                 .blocText {
@@ -534,6 +863,16 @@
                             height: 2.5em;
                             width: 2.5em;
                         }
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            height: 4em;
+                            width: 4em;
+                        }
+
+                        @media screen and (max-width: 414px) {
+                            height: 3em;
+                            width: 3em;
+                        }
                     }
 
                     @media screen and (max-width: $breakpoint-lg) {
@@ -543,6 +882,12 @@
 
                     @media screen and (max-width: $breakpoint-md) {
                         width: 70%;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 40%;
+                        flex-direction: column;
+                        align-items: center;
                     }
                 }
             }
@@ -555,6 +900,7 @@
             background-image: url(../../assets/images/aPropos/titrePasseTemps.png);
             background-position: center;
             background-repeat: no-repeat;
+            background-size: contain;
 
             width: 100%;
             height: 150px;
@@ -566,9 +912,31 @@
                 top: -2%;
             }
 
+            @media screen and (max-width: $breakpoint-sm) {
+                top: -5%;
+                left: 25%;
+
+                width: 50%;
+            }
+
+            @media screen and (max-width: 414px) {
+                top: -5%;
+                left: 20%;
+
+                width: 60%;
+            }
+
             h1 {
                 font-size: var(--font-size-h2);
                 color: var(--color-black);
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    font-size: var(--font-size-h4-responsive);
+                }
+
+                @media screen and (max-width: 414px) {
+                    font-size: var(--font-size-content-responsive);
+                }
             }
         }
     }
@@ -594,6 +962,11 @@
             letter-spacing: -25px;
             transform: rotate(27deg);
             margin-right: 52%;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            font-size: var(--font-size-content-responsive);
+            letter-spacing: -20px;
         }
     }
     .poteaux {

@@ -7,6 +7,14 @@
         @media screen and (max-width: $breakpoint-md) {
             margin-top: 15%;
         }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            font-size: var(--font-size-h3-responsive);
+        }
+
+        @media screen and (max-width: 425px) {
+            margin-top: 30%;
+        }
     }
     .card {
         display: flex;
@@ -39,20 +47,24 @@
             height: 225px;
             margin-bottom: 4%;
         }
-
-        @media screen and (max-width: 700px) {
-            height: 200px;
-            margin-bottom: 4%;
+        @media screen and (max-width: $breakpoint-sm) {
+            height: 210px;
         }
 
         @media screen and (max-width: 700px) {
             height: 200px;
-            margin-bottom: 4%;
+        }
+
+        @media screen and (max-width: 425px) {
+            height: 140px;
+            width: 90%;
         }
 
         img {
             border-radius: 10px;
             width: 30%;
+            height: 70%;
+            object-fit: cover;
 
             @media screen and (max-width: $breakpoint-lg) {
                 width: 40%;
@@ -66,6 +78,22 @@
                 @media screen and (max-width: $breakpoint-lg) {
                     margin-right: 5%;
                 }
+
+                @media screen and (max-width: 425px) {
+                    margin-right: 8%;
+                    width: 35%;
+                }
+            }
+            .card__texte {
+                .button {
+                    @media screen and (max-width: 425px) {
+                        margin-left: -40%;
+                    }
+                }
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                margin: 5% auto;
             }
         }
         &:nth-child(even) {
@@ -73,6 +101,10 @@
 
             img {
                 margin-left: 4%;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                margin: 5% auto;
             }
         }
 
@@ -88,6 +120,14 @@
                 @media screen and (max-width: $breakpoint-md) {
                     font-size: var(--font-size-h3-responsive);
                 }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    font-size: var(--font-size-h4);
+                }
+
+                @media screen and (max-width: 425px) {
+                    font-size: var(--font-size-h4-mobile);
+                }
             }
             .card__info {
                 font-size: var(--font-size-content-responsive);
@@ -97,6 +137,11 @@
 
                 @media screen and (max-width: $breakpoint-md) {
                     font-size: var(--font-size-infocard);
+                }
+
+                @media screen and (max-width: 425px) {
+                    font-size: var(--font-size-infocard-responsive);
+                    padding-bottom: 0;
                 }
             }
 
@@ -128,10 +173,14 @@
 
             .button {
                 cursor: pointer;
+
                 background-image: url(../../assets/images/projets/BouttonCard.png);
                 background-position: 50% 65%;
                 background-repeat: no-repeat;
                 background-size: contain;
+
+                width: 15vw;
+                margin-top: 3%;
                 padding: 20px 50px;
                 border: none;
                 text-align: center;
@@ -139,7 +188,12 @@
                 transition: all 0.3s $ease-out-expo;
 
                 @media screen and (max-width: $breakpoint-md) {
-                    padding: 10px 50px;
+                    padding: 10px 30px;
+                }
+
+                @media screen and (max-width: 425px) {
+                    padding: 10px 10px;
+                    width: 25vw;
                 }
 
                 &:hover {
@@ -156,6 +210,11 @@
                 @media screen and (max-width: $breakpoint-md) {
                     font-size: var(--font-size-content-mobile);
                 }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    font-size: var(--font-size-infocard);
+                }
+
                 &:hover {
                     color: var(--color-black);
                 }
