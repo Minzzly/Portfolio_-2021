@@ -3,22 +3,45 @@
     background-position: center;
     background-repeat: repeat-y;
 
+    @media screen and (max-width: $breakpoint-md) {
+        background-size: 50%;
+    }
+
     .inner {
         background-color: var(--color-quinary);
     }
 
     //--------------------------Section Titre---------------------------------------------------
     .FaitEnUn__hero {
+        @media screen and (max-width: $breakpoint-lg) {
+            margin-top: 15%;
+        }
+
+        @media screen and (max-width: 425px) {
+            margin-top: 30%;
+        }
         .content {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             text-align: right;
 
+            @media screen and (max-width: 425px) {
+                flex-direction: column;
+            }
+
             .content__text {
                 text-align: right;
+
+                @media screen and (max-width: 425px) {
+                    text-align: center;
+                }
                 p {
                     width: 90%;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        font-size: var(--font-size-h3-responsive);
+                    }
                 }
                 .description__projet {
                     font-family: var(--font-primary);
@@ -26,17 +49,29 @@
                     font-size: var(--font-size-h4-responsive);
                     padding-top: 5%;
                     letter-spacing: 3px;
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        font-size: var(--font-size-content-responsive);
+                    }
                 }
                 .description__nom {
                     font-size: var(--font-size-content-responsive);
                     font-family: var(--font-secondary);
                     padding: 1% 0;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        font-size: var(--font-size-content-mobile);
+                    }
                 }
             }
 
             img {
                 width: 50%;
                 margin: 2%;
+
+                @media screen and (max-width: 425px) {
+                    width: 75%;
+                }
             }
         }
     }
@@ -44,6 +79,7 @@
     .FaitEnUn__sketch {
         img {
             height: 500px;
+            object-fit: cover;
         }
     }
 
@@ -55,11 +91,51 @@
             width: 50%;
             margin: auto;
             padding-bottom: 5%;
+
+            @media screen and (max-width: $breakpoint-md) {
+                width: 60%;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 90%;
+            }
+
             .pallette {
                 width: 124px;
                 height: 274px;
                 border: 1px solid var(--color-white);
                 border-radius: 10px;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    width: 100px;
+                    height: 150px;
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 80px;
+                    height: 125px;
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 60px;
+                    height: 100px;
+                }
+
+                @media screen and (max-width: 425px) {
+                    width: 50px;
+                    height: 100px;
+                }
+
+                p {
+                    background-color: rgba(0, 0, 0, 0.5);
+
+                    width: 100%;
+                    border-radius: 10px 10px 0 0;
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        font-size: var(--font-size-infocard);
+                    }
+                }
             }
             .mauve {
                 background-color: var(--color-palette-primary);
@@ -90,6 +166,14 @@
         h3 {
             font-family: var(--font-primary);
             font-weight: var(--fw-regular);
+
+            @media screen and (max-width: $breakpoint-lg) {
+                font-size: var(--font-size-liens);
+            }
+
+            @media screen and (max-width: 425px) {
+                font-size: var(--font-size-content-mobile);
+            }
         }
         p {
             width: 40%;
@@ -97,6 +181,19 @@
             font-family: var(--font-secondary);
             font-size: var(--font-size-content-responsive);
             padding: 2% 0;
+
+            @media screen and (max-width: $breakpoint-lg) {
+                font-size: var(--font-size-content-mobile);
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 60%;
+            }
+
+            @media screen and (max-width: 425px) {
+                width: 80%;
+                font-size: var(--font-size-infocard);
+            }
 
             span {
                 color: var(--color-primary);
@@ -107,25 +204,65 @@
             a {
                 span {
                     text-decoration: underline;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        font-size: var(--font-size-content-responsive);
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        font-size: var(--font-size-infocard);
+                    }
                 }
             }
         }
         img {
             border-radius: 10px;
+
+            @media screen and (max-width: 425px) {
+                width: 90%;
+                margin-bottom: 10%;
+            }
         }
     }
 
     h1 {
         margin-right: 3%;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            font-size: var(--font-size-h3-responsive);
+        }
     }
     h2 {
         background-image: url(../../assets/images/singleNihilo/soustitre.png);
         background-repeat: no-repeat;
+        background-size: contain;
         height: 200px;
         margin: 5% 2% 0 2%;
         padding-top: 3.5%;
 
         text-align: center;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            font-size: var(--font-size-h1-mobile);
+
+            height: 125px;
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            height: 100px;
+            padding-top: 2.5%;
+            font-size: var(--font-size-h4-mobile);
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            background-image: none;
+            font-size: var(--font-size-content);
+        }
+
+        @media screen and (max-width: 425px) {
+            height: 60px;
+            font-size: var(--font-size-content-responsive);
+        }
     }
 
     .swiper-pagination-bullet {

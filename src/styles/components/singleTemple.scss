@@ -3,22 +3,46 @@
     background-position: center;
     background-repeat: repeat-y;
 
+    @media screen and (max-width: $breakpoint-md) {
+        background-size: 50%;
+    }
+
     .inner {
         background-color: var(--color-tertiary);
     }
 
     //--------------------------Section Titre---------------------------------------------------
     .temple__hero {
+        @media screen and (max-width: $breakpoint-lg) {
+            margin-top: 15%;
+        }
+
+        @media screen and (max-width: 425px) {
+            margin-top: 30%;
+        }
         .content {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             text-align: right;
 
+            @media screen and (max-width: $breakpoint-sm) {
+                flex-direction: column;
+            }
+
             .content__text {
                 text-align: right;
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    text-align: center;
+                    margin-bottom: 7%;
+                }
                 p {
                     width: 90%;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        font-size: var(--font-size-h3-responsive);
+                    }
                 }
                 .description__projet {
                     font-family: var(--font-primary);
@@ -26,11 +50,19 @@
                     font-size: var(--font-size-h4-responsive);
                     padding-top: 5%;
                     letter-spacing: 3px;
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        font-size: var(--font-size-content-responsive);
+                    }
                 }
                 .description__nom {
                     font-size: var(--font-size-content-responsive);
                     font-family: var(--font-secondary);
                     padding: 1% 0;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        font-size: var(--font-size-content-mobile);
+                    }
                 }
             }
             .sketchfab-embed-wrapper {
@@ -39,7 +71,44 @@
                     border-radius: 10px;
                     width: 795px;
                     height: 447px;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        width: 600px;
+                        height: 400px;
+                    }
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        width: 475px;
+                        height: 250px;
+                    }
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 500px;
+                        height: 275px;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        width: 250px;
+                        height: 175px;
+
+                        margin-top: 7%;
+                    }
                 }
+            }
+        }
+    }
+    .temple__inspirations {
+        .inspirations {
+            @media screen and (max-width: $breakpoint-sm) {
+                display: none;
+            }
+        }
+
+        .swiper-container {
+            display: none;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                display: block;
             }
         }
     }
@@ -51,6 +120,23 @@
                 border-radius: 10px;
                 width: 795px;
                 height: 447px;
+
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 450px;
+                    height: 275px;
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 450px;
+                    height: 275px;
+                }
+
+                @media screen and (max-width: 425px) {
+                    width: 250px;
+                    height: 175px;
+
+                    margin-top: 7%;
+                }
             }
         }
     }
@@ -63,6 +149,14 @@
         h3 {
             font-family: var(--font-primary);
             font-weight: var(--fw-regular);
+
+            @media screen and (max-width: $breakpoint-lg) {
+                font-size: var(--font-size-liens);
+            }
+
+            @media screen and (max-width: 425px) {
+                font-size: var(--font-size-content-mobile);
+            }
 
             span {
                 color: var(--color-primary);
@@ -77,6 +171,19 @@
             font-size: var(--font-size-content-responsive);
             padding: 2% 0;
 
+            @media screen and (max-width: $breakpoint-lg) {
+                font-size: var(--font-size-content-mobile);
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 60%;
+            }
+
+            @media screen and (max-width: 425px) {
+                width: 80%;
+                font-size: var(--font-size-infocard);
+            }
+
             span {
                 color: var(--color-primary);
                 font-family: var(--font-primary);
@@ -86,25 +193,65 @@
             a {
                 span {
                     text-decoration: underline;
+
+                    @media screen and (max-width: $breakpoint-lg) {
+                        font-size: var(--font-size-content-responsive);
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        font-size: var(--font-size-infocard);
+                    }
                 }
             }
         }
         img {
             border-radius: 10px;
+
+            @media screen and (max-width: 425px) {
+                width: 90%;
+                margin-bottom: 10%;
+            }
         }
     }
 
     h1 {
         margin-right: 3%;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            font-size: var(--font-size-h3-responsive);
+        }
     }
     h2 {
         background-image: url(../../assets/images/singleNihilo/soustitre.png);
         background-repeat: no-repeat;
+        background-size: contain;
         height: 200px;
         margin: 5% 2% 0 2%;
         padding-top: 3.5%;
 
         text-align: center;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            font-size: var(--font-size-h1-mobile);
+
+            height: 125px;
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            height: 100px;
+            padding-top: 2.5%;
+            font-size: var(--font-size-h4-mobile);
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            background-image: none;
+            font-size: var(--font-size-content);
+        }
+
+        @media screen and (max-width: 425px) {
+            height: 60px;
+            font-size: var(--font-size-content-responsive);
+        }
     }
 
     .swiper-pagination-bullet {

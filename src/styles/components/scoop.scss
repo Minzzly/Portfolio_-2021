@@ -9,6 +9,10 @@
     }
     .inner {
         border: 20px solid var(--color-white);
+
+        @media screen and (max-width: 425px) {
+            border: 15px solid var(--color-white);
+        }
     }
     .inner i {
         width: 80px;
@@ -16,6 +20,10 @@
         border: 20px solid var(--color-white);
         border-radius: 50%;
         background-color: var(--color-background-primary);
+
+        @media screen and (max-width: 425px) {
+            border: 10px solid var(--color-white);
+        }
     }
     .inner .top {
         position: absolute;
