@@ -128,33 +128,93 @@
                                 </div>
                             </div>
                             <div class="inspirations">
-                                <img src="assets/images/singleTemple/inspiration1.png" alt="" />
-                                <img src="assets/images/singleTemple/inspiration2.png" alt="" />
-                                <img src="assets/images/singleTemple/inspiration3.png" alt="" />
-                                <img src="assets/images/singleTemple/inspiration4.png" alt="" />
-                                <img src="assets/images/singleTemple/inspiration5.png" alt="" />
+                                <img
+                                    src="assets/images/singleTemple/inspiration1.png"
+                                    alt=""
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-images"
+                                    data-modal-source="assets/images/singleTemple/inspiration1.png"
+                                />
+                                <img
+                                    src="assets/images/singleTemple/inspiration2.png"
+                                    alt=""
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-images"
+                                    data-modal-source="assets/images/singleTemple/inspiration2.png"
+                                />
+                                <img
+                                    src="assets/images/singleTemple/inspiration3.png"
+                                    alt=""
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-images"
+                                    data-modal-source="assets/images/singleTemple/inspiration3.png"
+                                />
+                                <img
+                                    src="assets/images/singleTemple/inspiration4.png"
+                                    alt=""
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-images"
+                                    data-modal-source="assets/images/singleTemple/inspiration4.png"
+                                />
+                                <img
+                                    src="assets/images/singleTemple/inspiration5.png"
+                                    alt=""
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-images"
+                                    data-modal-source="assets/images/singleTemple/inspiration5.png"
+                                />
                             </div>
 
                             <div class="swiper-container" data-component="Carousel" data-carousel="coverflow">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="assets/images/singleTemple/inspiration1.png" alt="" />
+                                        <img
+                                            src="assets/images/singleTemple/inspiration1.png"
+                                            alt=""
+                                            data-component="Modal"
+                                            data-modal-id="tpl-modal-images"
+                                            data-modal-source="assets/images/singleTemple/inspiration1.png"
+                                        />
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <img src="assets/images/singleTemple/inspiration2.png" alt="" />
+                                        <img
+                                            src="assets/images/singleTemple/inspiration2.png"
+                                            alt=""
+                                            data-component="Modal"
+                                            data-modal-id="tpl-modal-images"
+                                            data-modal-source="assets/images/singleTemple/inspiration2.png"
+                                        />
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <img src="assets/images/singleTemple/inspiration3.png" alt="" />
+                                        <img
+                                            src="assets/images/singleTemple/inspiration3.png"
+                                            alt=""
+                                            data-component="Modal"
+                                            data-modal-id="tpl-modal-images"
+                                            data-modal-source="assets/images/singleTemple/inspiration3.png"
+                                        />
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <img src="assets/images/singleTemple/inspiration4.png" alt="" />
+                                        <img
+                                            src="assets/images/singleTemple/inspiration4.png"
+                                            alt=""
+                                            data-component="Modal"
+                                            data-modal-id="tpl-modal-images"
+                                            data-modal-source="assets/images/singleTemple/inspiration4.png"
+                                        />
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <img src="assets/images/singleTemple/inspiration5.png" alt="" />
+                                        <img
+                                            src="assets/images/singleTemple/inspiration5.png"
+                                            alt=""
+                                            data-component="Modal"
+                                            data-modal-id="tpl-modal-images"
+                                            data-modal-source="assets/images/singleTemple/inspiration5.png"
+                                        />
                                     </div>
                                 </div>
                                 <div class="swiper-pagination"></div>
@@ -186,8 +246,20 @@
                                 </div>
                             </div>
                             <div class="inspirations"></div>
-                            <img src="assets/images/singleTemple/sketch1.png" alt="" />
-                            <img src="assets/images/singleTemple/sketch2.png" alt="" />
+                            <img
+                                src="assets/images/singleTemple/sketch1.png"
+                                alt=""
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/singleTemple/sketch1.png"
+                            />
+                            <img
+                                src="assets/images/singleTemple/sketch2.png"
+                                alt=""
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/singleTemple/sketch2.png"
+                            />
                         </div>
                         <i class="bottom right"></i>
                         <i class="bottom left"></i>
@@ -256,6 +328,18 @@
             <footer class="footer">
                 <p class="">AudreyLanglois©2021</p>
             </footer>
+
+            <template id="tpl-modal-images">
+                <div class="modal">
+                    <div class="modal_scrim"></div>
+                    <div class="modal_box" id="contentModal">
+                        <div class="modal_content">
+                            <img src="{{source}}" alt="Image d'un logo" />
+                        </div>
+                        <button class="modal__close js-close"></button>
+                    </div>
+                </div>
+            </template>
         </section>
     </body>
 </html>

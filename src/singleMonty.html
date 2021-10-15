@@ -75,7 +75,13 @@
                         <i class="top left"></i>
                         <i class="top right"></i>
                         <div class="content">
-                            <img src="assets/images/singleMonty/LogoMontysAardvark.png" alt="" />
+                            <img
+                                src="assets/images/singleMonty/LogoMontysAardvark.png"
+                                alt=""
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/singleMonty/LogoMontysAardvark.png"
+                            />
                             <div class="content__text">
                                 <h1>Monty's Aardvark</h1>
                                 <div class="description">
@@ -114,7 +120,13 @@
                                     </p>
                                 </div>
                             </div>
-                            <img src="assets/images/singleMonty/sketchMonty.jpg" alt="" />
+                            <img
+                                src="assets/images/singleMonty/sketchMonty.jpg"
+                                alt=""
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/singleMonty/sketchMonty.jpg"
+                            />
                         </div>
                         <i class="bottom right"></i>
                         <i class="bottom left"></i>
@@ -143,7 +155,13 @@
                                                 <span>pas parfait</span>, c’est-à-dire que les lettres n’était pas droit
                                                 et l’animal était trop petit.
                                             </p>
-                                            <img src="assets/images/singleMonty/Lineart.png" alt="" />
+                                            <img
+                                                src="assets/images/singleMonty/Lineart.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/singleMonty/Lineart.png"
+                                            />
                                         </div>
 
                                         <div class="swiper-slide">
@@ -155,7 +173,13 @@
                                                 avoir et c’est pour celà que je dois les <span>renommer</span> et les
                                                 <span>regrouper</span>.
                                             </p>
-                                            <img src="assets/images/singleMonty/calques.png" alt="" />
+                                            <img
+                                                src="assets/images/singleMonty/calques.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/singleMonty/calques.png"
+                                            />
                                         </div>
                                     </div>
                                     <div class="swiper-pagination"></div>
@@ -190,7 +214,13 @@
                                     </p>
                                 </div>
                             </div>
-                            <img src="assets/images/singleMonty/LogoMontysAardvark.png" alt="" />
+                            <img
+                                src="assets/images/singleMonty/LogoMontysAardvark.png"
+                                alt=""
+                                data-component="Modal"
+                                data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/singleMonty/LogoMontysAardvark.png"
+                            />
                         </div>
                         <i class="bottom right"></i>
                         <i class="bottom left"></i>
@@ -201,6 +231,18 @@
             <footer class="footer">
                 <p class="">AudreyLanglois©2021</p>
             </footer>
+
+            <template id="tpl-modal-images">
+                <div class="modal">
+                    <div class="modal_scrim"></div>
+                    <div class="modal_box" id="contentModal">
+                        <div class="modal_content">
+                            <img src="{{source}}" alt="Image d'un logo" />
+                        </div>
+                        <button class="modal__close js-close"></button>
+                    </div>
+                </div>
+            </template>
         </section>
     </body>
 </html>

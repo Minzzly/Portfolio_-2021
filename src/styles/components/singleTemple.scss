@@ -206,6 +206,7 @@
         }
         img {
             border-radius: 10px;
+            cursor: pointer;
 
             @media screen and (max-width: 425px) {
                 width: 90%;
