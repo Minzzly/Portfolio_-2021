@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Audrey Langlois - Portfolio</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Comfortaa:wght@400;700&family=Telex&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" type="image/jpg" href="./assets/images/Logo.png" />
+
+        <!--Imports a model-viewer JavaScript code -->
+        <!--It helps to handle how the 3D Object would be displayed -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header" data-component="Header">
+            <nav class="navPrincipal">
+                <div class="navPrincipal__logo">
+                    <img src="assets/images/decorations/DecoNav.png" alt="" />
+                    <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+                </div>
+                <ul class="navPrincipal__liste">
+                    <a href="apropos.html"><li>À propos</li></a>
+                    <li class="navPoint"></li>
+                    <a href="projets.html"><li>Projets</li></a>
+                    <li class="navPoint"></li>
+                    <a href="contact.html"><li>Contact</li></a>
+                    <li class="navPoint"></li>
+                    <a href="CV_Audrey_Langlois.pdf" target="blank"><li>Télécharger mon CV</li></a>
+                </ul>
+
+                <img class="navPrincipal__decorDroite" src="assets/images/decorations/DecoNav.png" alt="" />
+            </nav>
+
+            <nav class="navMobile">
+                <div class="hamburgerEtLogo wrapper">
+                    <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+                    <div class="menu-hamburger js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <nav class="mobileModal">
+                    <div class="wrapper">
+                        <ul class="navPrincipal__liste">
+                            <a href="apropos.html"><li>À propos</li></a>
+                            <li class="navPoint"></li>
+                            <a href="projets.html"><li>Projets</li></a>
+                            <li class="navPoint"></li>
+                            <a href="contact.html"><li>Contact</li></a>
+                            <li class="navPoint"></li>
+                            <a href="assets/CV_Audrey_Langlois.pdf" target="blank"><li>Télécharger mon CV</li></a>
+                        </ul>
+                    </div>
+                </nav>
+            </nav>
+        </header>
+
+        <section class="hollowknight">
+            <article class="hollow__hero">
+                <div class="outer">
+                    <div class="inner">
+                        <i class="top left"></i>
+                        <i class="top right"></i>
+                        <div class="content">
+                            <div
+                                class="video video--full wrapper"
+                                data-component="Video"
+                                data-video-id="4sFQ9LD0Li8"
+                                data-scrolly="FlipfromBottom"
+                            >
+                                <div class="video__media js-video">
+                                    <img
+                                        class="js-poster"
+                                        src="assets/images/hollowKnight/PosterHollow.png"
+                                        alt="Animation de Hollow Knight"
+                                    />
+                                    <svg class="icon icon--md">
+                                        <use xlink:href="#icon-play"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="content__text">
+                                <h1>Défi Fraternel</h1>
+                                <div class="description">
+                                    <p class="description__projet">Sur le projet:</p>
+                                    <p class="description__nom">
+                                        Une animation sur un de mes jeux préféré ; Hollow Knight. J'ai voulu créer des
+                                        personnage en 3D basé sur ceux du jeux de platforme 2D.
+                                    </p>
+
+                                    <p class="description__nom">
+                                        Personnages par:
+                                        <a href="https://www.teamcherry.com.au/">Team Cherry</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="bottom right"></i>
+                        <i class="bottom left"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="hollow__reference">
+                <div class="outer">
+                    <div class="inner">
+                        <i class="top left"></i>
+                        <i class="top right"></i>
+                        <div class="content">
+                            <div class="content__text">
+                                <h2>Étape 1: Références</h2>
+                                <div class="description">
+                                    <h3 class="soustitre__reference">Comment je commence mes projets:</h3>
+                                    <p class="description__nom">
+                                        Pour créer mon <span>environnement</span> le plus proche possible au jeu, j'ai
+                                        été chercher des <span>références </span> pour voir les
+                                        <span>mouvements</span> et les <span>formes</span> des personnages. Je n'ai pas
+                                        cherchée une ou deux images, j'ai été chercher un peu plus (juste un peu).
+                                    </p>
+                                </div>
+
+                                <div class="swiper-container" data-component="Carousel" data-carousel="coverflow">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="assets/images/hollowKnight/references/maxresdefault.jpg"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/references/maxresdefault.jpg"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="assets/images/hollowKnight/references/Nail_1_Old_Nail.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/references/Nail_1_Old_Nail.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="assets/images/hollowKnight/references/Screenshot 2020-11-18 210319.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/references/Screenshot 2020-11-18 210319.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="assets/images/hollowKnight/references/Screenshot 2020-11-18 210333.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/references/Screenshot 2020-11-18 210333.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="assets/images/hollowKnight/references/Screenshot 2020-11-18 210354.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/references/Screenshot 2020-11-18 210354.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="assets/images/hollowKnight/references/Screenshot 2020-11-18 210410.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/references/Screenshot 2020-11-18 210410.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="assets/images/hollowKnight/references/Screenshot 2020-11-18 210441.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/references/Screenshot 2020-11-18 210441.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="assets/images/hollowKnight/references/Screenshot 2020-11-18 210537.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/references/Screenshot 2020-11-18 210537.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="assets/images/hollowKnight/references/Screenshot 2020-11-18 210714.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/references/Screenshot 2020-11-18 210714.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="assets/images/hollowKnight/references/Screenshot 2020-11-18 210732.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/references/Screenshot 2020-11-18 210732.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="assets/images/hollowKnight/references/Screenshot 2020-11-23 214026.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/references/Screenshot 2020-11-23 214026.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img
+                                                src="assets/images/hollowKnight/references/Screenshot 2020-11-23 214043.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/references/Screenshot 2020-11-23 214043.png"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="bottom right"></i>
+                        <i class="bottom left"></i>
+                    </div>
+                </div>
+            </article>
+
+            <!-- <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video> -->
+
+            <article class="hollow__modelisation">
+                <div class="outer">
+                    <div class="inner">
+                        <i class="top left"></i>
+                        <i class="top right"></i>
+                        <div class="content">
+                            <div class="wrapper">
+                                <h2>Étape 2: modélisation</h2>
+
+                                <div class="swiper-container" data-component="Carousel" data-carousel="coverflow">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <h3>Le "Hollow Knight" :</h3>
+                                            <p class="description">
+                                                Ce n'était donc pas facile de faire la <span>forme du visage</span>. Je
+                                                n'ai pas réussi la première fois,car je n'avais pas tout a fait la bonne
+                                                forme et j'avais des problème de topologie. Par contre, la deuxième fois
+                                                es bien réussi d'après moi. Pour <span>le corps</span>, j'ai utilisé le
+                                                cylindre comme forme de base et je l'ai modifier.
+                                            </p>
+                                            <img
+                                                src="assets/images/hollowKnight/modelHollowKnight.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/modelHollowKnight.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide cloakHollow">
+                                            <h3>La cape du "Hollow Knight" :</h3>
+                                            <p class="description">
+                                                Pour animer la cape, j'ai voulu <span>expérimenter</span> sur la
+                                                <span>simulation</span> "Cloth" de Blender. Ce n'est bien sûr
+                                                <span>pas parfait</span>, car elle passe un peu à travers le personnage
+                                                durant l'animation. Mais je m'attend de
+                                                <span>comprendre davantage</span> mieux sur cette simulation pour
+                                                <span>perfectionner</span> la prochaine animation.
+                                            </p>
+                                            <img
+                                                src="assets/images/hollowKnight/effetClothWeightPaint.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/effetClothWeightPaint.png"
+                                            />
+                                            <img
+                                                src="assets/images/hollowKnight/effetCloth.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/effetCloth.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <h3>Le "Knight" :</h3>
+                                            <p class="description">
+                                                La <span>forme de l'héro</span> du jeu à été relativement
+                                                <span>facile</span> à faire et la cape à été fait de la même façon que
+                                                l'autre personnage. La <span>tête</span> a été
+                                                <span>un peu plus difficile</span> que le reste du corps. La forme a
+                                                l'air simple, mais j'ai eu un peu plus de difficulté que je croyais
+                                                avoir.
+                                            </p>
+
+                                            <img
+                                                src="assets/images/hollowKnight/modèleKnight.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/modèleKnight.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide cloakHollow">
+                                            <h3>La scène (intérieur):</h3>
+                                            <p class="description">
+                                                Pour <span>l'intérieur</span> de la scène, j'ai utilisée une image du
+                                                font fesant partie du jeu pour donné plus de
+                                                <span>profondeur dans la scène</span>. J'ai ensuite utilisé mes
+                                                <span>références</span> pour créer le <span>plancher</span>, les
+                                                <span>boulles d'infections</span> (les boulles oranges), les
+                                                <span>chaines</span> et le <span>plafond</span>.
+                                            </p>
+
+                                            <img
+                                                src="assets/images/hollowKnight/sceneSansTexture.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/sceneSansTexture.png"
+                                            />
+
+                                            <img
+                                                src="assets/images/hollowKnight/sceneCouleur.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/sceneCouleur.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <h3>La scène (extérieur):</h3>
+                                            <p class="description">
+                                                L'<span>extérieur </span>ressemble donc à cela, lorsque la scène a été
+                                                montée.
+                                            </p>
+
+                                            <img
+                                                src="assets/images/hollowKnight/sceneExterieur.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/sceneExterieur.png"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="bottom right"></i>
+                        <i class="bottom left"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="hollow__texture">
+                <div class="outer">
+                    <div class="inner">
+                        <i class="top left"></i>
+                        <i class="top right"></i>
+                        <div class="content">
+                            <div class="wrapper">
+                                <h2>Étape 3: Textures</h2>
+                                <h3>La scène (extérieur):</h3>
+                                <p class="description">
+                                    Comme expliqué plus tôt, j'ai utilisé une image faisant partie du jeu comme texture
+                                    sur le <span>mur</span> pour ajouter de la profondeur dans la scène. Pour les
+                                    <span>autres</span> modèles, j'ai utilisé les <span>couleurs</span> intégrées dans
+                                    le logiciel et j'ai <span>modifier les paramètre</span> pour faire différentes
+                                    textures.
+                                </p>
+                                <img
+                                    src="assets/images/hollowKnight/sceneCouleur.png"
+                                    alt=""
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-images"
+                                    data-modal-source="assets/images/hollowKnight/sceneCouleur.png"
+                                />
+                            </div>
+                        </div>
+                        <i class="bottom right"></i>
+                        <i class="bottom left"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="hollow__animation">
+                <div class="outer">
+                    <div class="inner">
+                        <i class="top left"></i>
+                        <i class="top right"></i>
+                        <div class="content">
+                            <div class="wrapper">
+                                <h2>Étape 4: Animation</h2>
+
+                                <div class="swiper-container" data-component="Carousel" data-carousel="coverflow">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <h3>Le rigging et les caméras:</h3>
+                                            <p class="description">
+                                                <span>Une des dernières étapes</span> du projet serait bien sûr de faire
+                                                <span>l'animation</span> en tant que telle. J'ai donc commencée par
+                                                donner un <span>skelette</span> à mes personnages et le placement des
+                                                <span>caméras </span>ainsi que leurs mouvements et les changements de
+                                                caméras. J'ai ensuite <span>animé les corps</span> des personnages et
+                                                pour terminer, j'ai fait des <span>rendus</span>.
+                                            </p>
+                                            <img
+                                                src="assets/images/hollowKnight/animationHollow.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/sceneCouleur.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <h3>Les tests de rendu:</h3>
+                                            <p class="description">
+                                                Je ne me suis donc pas décidé quel <span>mode de rendu</span> faire pour
+                                                mon animation. J'ai donc fait <span>des test</span> pour voir la
+                                                <span>différence entre les Cycles et Eevee.</span> J'ai donc conclu que
+                                                <span>Cycles</span> était mieux, à cause de la qualité que la
+                                                <span>lumière intéragit</span> avec mes <span>textures</span>. <br />
+                                                Voici donc les deux résultats que j'ai obtenu:
+                                            </p>
+                                            <p class="type_de_rendu">EEVEE</p>
+                                            <video controls>
+                                                <source
+                                                    src="assets/images/hollowKnight/Langlois_Audrey_HollowKnight0000-0410.mp4"
+                                                    type="video/mp4"
+                                                />
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <h3>Les tests de rendu:</h3>
+                                            <p class="description">
+                                                Je ne me suis donc pas décidé quel <span>mode de rendu</span> faire pour
+                                                mon animation. J'ai donc fait <span>des test</span> pour voir la
+                                                <span>différence entre les Cycles et Eevee.</span> J'ai donc conclu que
+                                                <span>Cycles</span> était mieux, à cause de la qualité que la
+                                                <span>lumière intéragit</span> avec mes <span>textures</span>. <br />
+                                                Voici donc les deux résultats que j'ai obtenu:
+                                            </p>
+                                            <p class="type_de_rendu">CYCLES</p>
+                                            <video controls>
+                                                <source
+                                                    src="assets/images/hollowKnight/Langlois_Audrey_HollowKnight.mp4"
+                                                    type="video/mp4"
+                                                />
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="bottom right"></i>
+                        <i class="bottom left"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="hollow__son">
+                <div class="outer">
+                    <div class="inner">
+                        <i class="top left"></i>
+                        <i class="top right"></i>
+                        <div class="content">
+                            <div class="wrapper">
+                                <h2>Étape 5: Les sons</h2>
+
+                                <div class="swiper-container" data-component="Carousel" data-carousel="coverflow">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <h3>L'étape la plus importante pour donner vie:</h3>
+                                            <p class="description">
+                                                Je trouve que le son donne une meilleur idées de ce qui se passe dans
+                                                l'animation et rend l'expérience <span>plus intéressante</span>. J'ai
+                                                donc utilisé une banque de son provenant de jeu sur
+                                                <a href="https://www.sounds-resource.com/pc_computer/hollowknight/"
+                                                    ><span>internet</span></a
+                                                >.
+                                            </p>
+                                            <img
+                                                src="assets/images/hollowKnight/banquesonsHollow.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/banquesonsHollow.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <h3>Le processus d'ajouter du son:</h3>
+                                            <p class="description">
+                                                J'ai commencée par <span>assembler tous les sons</span> obtenus dans mon
+                                                fichier <span>Audition</span> et les placer dans les endroit appropriés
+                                                pour créer les <span>bons effets</span>.
+                                            </p>
+                                            <img
+                                                src="assets/images/hollowKnight/screenshot__Audition.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/screenshot__Audition.png"
+                                            />
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <h3>Le processus d'édition de la vidéo:</h3>
+                                            <p class="description">
+                                                Ensuite, j'ai ajouté les <span>crédit</span> avec l'outils de texte et
+                                                je l'ai <span>synchronisé avec la musique</span>.
+                                            </p>
+                                            <img
+                                                src="assets/images/hollowKnight/screenshotPremierPro.png"
+                                                alt=""
+                                                data-component="Modal"
+                                                data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/hollowKnight/screenshotPremierPro.png"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="bottom right"></i>
+                        <i class="bottom left"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="hollow__final">
+                <div class="outer">
+                    <div class="inner">
+                        <i class="top left"></i>
+                        <i class="top right"></i>
+                        <div class="content">
+                            <h2>Étape 6: Produit Final</h2>
+                            <div
+                                class="video video--full wrapper"
+                                data-component="Video"
+                                data-video-id="4sFQ9LD0Li8"
+                                data-scrolly="FlipfromBottom"
+                            >
+                                <div class="video__media js-video">
+                                    <img
+                                        class="js-poster"
+                                        src="assets/images/hollowKnight/PosterHollow.png"
+                                        alt="Animation de Hollow Knight"
+                                    />
+                                    <svg class="icon icon--md">
+                                        <use xlink:href="#icon-play"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="bottom right"></i>
+                        <i class="bottom left"></i>
+                    </div>
+                </div>
+            </article>
+
+            <footer class="footer">
+                <p class="">AudreyLanglois©2021</p>
+            </footer>
+
+            <template id="tpl-modal-images">
+                <div class="modal">
+                    <div class="modal_scrim"></div>
+                    <div class="modal_box" id="contentModal">
+                        <div class="modal_content">
+                            <img src="{{source}}" alt="Image d'un logo" />
+                        </div>
+                        <button class="modal__close js-close"></button>
+                    </div>
+                </div>
+            </template>
+        </section>
+    </body>
+</html>
