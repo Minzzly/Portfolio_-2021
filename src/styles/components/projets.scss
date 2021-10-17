@@ -1,4 +1,6 @@
 .projets {
+    width: 100vw;
+
     h1 {
         text-align: center;
         margin-top: 10%;
@@ -17,52 +19,63 @@
         }
     }
     .card {
-        display: flex;
-        align-items: center;
-        width: 70%;
-        height: 460px;
-        margin-bottom: 10.5%;
-
-        color: var(--color-white);
-
         background-repeat: no-repeat;
+        background-position: center;
         background-size: contain;
+        width: 100%;
+        margin: 10.5% auto;
+        .card__contenu {
+            display: flex;
+            align-items: center;
+            width: 70%;
+            height: 460px;
 
-        @media screen and (max-width: $breakpoint-lg) {
-            height: 400px;
-            margin-bottom: 8%;
-        }
+            margin: auto;
+            display: flex;
+            justify-content: center;
 
-        @media screen and (max-width: $breakpoint-md) {
-            height: 290px;
-            margin-bottom: 5%;
-        }
+            color: var(--color-white);
 
-        @media screen and (max-width: 950px) {
-            height: 250px;
-            margin-bottom: 5%;
-        }
+            @media screen and (min-width: 1921px) {
+                height: 525px;
+            }
 
-        @media screen and (max-width: 800px) {
-            height: 225px;
-            margin-bottom: 4%;
-        }
-        @media screen and (max-width: $breakpoint-sm) {
-            height: 210px;
-        }
+            @media screen and (max-width: $breakpoint-lg) {
+                height: 400px;
+                margin-bottom: 8%;
+            }
 
-        @media screen and (max-width: 700px) {
-            height: 200px;
-        }
+            @media screen and (max-width: $breakpoint-md) {
+                height: 290px;
+                margin-bottom: 5%;
+            }
 
-        @media screen and (max-width: 425px) {
-            height: 140px;
-            width: 90%;
+            @media screen and (max-width: 950px) {
+                height: 250px;
+                margin-bottom: 5%;
+            }
+
+            @media screen and (max-width: 800px) {
+                height: 225px;
+                margin-bottom: 4%;
+            }
+            @media screen and (max-width: $breakpoint-sm) {
+                height: 210px;
+            }
+
+            @media screen and (max-width: 700px) {
+                height: 200px;
+            }
+
+            @media screen and (max-width: 425px) {
+                height: 140px;
+                width: 90%;
+            }
         }
 
         img {
             border-radius: 10px;
-            width: 30%;
+            width: 40%;
             height: 70%;
             object-fit: cover;
 
@@ -73,7 +86,10 @@
 
         &:nth-child(odd) {
             img {
-                margin-right: 17%;
+                margin-right: 10%;
+                @media screen and (min-width: 1921px) {
+                    margin-right: 13%;
+                }
 
                 @media screen and (max-width: $breakpoint-lg) {
                     margin-right: 5%;
@@ -86,9 +102,7 @@
             }
             .card__texte {
                 .button {
-                    @media screen and (max-width: 425px) {
-                        margin-left: -40%;
-                    }
+                    margin-left: -40%;
                 }
             }
 
@@ -97,10 +111,12 @@
             }
         }
         &:nth-child(even) {
-            margin-left: auto;
-
             img {
-                margin-left: 4%;
+                margin-left: -8%;
+
+                @media screen and (min-width: 1921px) {
+                    margin-left: -2%;
+                }
             }
 
             @media screen and (max-width: $breakpoint-sm) {
@@ -112,7 +128,7 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
-            width: 40%;
+            width: 30%;
             p {
                 margin: 0;
             }
