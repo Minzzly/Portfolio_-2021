@@ -83,27 +83,40 @@
     }
 
     //--------------------------SECTION REFERENCE---------------------------------------------------
-    .hollow__referencesGrid {
-        display: flex;
-        flex-wrap: wrap;
+    .hollow__references {
+        .content {
+            .hollow__referencesGrid {
+                display: flex;
+                flex-wrap: wrap;
 
-        width: 70%;
-        margin: auto;
+                width: 70%;
+                margin: auto;
 
-        padding-bottom: 2%;
-        img {
-            width: 25%;
-            height: 200px;
-            object-fit: cover;
+                padding-bottom: 2%;
+                @media screen and (max-width: 425px) {
+                    padding-bottom: 5%;
+                }
+                img {
+                    width: 25%;
+                    height: 200px;
+                    object-fit: cover;
 
-            border-radius: 0 !important;
+                    border-radius: 0;
 
-            @media screen and (max-width: $breakpoint-sm) {
-                height: 2000px;
-            }
+                    @media screen and (max-width: $breakpoint-md) {
+                        height: 150px;
+                    }
 
-            @media screen and (max-width: $breakpoint-md) {
-                height: 200px;
+                    @media screen and (max-width: $breakpoint-sm) {
+                        height: 100px;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        width: 25%;
+                        margin: 0;
+                        height: 50px;
+                    }
+                }
             }
         }
     }
@@ -300,5 +313,9 @@
 
         height: 12px;
         width: 12px;
+        @media screen and (max-width: 425px) {
+            height: 8px;
+            width: 8px;
+        }
     }
 }
