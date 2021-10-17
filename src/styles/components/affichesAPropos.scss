@@ -60,6 +60,10 @@
                     @media screen and (max-width: $breakpoint-sm) {
                         display: none;
                     }
+
+                    @media screen and (min-width: 1921px) {
+                        width: 95%;
+                    }
                 }
 
                 .photoPortfolio--responsive {
@@ -338,11 +342,13 @@
                 align-items: flex-start;
                 padding-top: 6%;
             }
-
-            @media screen and (max-width: $breakpoint-xs) {
+            @media screen and (max-width: 425px) {
                 height: 100vh;
+            }
+            @media screen and (max-width: $breakpoint-xs) {
                 width: 100vw;
             }
+
             .contenuPeuxFaire {
                 padding-top: 3%;
 
@@ -350,7 +356,7 @@
                     padding: 0;
                 }
                 @media screen and (max-width: 425px) {
-                    margin-top: 2vh;
+                    margin-top: 3vh;
                 }
 
                 @media screen and (max-width: $breakpoint-xs) {
@@ -631,8 +637,8 @@
         }
         .sticker {
             position: absolute;
-            bottom: -11%;
-            right: -10%;
+            bottom: -25%;
+            right: -5%;
             height: 350px;
 
             display: flex;
@@ -645,6 +651,10 @@
             justify-content: flex-end;
             align-items: center;
 
+            @media screen and (min-width: 1921px) {
+                bottom: -15%;
+            }
+
             @media screen and (max-width: $breakpoint-lg) {
                 width: 30%;
                 height: 30%;
@@ -654,31 +664,7 @@
             }
 
             @media screen and (max-width: $breakpoint-md) {
-                width: 25%;
-                height: 25%;
-
-                bottom: 3%;
-                right: 0;
-            }
-
-            @media screen and (max-width: $breakpoint-sm) {
-                width: 40%;
-                height: 40%;
-
-                bottom: 0;
-                right: 5%;
-            }
-
-            @media screen and (max-width: 425px) {
-                width: 50%;
-                height: 50%;
-
-                bottom: -19%;
-                right: 0;
-            }
-
-            @media screen and (max-width: $breakpoint-xs) {
-                bottom: -13%;
+                display: none;
             }
 
             p {
@@ -748,10 +734,18 @@
                 margin-top: 10%;
             }
 
+            @media screen and (max-width: 425px) {
+                height: 100vh;
+            }
+
             .contenu__passion {
                 margin-top: 5vh;
                 @media screen and (max-width: $breakpoint-sm) {
                     margin-top: 13%;
+                }
+
+                @media screen and (max-width: 425px) {
+                    margin-top: 30%;
                 }
 
                 @media screen and (max-width: $breakpoint-xs) {

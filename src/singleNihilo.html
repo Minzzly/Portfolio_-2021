@@ -94,10 +94,20 @@
                             <div class="content__text">
                                 <h1>Ex Nihilo</h1>
                                 <div class="description">
-                                    <p class="description__projet">Un projet d'animation par:</p>
-                                    <p class="description__nom">Audrey Langlois</p>
-                                    <p class="description__nom">Jean-Marie Gariépy</p>
-                                    <p class="description__nom">Roméo Girard</p>
+                                    <p class="description__projet">Un projet d'animation par :</p>
+                                    <p class="description__nom">
+                                        <a href="https://audreylanglois.ca/">Audrey Langlois</a>,
+                                        <a href="https://jmgariepy.ca/">Jean-Marie Gariépy</a> et
+                                        <a href="https://romeogirard.com/">Roméo Girard</a>
+                                    </p>
+
+                                    <p class="description__projet">Description du projet :</p>
+                                    <p class="description__nom">
+                                        Un projet d'animation dont je me suis occupé à créer l'environnement complète
+                                        <br />des deux scènes, à l'exception de l'horloge. J'ai ensuite fait une partie
+                                        de <br />l'animation pour ensuite créer le résultat final (à voir tous les
+                                        crédits à la fin de l'animation).
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -386,12 +396,11 @@
 
             <template id="tpl-modal-images">
                 <div class="modal">
-                    <div class="modal_scrim"></div>
+                    <div class="modal_scrim js-close"></div>
                     <div class="modal_box" id="contentModal">
                         <div class="modal_content">
                             <img src="{{source}}" alt="Image d'un logo" />
                         </div>
-                        <button class="modal__close js-close"></button>
                     </div>
                 </div>
             </template>
