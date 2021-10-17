@@ -82,15 +82,24 @@
         }
     }
 
-    //--------------------------SECTION STORYBOARD---------------------------------------------------
-    .hollow__reference {
+    //--------------------------SECTION REFERENCE---------------------------------------------------
+    .hollow__referencesGrid {
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 70%;
+        margin: auto;
+
+        padding-bottom: 2%;
         img {
-            margin-bottom: 5%;
-            height: 500px;
+            width: 25%;
+            height: 200px;
             object-fit: cover;
 
-            @media screen and (max-width: $breakpoint-md) {
-                width: 75%;
+            border-radius: 0 !important;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                height: 2000px;
             }
 
             @media screen and (max-width: $breakpoint-md) {
@@ -99,7 +108,7 @@
         }
     }
 
-    //-------------------------SECTION MOODBOARD------------------------------------------------------
+    //-------------------------SECTION MODELISATION------------------------------------------------------
     .hollow__modelisation {
         .cloakHollow {
             img {
@@ -119,7 +128,8 @@
             }
         }
     }
-    //-------------------------SECTION MODELISATION---------------------------------------------------
+
+    //-------------------------SECTION TEXTURE, ANIMATION, SON---------------------------------------------------
     .hollow__texture,
     .hollow__animation,
     .hollow__son {
