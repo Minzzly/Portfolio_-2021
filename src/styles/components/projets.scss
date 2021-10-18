@@ -117,6 +117,11 @@
                 @media screen and (min-width: 1921px) {
                     margin-left: -2%;
                 }
+
+                @media screen and (max-width: 425px) {
+                    margin-left: -10%;
+                    width: 30%;
+                }
             }
 
             @media screen and (max-width: $breakpoint-sm) {
@@ -129,6 +134,9 @@
             justify-content: center;
             flex-direction: column;
             width: 30%;
+            @media screen and (max-width: 425px) {
+                width: 40%;
+            }
             p {
                 margin: 0;
             }
