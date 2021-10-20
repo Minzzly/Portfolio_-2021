@@ -19,14 +19,79 @@
         width: 100vw;
     }
 
-    @media screen and (max-width: 550px) {
-        background-image: url(../../assets/images/aPropos/affiche3_responsive.png);
-        width: 60vw;
-    }
-
-    @media screen and (max-width: $breakpoint-xs) {
+    @media screen and (max-width: 425px) {
         background-image: url(../../assets/images/aPropos/affiche3_responsive.png);
         width: 80vw;
+    }
+
+    a {
+        position: relative;
+
+        .bouttonVideo {
+            cursor: pointer;
+            margin: var(--spacing-md) 0;
+            background-color: var(--color-quaterny);
+            border: dashed 5px var(--color-primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            font-family: var(--font-secondary);
+            color: var(--color-white);
+            text-transform: uppercase;
+            padding: 22px 43px 22px 31px;
+
+            transition: all 0.5s $ease-out-expo;
+
+            @media screen and (max-width: $breakpoint-lg) {
+               margin:5% 0;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                font-size:var(--font-size-content-responsive);
+             }
+
+
+             @media screen and (max-width: $breakpoint-sm) {
+                padding:10px 20px;
+             }
+
+             @media screen and (max-width: 425px) {
+                font-size:var(--font-size-content-mobile);
+             }
+            
+            &:hover {
+                background-color: var(--color-primary);
+                border-color: var(--color-quaterny);
+                box-shadow: inset 0 5px 10px
+                    var(--color-background-septenary);
+
+                img {
+                    left: 92%;
+                }
+            }
+
+            img {
+                transition: all 0.5s $ease-out-expo;
+                position: absolute;
+                top: 21%;
+                left: 90%;
+                
+                @media screen and (max-width: $breakpoint-lg) {
+                    top:15%;
+                 }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 30%;
+                }
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 25%;
+                    top:10%;
+                }
+            }
+
+            
+        }
     }
 
     .contenuContact {
@@ -48,6 +113,10 @@
         .informations {
             text-align: center;
             width: 100%;
+
+            @media screen and (max-width: $breakpoint-lg) {
+               margin-top:5%; 
+            }
             .titre {
                 padding-bottom: 5%;
 

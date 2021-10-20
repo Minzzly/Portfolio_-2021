@@ -1,0 +1,21 @@
+.has-js {
+    [data-scrolly='FlipfromTop'] {
+        opacity: 0;
+        transition: all 0.5s ease-out;
+        transform: translateY(-100%);
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='FlipfromBottom'] {
+        opacity: 0;
+        transition: all 0.5s ease-out;
+        transform: translateY(100%);
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

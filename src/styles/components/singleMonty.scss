@@ -202,6 +202,10 @@
             height: 60px;
             font-size: var(--font-size-content-responsive);
         }
+
+        @media screen and (max-width: $breakpoint-xs) {
+            padding-top:10%;
+        }
     }
 
     .swiper-pagination-bullet {
