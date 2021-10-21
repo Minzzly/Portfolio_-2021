@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
+    <title>Audrey Langlois | 404 | Portfolio</title>
+
+    <link rel="stylesheet" href="/styles/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Comfortaa:wght@400;700&family=Telex&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="/src/assets/images/Logo.png"
+    />
+
+    <script src="/scripts/main.js" defer></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LHCS1SRPG0"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-LHCS1SRPG0");
+    </script>
+  </head>
+
+  <body class="page-erreur">
+    <section class="erreur" data-component="Scrolly">
+      <article class="erreur__contenu" data-scrolly="FlipfromTop">
+        <h1>404</h1>
+        <p>
+          Uh oh! Vous n’êtes pas sensé être ici. <br />
+          Vite! Retournez à la page d’accueil!
+        </p>
+        <a href="index.html">
+          <button class="erreur__boutton">
+            Revenir à la page d'accueil<img
+              src="assets/images/decorations/BouttonAccueil.png"
+              alt=""
+            />
+          </button>
+        </a>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p class="">AudreyLanglois©2021</p>
+    </footer>
+  </body>
+</html>

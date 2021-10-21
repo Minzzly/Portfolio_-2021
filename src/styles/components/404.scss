@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media screen and (max-width: $breakpoint-lg) {
+    @media screen and (max-width: $breakpoint-md) {
         background-size: contain;
     }
 
@@ -20,9 +20,36 @@
 
         h1 {
             font-size: 17.38rem;
+            @media screen and (max-width: $breakpoint-md) {
+                font-size: 15rem;
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                font-size: 10rem;
+            }
+
+            @media screen and (max-width: 425px) {
+                font-size: 8rem;
+            }
+
+            @media screen and (max-width: $breakpoint-xs) {
+                font-size: 6rem;
+            }
         }
         p {
             font-size: var(--font-size-h2-responsive);
+
+            @media screen and (max-width: $breakpoint-md) {
+                font-size: var(--font-size-h3-responsive);
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+                font-size: var(--font-size-h1-mobile);
+            }
+
+            @media screen and (max-width: 425px) {
+                font-size: var(--font-size-h2-mobile);
+            }
         }
 
         a {
@@ -75,10 +102,6 @@
                     top: -10%;
                     left: 90%;
 
-                    // @media screen and (max-width: $breakpoint-lg) {
-                    //     top: -10%;
-                    // }
-
                     @media screen and (max-width: $breakpoint-md) {
                         width: 30%;
                         top: -25%;
@@ -86,7 +109,6 @@
 
                     @media screen and (max-width: $breakpoint-sm) {
                         width: 25%;
-                        // top: 10%;
                     }
                 }
             }
