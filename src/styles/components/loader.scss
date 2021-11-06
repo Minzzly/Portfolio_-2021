@@ -1,0 +1,39 @@
+//////////////////////
+.loader-wrapper{
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: var(--color-background-primary);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 1s $ease-out-expo;
+
+    .loader-42 {
+	width: 2em;
+	height: .66em;
+	border: .05em currentcolor solid;
+	border-radius: .1em;
+	background: linear-gradient(-60deg, transparent 0%, transparent 50%, currentcolor 50%, currentcolor 75%, transparent 75%, transparent);
+	background-size: 1em 2em;
+	background-position: 0 0;
+	animation: loader-42 0.8s infinite linear;
+}
+@keyframes loader-42 {
+	from { background-position: 0 0; }
+	to { background-position: -2em 0; }
+}
+
+.loaderFade &{
+    transition: all 1s $ease-out-expo;
+    opacity: 0;
+}
+}
+
+
+
+
+//////////////////////

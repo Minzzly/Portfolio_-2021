@@ -41,7 +41,7 @@
             }
 
             @media screen and (max-width: $breakpoint-lg) {
-                height: 400px;
+                height: 450px;
                 margin-bottom: 8%;
             }
 
@@ -79,9 +79,6 @@
             height: 70%;
             object-fit: cover;
 
-            @media screen and (max-width: $breakpoint-lg) {
-                width: 40%;
-            }
         }
 
         &:nth-child(odd) {
@@ -92,6 +89,10 @@
                 }
 
                 @media screen and (max-width: $breakpoint-lg) {
+                    margin-right: 0;
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
                     margin-right: 5%;
                 }
 
@@ -103,7 +104,15 @@
             .card__texte {
                 .button {
                     margin-left: -40%;
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        margin-left: 0;
+                    }
+                    @media screen and (max-width: 425px) {
+                        margin-left: -30%;
+                    }
                 }
+
             }
 
             @media screen and (max-width: $breakpoint-sm) {
@@ -116,6 +125,14 @@
 
                 @media screen and (min-width: 1921px) {
                     margin-left: -2%;
+                }
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    margin-left: -15%;
+                }
+
+                @media screen and (max-width: $breakpoint-md) {
+                    margin-left: -5%;
                 }
 
                 @media screen and (max-width: 425px) {
@@ -134,6 +151,11 @@
             justify-content: center;
             flex-direction: column;
             width: 30%;
+
+            @media screen and (max-width: $breakpoint-lg) {
+                width:45%;
+            }
+
             @media screen and (max-width: 425px) {
                 width: 40%;
             }
@@ -218,6 +240,10 @@
                 @media screen and (max-width: 425px) {
                     padding: 10px 10px;
                     width: 25vw;
+                }
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    font-size: smaller;
                 }
 
                 &:hover {

@@ -1,315 +1,316 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Audrey Langlois | FaitEnUn | Projets | Portfolio</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Comfortaa:wght@400;700&family=Telex&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="shortcut icon" type="image/jpg" href="./assets/images/Logo.png" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audrey Langlois | FaitEnUn | Projets | Portfolio</title>
 
-        <!--Imports a model-viewer JavaScript code -->
-        <!--It helps to handle how the 3D Object would be displayed -->
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Comfortaa:wght@400;700&family=Telex&display=swap"
+        rel="stylesheet" />
+    <link rel="shortcut icon" type="image/jpg" href="./assets/images/Logo.png" />
 
-        <link rel="stylesheet" href="styles/main.css" />
-        <script src="scripts/main.js" defer></script>
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHCS1SRPG0"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
 
-            gtag("config", "G-LHCS1SRPG0");
-        </script>
-    </head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHCS1SRPG0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-    <body>
-        <header class="header" data-component="Header">
-            <nav class="navPrincipal">
-                <div class="navPrincipal__logo">
-                    <img src="assets/images/decorations/DecoNav.png" alt="" />
-                    <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+        gtag("config", "G-LHCS1SRPG0");
+    </script>
+</head>
+
+<body>
+    <header class="header" data-component="Header">
+        <nav class="navPrincipal">
+            <div class="navPrincipal__logo">
+                <img src="assets/images/decorations/DecoNav.png" alt="" />
+                <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+            </div>
+            <ul class="navPrincipal__liste">
+                <a href="apropos.html">
+                    <li>À propos</li>
+                </a>
+                <li class="navPoint"></li>
+                <a href="projets.html">
+                    <li>Projets</li>
+                </a>
+                <li class="navPoint"></li>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+                <li class="navPoint"></li>
+                <a href="https://youtu.be/0DNykAPC0gw">
+                    <li>Voir ma Vidéo</li>
+                </a>
+            </ul>
+
+            <img class="navPrincipal__decorDroite" src="assets/images/decorations/DecoNav.png" alt="" />
+        </nav>
+
+        <nav class="navMobile">
+            <div class="hamburgerEtLogo wrapper">
+                <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+                <div class="menu-hamburger js-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <ul class="navPrincipal__liste">
-                    <a href="apropos.html"><li>À propos</li></a>
-                    <li class="navPoint"></li>
-                    <a href="projets.html"><li>Projets</li></a>
-                    <li class="navPoint"></li>
-                    <a href="contact.html"><li>Contact</li></a>
-                    <li class="navPoint"></li>
-                    <a href="https://youtu.be/0DNykAPC0gw"><li>Voir ma Vidéo</li></a>
-                </ul>
+            </div>
 
-                <img class="navPrincipal__decorDroite" src="assets/images/decorations/DecoNav.png" alt="" />
+            <nav class="mobileModal">
+                <div class="wrapper">
+                    <ul class="navPrincipal__liste">
+                        <a href="apropos.html">
+                            <li>À propos</li>
+                        </a>
+                        <li class="navPoint"></li>
+                        <a href="projets.html">
+                            <li>Projets</li>
+                        </a>
+                        <li class="navPoint"></li>
+                        <a href="contact.html">
+                            <li>Contact</li>
+                        </a>
+                        <li class="navPoint"></li>
+                        <a href="https://youtu.be/0DNykAPC0gw">
+                            <li>Voir ma Vidéo</li>
+                        </a>
+                    </ul>
+                </div>
             </nav>
+        </nav>
+    </header>
 
-            <nav class="navMobile">
-                <div class="hamburgerEtLogo wrapper">
-                    <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
-                    <div class="menu-hamburger js-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-
-                <nav class="mobileModal">
-                    <div class="wrapper">
-                        <ul class="navPrincipal__liste">
-                            <a href="apropos.html"><li>À propos</li></a>
-                            <li class="navPoint"></li>
-                            <a href="projets.html"><li>Projets</li></a>
-                            <li class="navPoint"></li>
-                            <a href="contact.html"><li>Contact</li></a>
-                            <li class="navPoint"></li>
-                            <a href="https://youtu.be/0DNykAPC0gw"><li>Voir ma Vidéo</li></a>
-                        </ul>
-                    </div>
-                </nav>
-            </nav>
-        </header>
-
-        <section class="FaitEnUn">
-            <article class="FaitEnUn__hero">
-                <div class="outer">
-                    <div class="inner">
-                        <i class="top left"></i>
-                        <i class="top right"></i>
-                        <div class="content">
-                            <img
-                                src="assets/images/singleFaitEnUn/heroFaitEnUn.png"
-                                alt=""
-                                data-component="Modal"
-                                data-modal-id="tpl-modal-images"
-                                data-modal-source="assets/images/singleFaitEnUn/heroFaitEnUn.png"
-                            />
-                            <div class="content__text">
-                                <h1>FaitEnUn</h1>
-                                <div class="description">
-                                    <p class="description__projet">
-                                        Un projet personnel en équipe avec: <br />
-                                        <a href="https://jmgariepy.ca/">Jean-Marie Gariépy</a>
-                                    </p>
-
-                                    <p class="description__projet">Description du projet :</p>
-                                    <p class="description__nom">
-                                        Une affiche créée pour une compétition, organisée par Jean-Marie, qui développe
-                                        les compétences artistiques des étudiants de la technique d'intégration
-                                        multimédia. Pourquoi le nommer FaitEnUn? Parce que les candidatures sont faites
-                                        en un mois ;).
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <i class="bottom right"></i>
-                        <i class="bottom left"></i>
-                    </div>
-                </div>
-            </article>
-
-            <article class="FaitEnUn__sketch">
-                <div class="outer">
-                    <div class="inner">
-                        <i class="top left"></i>
-                        <i class="top right"></i>
-                        <div class="content">
-                            <div class="wrapper">
-                                <h2>
-                                    Étape 1: sketch et <br />
-                                    inspirations
-                                </h2>
-
-                                <h3>Le début:</h3>
-                                <p class="description">
-                                    La façon dont je me suis rendu là n’a pas commencé du tout avec l’idée de
-                                    transformer mon professeur en un personnage emblématique. Au début, je voulais créer
-                                    une oeuvre avec la maquette de la compétition avec un personnage qui montre qu’il
-                                    est fort.
+    <section class="FaitEnUn">
+        <article class="FaitEnUn__hero">
+            <div class="outer">
+                <div class="inner">
+                    <i class="top left"></i>
+                    <i class="top right"></i>
+                    <div class="content">
+                        <img src="assets/images/singleFaitEnUn/heroFaitEnUn.png" alt="" data-component="Modal"
+                            data-modal-id="tpl-modal-images"
+                            data-modal-source="assets/images/singleFaitEnUn/heroFaitEnUn.png" />
+                        <div class="content__text">
+                            <h1>FaitEnUn</h1>
+                            <div class="description">
+                                <p class="description__projet">
+                                    Un projet personnel en équipe avec: <br />
+                                    <a href="https://jmgariepy.ca/">Jean-Marie Gariépy</a>
                                 </p>
-                                <div class="swiper-container" data-component="Carousel" data-carousel="coverflow">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img
-                                                src="assets/images/singleFaitEnUn/SketchDonato.png"
-                                                alt=""
-                                                data-component="Modal"
-                                                data-modal-id="tpl-modal-images"
-                                                data-modal-source="assets/images/singleFaitEnUn/SketchDonato.png"
-                                            />
-                                        </div>
 
-                                        <div class="swiper-slide">
-                                            <img
-                                                src="assets/images/singleFaitEnUn/FaitEnUn-maquette-V2-4.png"
-                                                alt=""
-                                                data-component="Modal"
-                                                data-modal-id="tpl-modal-images"
-                                                data-modal-source="assets/images/singleFaitEnUn/FaitEnUn-maquette-V2-4.png"
-                                            />
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <img
-                                                src="assets/images/singleFaitEnUn/sketchDebut.png"
-                                                alt=""
-                                                data-component="Modal"
-                                                data-modal-id="tpl-modal-images"
-                                                data-modal-source="assets/images/singleFaitEnUn/sketchDebut.png"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-                                </div>
+                                <p class="description__projet">Description du projet :</p>
+                                <p class="description__nom">
+                                    Une affiche créée pour une compétition, organisée par Jean-Marie, qui développe
+                                    les compétences artistiques des étudiants de la technique d'intégration
+                                    multimédia. Pourquoi le nommer FaitEnUn? Parce que les candidatures sont faites
+                                    en un mois ;).
+                                </p>
                             </div>
                         </div>
-                        <i class="bottom right"></i>
-                        <i class="bottom left"></i>
                     </div>
+                    <i class="bottom right"></i>
+                    <i class="bottom left"></i>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <article class="FaitEnUn__couleurs">
-                <div class="outer">
-                    <div class="inner">
-                        <i class="top left"></i>
-                        <i class="top right"></i>
-                        <div class="content">
-                            <div class="content__text">
-                                <h2>Étape 2: Couleurs</h2>
-                                <div class="swiper-container" data-component="Carousel" data-carousel="coverflow">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="description__palettes">
-                                                <h3 class="soustitre__palettes">Une palette de couleur:</h3>
-                                                <p class="description__nom">
-                                                    Pour m’aider à trouver les couleurs pour l’affiche, j’ai utilisé le
-                                                    site
-                                                    <a href="https://coolors.co/"><span>Coolors</span></a
-                                                    >. Ensuite, j’avais ma base pour mettre la vie dans mon oeuvre.
-                                                </p>
-                                                <div class="pallettes">
-                                                    <div class="pallette mauve"><p>#540D6E</p></div>
-                                                    <div class="pallette jaune"><p>#FFD23F</p></div>
-                                                    <div class="pallette vert"><p>#3BCEAC</p></div>
-                                                    <div class="pallette bleu"><p>#2E86AB</p></div>
-                                                    <div class="pallette beige"><p>#D8B094</p></div>
+        <article class="FaitEnUn__sketch">
+            <div class="outer">
+                <div class="inner">
+                    <i class="top left"></i>
+                    <i class="top right"></i>
+                    <div class="content">
+                        <div class="wrapper">
+                            <h2>
+                                Étape 1: sketch et <br />
+                                inspirations
+                            </h2>
+
+                            <h3>Le début:</h3>
+                            <p class="description">
+                                La façon dont je me suis rendu là n’a pas commencé du tout avec l’idée de
+                                transformer mon professeur en un personnage emblématique. Au début, je voulais créer
+                                une oeuvre avec la maquette de la compétition avec un personnage qui montre qu’il
+                                est fort.
+                            </p>
+                            <div class="swiper-container" data-component="Carousel" data-carousel="coverflow">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/singleFaitEnUn/SketchDonato.png" alt=""
+                                            data-component="Modal" data-modal-id="tpl-modal-images"
+                                            data-modal-source="assets/images/singleFaitEnUn/SketchDonato.png" />
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/singleFaitEnUn/FaitEnUn-maquette-V2-4.png" alt=""
+                                            data-component="Modal" data-modal-id="tpl-modal-images"
+                                            data-modal-source="assets/images/singleFaitEnUn/FaitEnUn-maquette-V2-4.png" />
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/singleFaitEnUn/sketchDebut.png" alt=""
+                                            data-component="Modal" data-modal-id="tpl-modal-images"
+                                            data-modal-source="assets/images/singleFaitEnUn/sketchDebut.png" />
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="bottom right"></i>
+                    <i class="bottom left"></i>
+                </div>
+            </div>
+        </article>
+
+        <article class="FaitEnUn__couleurs">
+            <div class="outer">
+                <div class="inner">
+                    <i class="top left"></i>
+                    <i class="top right"></i>
+                    <div class="content">
+                        <div class="content__text">
+                            <h2>Étape 2: Couleurs</h2>
+                            <div class="swiper-container" data-component="Carousel" data-carousel="coverflow">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="description__palettes">
+                                            <h3 class="soustitre__palettes">Une palette de couleur:</h3>
+                                            <p class="description__nom">
+                                                Pour m’aider à trouver les couleurs pour l’affiche, j’ai utilisé le
+                                                site
+                                                <a href="https://coolors.co/"><span>Coolors</span></a>. Ensuite, j’avais
+                                                ma base pour mettre la vie dans mon oeuvre.
+                                            </p>
+                                            <div class="pallettes">
+                                                <div class="pallette mauve">
+                                                    <p>#540D6E</p>
+                                                </div>
+                                                <div class="pallette jaune">
+                                                    <p>#FFD23F</p>
+                                                </div>
+                                                <div class="pallette vert">
+                                                    <p>#3BCEAC</p>
+                                                </div>
+                                                <div class="pallette bleu">
+                                                    <p>#2E86AB</p>
+                                                </div>
+                                                <div class="pallette beige">
+                                                    <p>#D8B094</p>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div class="swiper-slide">
-                                            <div class="description__couleurs">
-                                                <h3 class="soustitre__palettes">On mets de la vie!</h3>
-                                                <p class="description__nom">
-                                                    J’ai donc commencé mon aventure avec la <span>couleur</span>. J’ai
-                                                    commencer par <span>pratiquer</span> le style de l’affiche original
-                                                    sur le chapeau et je suis allé travailler sur le reste du
-                                                    personnage. Ce n’était pas facile de recréer le
-                                                    <span>style</span> d’un oeuvre fait avec de la vraie<span>
-                                                        peinture</span
-                                                    >, mais je suis très contente du résultat.
-                                                </p>
-                                                <img
-                                                    src="assets/images/singleFaitEnUn/produit final.png"
-                                                    alt=""
-                                                    data-component="Modal"
-                                                    data-modal-id="tpl-modal-images"
-                                                    data-modal-source="assets/images/singleFaitEnUn/produit final.png"
-                                                />
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide">
-                                            <div class="description__couleurs">
-                                                <h3 class="soustitre__palettes">Organiser, organiser et organiser!</h3>
-                                                <p class="description__nom">
-                                                    Ce n’est pas une surprise pour le monde qui me connait que j’<span
-                                                        >organise</span
-                                                    >
-                                                    mes calques lorsque je travaille. Tout est <span>renommé</span> et
-                                                    placé dans un <span>dossier</span> pour ne pas que je me perde
-                                                    pendant que je travaille.
-                                                </p>
-                                                <img
-                                                    src="assets/images/singleFaitEnUn/organisationCalques.png"
-                                                    alt=""
-                                                    data-component="Modal"
-                                                    data-modal-id="tpl-modal-images"
-                                                    data-modal-source="assets/images/singleFaitEnUn/organisationCalques.png"
-                                                />
-                                            </div>
+                                    <div class="swiper-slide">
+                                        <div class="description__couleurs">
+                                            <h3 class="soustitre__palettes">On mets de la vie!</h3>
+                                            <p class="description__nom">
+                                                J’ai donc commencé mon aventure avec la <span>couleur</span>. J’ai
+                                                commencer par <span>pratiquer</span> le style de l’affiche original
+                                                sur le chapeau et je suis allé travailler sur le reste du
+                                                personnage. Ce n’était pas facile de recréer le
+                                                <span>style</span> d’un oeuvre fait avec de la vraie<span>
+                                                    peinture</span>, mais je suis très contente du résultat.
+                                            </p>
+                                            <img src="assets/images/singleFaitEnUn/produit final.png" alt=""
+                                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/singleFaitEnUn/produit final.png" />
                                         </div>
                                     </div>
-                                    <div class="swiper-pagination"></div>
+
+                                    <div class="swiper-slide">
+                                        <div class="description__couleurs">
+                                            <h3 class="soustitre__palettes">Organiser, organiser et organiser!</h3>
+                                            <p class="description__nom">
+                                                Ce n’est pas une surprise pour le monde qui me connait que
+                                                j’<span>organise</span>
+                                                mes calques lorsque je travaille. Tout est <span>renommé</span> et
+                                                placé dans un <span>dossier</span> pour ne pas que je me perde
+                                                pendant que je travaille.
+                                            </p>
+                                            <img src="assets/images/singleFaitEnUn/organisationCalques.png" alt=""
+                                                data-component="Modal" data-modal-id="tpl-modal-images"
+                                                data-modal-source="assets/images/singleFaitEnUn/organisationCalques.png" />
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
-                        <i class="bottom right"></i>
-                        <i class="bottom left"></i>
                     </div>
+                    <i class="bottom right"></i>
+                    <i class="bottom left"></i>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <article class="FaitEnUn__sketch">
-                <div class="outer">
-                    <div class="inner">
-                        <i class="top left"></i>
-                        <i class="top right"></i>
-                        <div class="content">
-                            <div class="wrapper">
-                                <h2>Étape 3: Touche finale</h2>
+        <article class="FaitEnUn__sketch">
+            <div class="outer">
+                <div class="inner">
+                    <i class="top left"></i>
+                    <i class="top right"></i>
+                    <div class="content">
+                        <div class="wrapper">
+                            <h2>Étape 3: Touche finale</h2>
 
-                                <h3>Une petite touche finale avant d’afficher!</h3>
-                                <p class="description">
-                                    L’affiche était donc <span>trop petite</span> par rapport à la hauteur des feuilles.
-                                    J’ai donc ajouté un petit texte qui <span>explique brièvement le concours</span> et
-                                    qui pointe au code QR pour l’article que moi et Jean-Marie Gariépie avons écrit.
-                                </p>
+                            <h3>Une petite touche finale avant d’afficher!</h3>
+                            <p class="description">
+                                L’affiche était donc <span>trop petite</span> par rapport à la hauteur des feuilles.
+                                J’ai donc ajouté un petit texte qui <span>explique brièvement le concours</span> et
+                                qui pointe au code QR pour l’article que moi et Jean-Marie Gariépie avons écrit.
+                            </p>
 
-                                <img
-                                    src="assets/images/singleFaitEnUn/produitFinalFigma.png"
-                                    alt=""
-                                    data-component="Modal"
-                                    data-modal-id="tpl-modal-images"
-                                    data-modal-source="assets/images/singleFaitEnUn/produitFinalFigma.png"
-                                />
+                            <img src="assets/images/singleFaitEnUn/produitFinalFigma.png" alt="" data-component="Modal"
+                                data-modal-id="tpl-modal-images"
+                                data-modal-source="assets/images/singleFaitEnUn/produitFinalFigma.png" />
 
-                                <p class="description">
-                                    Voici la
-                                    <a href="https://www.youtube.com/watch?v=lqu-saKo9n4"><span>vidéo</span></a> qui
-                                    explique en détail le concours (créée par Jean-Marie Gariépy)
-                                </p>
-                            </div>
+                            <p class="description">
+                                Voici la
+                                <a href="https://www.youtube.com/watch?v=lqu-saKo9n4"><span>vidéo</span></a> qui
+                                explique en détail le concours (créée par Jean-Marie Gariépy)
+                            </p>
                         </div>
-                        <i class="bottom right"></i>
-                        <i class="bottom left"></i>
                     </div>
+                    <i class="bottom right"></i>
+                    <i class="bottom left"></i>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <footer class="footer">
-                <p class="">AudreyLanglois©2021</p>
-            </footer>
+        <div class="loader-wrapper">
+            <div class="loader-42"></div>
+        </div>
 
-            <template id="tpl-modal-images">
-                <div class="modal">
-                    <div class="modal_scrim js-close"></div>
-                    <div class="modal_box" id="contentModal">
-                        <img src="{{source}}" alt="Image d'un logo" />
-                    </div>
+        <footer class="footer">
+            <p class="">AudreyLanglois©2021</p>
+        </footer>
+
+        <template id="tpl-modal-images">
+            <div class="modal">
+                <div class="modal_scrim js-close"></div>
+                <div class="modal_box" id="contentModal">
+                    <img src="{{source}}" alt="Image d'un logo" />
                 </div>
-            </template>
-        </section>
-    </body>
+            </div>
+        </template>
+    </section>
+</body>
+
 </html>

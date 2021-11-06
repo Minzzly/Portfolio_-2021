@@ -1,286 +1,304 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Audrey Langlois | À Propos | Portfolio</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Comfortaa:wght@400;700&family=Telex&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="shortcut icon" type="image/jpg" href="./assets/images/Logo.png" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audrey Langlois | À Propos | Portfolio</title>
 
-        <!--Imports a model-viewer JavaScript code -->
-        <!--It helps to handle how the 3D Object would be displayed -->
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Comfortaa:wght@400;700&family=Telex&display=swap"
+        rel="stylesheet" />
+    <link rel="shortcut icon" type="image/jpg" href="./assets/images/Logo.png" />
 
-        <link rel="stylesheet" href="styles/main.css" />
-        <script src="scripts/main.js" defer></script>
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHCS1SRPG0"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
 
-            gtag("config", "G-LHCS1SRPG0");
-        </script>
-    </head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHCS1SRPG0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-    <body>
-        <header class="header" data-component="Header">
-            <nav class="navPrincipal">
-                <div class="navPrincipal__logo">
-                    <img src="assets/images/decorations/DecoNav.png" alt="" />
-                    <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+        gtag("config", "G-LHCS1SRPG0");
+    </script>
+</head>
+
+<body>
+    <header class="header" data-component="Header">
+        <nav class="navPrincipal">
+            <div class="navPrincipal__logo">
+                <img src="assets/images/decorations/DecoNav.png" alt="" />
+                <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+            </div>
+            <ul class="navPrincipal__liste">
+                <a href="apropos.html">
+                    <li>À propos</li>
+                </a>
+                <li class="navPoint"></li>
+                <a href="projets.html">
+                    <li>Projets</li>
+                </a>
+                <li class="navPoint"></li>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+                <li class="navPoint"></li>
+                <a href="https://youtu.be/0DNykAPC0gw">
+                    <li>Voir ma Vidéo</li>
+                </a>
+            </ul>
+
+            <img class="navPrincipal__decorDroite" src="assets/images/decorations/DecoNav.png" alt="" />
+        </nav>
+
+        <nav class="navMobile">
+            <div class="hamburgerEtLogo wrapper">
+                <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
+                <div class="menu-hamburger js-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <ul class="navPrincipal__liste">
-                    <a href="apropos.html"><li>À propos</li></a>
-                    <li class="navPoint"></li>
-                    <a href="projets.html"><li>Projets</li></a>
-                    <li class="navPoint"></li>
-                    <a href="contact.html"><li>Contact</li></a>
-                    <li class="navPoint"></li>
-                    <a href="https://youtu.be/0DNykAPC0gw"><li>Voir ma Vidéo</li></a>
-                </ul>
+            </div>
 
-                <img class="navPrincipal__decorDroite" src="assets/images/decorations/DecoNav.png" alt="" />
+            <nav class="mobileModal">
+                <div class="wrapper">
+                    <ul class="navPrincipal__liste">
+                        <a href="apropos.html">
+                            <li>À propos</li>
+                        </a>
+                        <li class="navPoint"></li>
+                        <a href="projets.html">
+                            <li>Projets</li>
+                        </a>
+                        <li class="navPoint"></li>
+                        <a href="contact.html">
+                            <li>Contact</li>
+                        </a>
+                        <li class="navPoint"></li>
+                        <a href="https://youtu.be/0DNykAPC0gw">
+                            <li>Voir ma Vidéo</li>
+                        </a>
+                    </ul>
+                </div>
             </nav>
+        </nav>
+    </header>
 
-            <nav class="navMobile">
-                <div class="hamburgerEtLogo wrapper">
-                    <a href="index.html"><img src="assets/images/Logo.png" alt="" /></a>
-                    <div class="menu-hamburger js-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-
-                <nav class="mobileModal">
-                    <div class="wrapper">
-                        <ul class="navPrincipal__liste">
-                            <a href="apropos.html"><li>À propos</li></a>
-                            <li class="navPoint"></li>
-                            <a href="projets.html"><li>Projets</li></a>
-                            <li class="navPoint"></li>
-                            <a href="contact.html"><li>Contact</li></a>
-                            <li class="navPoint"></li>
-                            <a href="https://youtu.be/0DNykAPC0gw"><li>Voir ma Vidéo</li></a>
+    <div class="aPropos" data-component="Scrolly">
+        <section class="infoGeneral">
+            <div class="parallelogram__info__general">
+                <div class="contenuGeneral" data-scrolly="FlipfromBottom">
+                    <img class="photoPortfolio" src="assets/images/aPropos/photoPortfolio.png" alt="" />
+                    <img class="photoPortfolio--responsive" src="assets/images/aPropos/photoPortfolio_responsive.png"
+                        alt="" />
+                    <div class="contenuGeneral__text">
+                        <p>Je m’appelle <span class="nom__aPropos">Audrey Langlois.</span></p>
+                        <p>
+                            Je suis étudiante en technique d’intégration multimédia. Depuis que je suis toute
+                            petite, je suis <span>passionnée</span> par les jeux vidéo. Ma
+                            <span>curiosité</span> sur le développement des jeux vidéo est la raison pour laquelle
+                            je suis dans ce domaine.
+                        </p>
+                        <h2>Je suis:</h2>
+                        <ul>
+                            <li>Créative</li>
+                            <li>Débrouillarde</li>
+                            <li>Minutieuse</li>
+                            <li>Organisée</li>
                         </ul>
                     </div>
-                </nav>
-            </nav>
-        </header>
-
-        <div class="aPropos" data-component="Scrolly">
-            <section class="infoGeneral">
-                <div class="parallelogram__info__general">
-                    <div class="contenuGeneral" data-scrolly="FlipfromBottom">
-                        <img class="photoPortfolio" src="assets/images/aPropos/photoPortfolio.png" alt="" />
-                        <img
-                            class="photoPortfolio--responsive"
-                            src="assets/images/aPropos/photoPortfolio_responsive.png"
-                            alt=""
-                        />
-                        <div class="contenuGeneral__text">
-                            <p>Je m’appelle <span class="nom__aPropos">Audrey Langlois.</span></p>
-                            <p>
-                                Je suis étudiante en technique d’intégration multimédia. Depuis que je suis toute
-                                petite, je suis <span>passionnée</span> par les jeux vidéo. Ma
-                                <span>curiosité</span> sur le développement des jeux vidéo est la raison pour laquelle
-                                je suis dans ce domaine.
-                            </p>
-                            <h2>Je suis:</h2>
-                            <ul>
-                                <li>Créative</li>
-                                <li>Débrouillarde</li>
-                                <li>Minutieuse</li>
-                                <li>Organisée</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
-                <div class="trapeze_bonjour">
-                    <h1>Bonjour!</h1>
-                </div>
+            </div>
+            <div class="trapeze_bonjour">
+                <h1>Bonjour!</h1>
+            </div>
 
-                <div class="fleche__scroll">
-                    <h3 class="fleche__scroll__text">Scroll</h3>
-                </div>
-            </section>
+            <div class="fleche__scroll">
+                <h3 class="fleche__scroll__text">Scroll</h3>
+            </div>
+        </section>
 
-            <section class="peuxFaire">
-                <div class="parallelogram__peuxFaire">
-                    <div class="contenuPeuxFaire">
-                        <div class="contenuPeuxFaire__text1" data-scrolly="FlipfromBottom">
-                            <h2>Artistique:</h2>
-                            <div class="bloc">
-                                <div class="blocText">
-                                    <svg class="icon icon--xl">
-                                        <use xlink:href="#icon-blender"></use>
-                                    </svg>
-                                    <div class="description">
-                                        <h3>Blender</h3>
-                                        <p>Une plateforme gratuite pour faire du modelage 3D.</p>
-                                    </div>
+        <section class="peuxFaire">
+            <div class="parallelogram__peuxFaire">
+                <div class="contenuPeuxFaire">
+                    <div class="contenuPeuxFaire__text1" data-scrolly="FlipfromBottom">
+                        <h2>Artistique:</h2>
+                        <div class="bloc">
+                            <div class="blocText">
+                                <svg class="icon icon--xl">
+                                    <use xlink:href="#icon-blender"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>Blender</h3>
+                                    <p>Une plateforme gratuite pour faire du modelage 3D.</p>
                                 </div>
-                                <div class="blocText">
-                                    <svg class="icon icon--xl">
-                                        <use xlink:href="#icon-photoshop"></use>
-                                    </svg>
-                                    <div class="description">
-                                        <h3>Photoshop</h3>
-                                        <p>
-                                            L'application Adobe où je fais mes illustrations pour des affiches ou des
-                                            Sketchs.
-                                        </p>
-                                    </div>
+                            </div>
+                            <div class="blocText">
+                                <svg class="icon icon--xl">
+                                    <use xlink:href="#icon-photoshop"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>Photoshop</h3>
+                                    <p>
+                                        L'application Adobe où je fais mes illustrations pour des affiches ou des
+                                        Sketchs.
+                                    </p>
                                 </div>
-                                <div class="blocText">
-                                    <svg class="icon icon--xl">
-                                        <use xlink:href="#icon-illustrator"></use>
-                                    </svg>
-                                    <div class="description">
-                                        <h3>Illustrator</h3>
-                                        <p>L'application où je fais des illustrations pour des logos ou icônes.</p>
-                                    </div>
+                            </div>
+                            <div class="blocText">
+                                <svg class="icon icon--xl">
+                                    <use xlink:href="#icon-illustrator"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>Illustrator</h3>
+                                    <p>L'application où je fais des illustrations pour des logos ou icônes.</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="contenuPeuxFaire__text2" data-scrolly="FlipfromBottom">
-                            <h2>Logique:</h2>
-                            <div class="bloc">
-                                <div class="blocText">
-                                    <div class="icones">
-                                        <svg class="icon icon--stroke icon--lg">
-                                            <use xlink:href="#icon-htmlfive"></use>
-                                        </svg>
-
-                                        <svg class="icon icon--stroke icon--lg">
-                                            <use xlink:href="#icon-css3"></use>
-                                        </svg>
-                                    </div>
-
-                                    <div class="description">
-                                        <h3>Html/Css</h3>
-                                        <p>Le langage de base pour faire un site avec du style.</p>
-                                    </div>
-                                </div>
-                                <div class="blocText">
-                                    <svg class="icon icon--xl">
-                                        <use xlink:href="#icon-js"></use>
+                    <div class="contenuPeuxFaire__text2" data-scrolly="FlipfromBottom">
+                        <h2>Logique:</h2>
+                        <div class="bloc">
+                            <div class="blocText">
+                                <div class="icones">
+                                    <svg class="icon icon--stroke icon--lg">
+                                        <use xlink:href="#icon-htmlfive"></use>
                                     </svg>
-                                    <div class="description">
-                                        <h3>JavaScript</h3>
-                                        <p>
-                                            La langue le plus populaire pour ajouter davantage de l'interactivité dans
-                                            un site.
-                                        </p>
-                                    </div>
+
+                                    <svg class="icon icon--stroke icon--lg">
+                                        <use xlink:href="#icon-css3"></use>
+                                    </svg>
+                                </div>
+
+                                <div class="description">
+                                    <h3>Html/Css</h3>
+                                    <p>Le langage de base pour faire un site avec du style.</p>
+                                </div>
+                            </div>
+                            <div class="blocText">
+                                <svg class="icon icon--xl">
+                                    <use xlink:href="#icon-js"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>JavaScript</h3>
+                                    <p>
+                                        La langue le plus populaire pour ajouter davantage de l'interactivité dans
+                                        un site.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="trapeze_peuxFaire">
-                    <h1>Qu'es ce que je peux Faire:</h1>
-                </div>
+            </div>
+            <div class="trapeze_peuxFaire">
+                <h1>Qu'es ce que je peux Faire:</h1>
+            </div>
 
-                <div class="fleche__scroll">
-                    <h3 class="fleche__scroll__text">Scroll</h3>
-                </div>
+            <div class="fleche__scroll">
+                <h3 class="fleche__scroll__text">Scroll</h3>
+            </div>
 
-                <div class="sticker">
-                    <p class="brefDescription">
-                        Bref, je fais de la modélisation <span>3D</span>, de <span>l’illustration</span> et de la
-                        programmation <span>web</span>.
-                    </p>
-                </div>
-            </section>
+            <div class="sticker">
+                <p class="brefDescription">
+                    Bref, je fais de la modélisation <span>3D</span>, de <span>l’illustration</span> et de la
+                    programmation <span>web</span>.
+                </p>
+            </div>
+        </section>
 
-            <section class="passion">
-                <div class="losange__passion">
-                    <div class="contenu__passion">
-                        <div class="contenuPeuxFaire__text1" data-scrolly="FlipfromBottom">
-                            <div class="bloc">
-                                <div class="blocText">
-                                    <svg class="icon icon--lg">
-                                        <use xlink:href="#icon-3d"></use>
-                                    </svg>
-                                    <div class="description">
-                                        <h3>Impression 3D</h3>
-                                        <p>
-                                            J'utilise une imprimante 3D pour imprimer des modèles pour ensuite les
-                                            peindre.
-                                        </p>
-                                    </div>
+        <section class="passion">
+            <div class="losange__passion">
+                <div class="contenu__passion">
+                    <div class="contenuPeuxFaire__text1" data-scrolly="FlipfromBottom">
+                        <div class="bloc">
+                            <div class="blocText">
+                                <svg class="icon icon--lg">
+                                    <use xlink:href="#icon-3d"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>Impression 3D</h3>
+                                    <p>
+                                        J'utilise une imprimante 3D pour imprimer des modèles pour ensuite les
+                                        peindre.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="contenuPeuxFaire__text2" data-scrolly="FlipfromBottom">
-                            <div class="bloc">
-                                <div class="blocText">
-                                    <svg class="icon icon--lg">
-                                        <use xlink:href="#icon-dessin"></use>
-                                    </svg>
-                                    <div class="description">
-                                        <h3>Dessin</h3>
-                                        <p>Un passe-temps que je fait depuis que je suis toute petite.</p>
-                                    </div>
+                    <div class="contenuPeuxFaire__text2" data-scrolly="FlipfromBottom">
+                        <div class="bloc">
+                            <div class="blocText">
+                                <svg class="icon icon--lg">
+                                    <use xlink:href="#icon-dessin"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>Dessin</h3>
+                                    <p>Un passe-temps que je fait depuis que je suis toute petite.</p>
                                 </div>
-                                <div class="blocText">
-                                    <svg class="icon icon--lg">
-                                        <use xlink:href="#icon-peinture"></use>
-                                    </svg>
-                                    <div class="description">
-                                        <h3>Peinture</h3>
-                                        <p>
-                                            Peindre c'est quelque chose que j'aime beaucoup faire et que je souhaite
-                                            m'améliorer.
-                                        </p>
-                                    </div>
+                            </div>
+                            <div class="blocText">
+                                <svg class="icon icon--lg">
+                                    <use xlink:href="#icon-peinture"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>Peinture</h3>
+                                    <p>
+                                        Peindre c'est quelque chose que j'aime beaucoup faire et que je souhaite
+                                        m'améliorer.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="contenuPeuxFaire__text3" data-scrolly="FlipfromBottom">
-                            <div class="bloc">
-                                <div class="blocText">
-                                    <svg class="icon icon--lg">
-                                        <use xlink:href="#icon-gaming"></use>
-                                    </svg>
-                                    <div class="description">
-                                        <h3>Jeux vidéo</h3>
-                                        <p>
-                                            Un de mes plus gros passe-temps que j'ai depuis que j'ai découvert la
-                                            Playstation 2.
-                                        </p>
-                                    </div>
+                    <div class="contenuPeuxFaire__text3" data-scrolly="FlipfromBottom">
+                        <div class="bloc">
+                            <div class="blocText">
+                                <svg class="icon icon--lg">
+                                    <use xlink:href="#icon-gaming"></use>
+                                </svg>
+                                <div class="description">
+                                    <h3>Jeux vidéo</h3>
+                                    <p>
+                                        Un de mes plus gros passe-temps que j'ai depuis que j'ai découvert la
+                                        Playstation 2.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="parallelogram_passion">
-                    <h1>Mes passe-temps</h1>
-                </div>
-            </section>
+            </div>
+            <div class="parallelogram_passion">
+                <h1>Mes passe-temps</h1>
+            </div>
+        </section>
 
-            <img src="assets/images/aPropos/poteaux.png" alt="" class="poteaux" />
-        </div>
+        <img src="assets/images/aPropos/poteaux.png" alt="" class="poteaux" />
+    </div>
 
-        <footer class="footer">
-            <p class="">AudreyLanglois©2021</p>
-        </footer>
-    </body>
+    <div class="loader-wrapper" data-component="Loader">
+        <div class="loader-42"></div>
+    </div>
+
+    <footer class="footer">
+        <p class="">AudreyLanglois©2021</p>
+    </footer>
+</body>
+
 </html>
