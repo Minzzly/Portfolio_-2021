@@ -1,17 +1,18 @@
 {
   "name": "timtools",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Stack de développement frontend",
   "author": {
-    "name": "Matt et JF"
+    "name": "Matthieu Parent et Jean-François Leblanc"
   },
   "scripts": {
     "start": "gulp",
     "build": "gulp build"
   },
   "dependencies": {
-    "swiper": "^6.6.2"
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "swiper": "^6.5.6"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -30,9 +31,10 @@
     "gulp-jsbeautifier": "^3.0.1",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.1",
     "gulp-sourcemaps": "^2.6.5",
     "node-notifier": "^5.4.0",
+    "sass": "^1.41.0",
     "svg-spritemap-webpack-plugin": "^3.9.1",
     "webpack": "^4.38.0",
     "webpack-notifier": "^1.8.0",
