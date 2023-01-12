@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1"
+        />
+        <title>Audrey Langlois | Portfolio</title>
+
+        <link rel="stylesheet" href="styles/main.scss" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Comfortaa:wght@400;700&family=Telex&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="shortcut icon"
+            type="image/jpg"
+            href="./assets/images/Logo.png"
+        />
+        <script type="module" src="scripts/main.js" defer></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-LHCS1SRPG0"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-LHCS1SRPG0");
+        </script>
+
+        <!--Imports a model-viewer JavaScript code -->
+        <!--It helps to handle how the 3D Object would be displayed -->
+        <script
+            type="module"
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+        ></script>
+    </head>
+
+    <body class="accueil">
+        <header class="header" data-component="Header">
+            <nav class="navPrincipal">
+                <div class="navPrincipal__logo">
+                    <img src="assets/images/decorations/DecoNav.png" alt="" />
+                    <a href="index.html"
+                        ><img src="assets/images/Logo.png" alt=""
+                    /></a>
+                </div>
+                <ul class="navPrincipal__liste">
+                    <a href="apropos.html">
+                        <li>À propos</li>
+                    </a>
+                    <li class="navPoint"></li>
+                    <a href="projets.html">
+                        <li>Projets</li>
+                    </a>
+                    <li class="navPoint"></li>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                    <li class="navPoint"></li>
+                    <a href="https://youtu.be/0DNykAPC0gw">
+                        <li>Voir ma Vidéo</li>
+                    </a>
+                </ul>
+
+                <img
+                    class="navPrincipal__decorDroite"
+                    src="assets/images/decorations/DecoNav.png"
+                    alt=""
+                />
+            </nav>
+
+            <nav class="navMobile">
+                <div class="hamburgerEtLogo wrapper">
+                    <a href="index.html"
+                        ><img src="assets/images/Logo.png" alt=""
+                    /></a>
+                    <div class="menu-hamburger js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <nav class="mobileModal">
+                    <div class="wrapper">
+                        <ul class="navPrincipal__liste">
+                            <a href="apropos.html">
+                                <li>À propos</li>
+                            </a>
+                            <li class="navPoint"></li>
+                            <a href="projets.html">
+                                <li>Projets</li>
+                            </a>
+                            <li class="navPoint"></li>
+                            <a href="contact.html">
+                                <li>Contact</li>
+                            </a>
+                            <li class="navPoint"></li>
+                            <a href="https://youtu.be/0DNykAPC0gw">
+                                <li>Voir ma Vidéo</li>
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+            </nav>
+        </header>
+
+        <section class="hero" data-component="Scrolly">
+            <article class="queen" data-scrolly="FlipfromTop">
+                <div></div>
+                <div></div>
+                <div></div>
+                <p class="slogan">
+                    La queen de la 3D, <br />princesse du front-end
+                </p>
+                <div></div>
+                <div></div>
+                <div></div>
+            </article>
+
+            <article class="textAccueil" data-scrolly="FlipfromTop">
+                <h1>Audrey Langlois</h1>
+
+                <a href="projets.html">
+                    <button class="bouttonAccueil">
+                        Explorer mes projets<img
+                            src="assets/images/decorations/BouttonAccueil.png"
+                            alt=""
+                        />
+                    </button>
+                </a>
+            </article>
+        </section>
+
+        <div class="model3D">
+            <model-viewer
+                class="3d-accueil"
+                src="assets/objet3d/Robot.glb"
+                alt="Camion garford"
+                loading="eager"
+                camera-controls
+                disable-zoom
+                camera-orbit="15deg 80deg 8m"
+                ar
+                ios-src="assets/objet3d/Robot.glb"
+            >
+            </model-viewer>
+        </div>
+
+        <div class="loader-wrapper" data-component="Loader">
+            <div class="loader-42"></div>
+        </div>
+
+        <footer class="footer">
+            <p class="">AudreyLanglois©2021</p>
+        </footer>
+    </body>
+</html>
