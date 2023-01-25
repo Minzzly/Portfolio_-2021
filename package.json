@@ -1,60 +1,21 @@
 {
-  "name": "timtools",
-  "version": "1.1.0",
+  "name": "audrey-portfolio",
+  "version": "1.0.0",
   "private": true,
-  "description": "Stack de développement frontend",
-  "author": {
-    "name": "Matthieu Parent et Jean-François Leblanc"
-  },
+  "type": "module",
+  "packageManager": "pnpm@7.26.0",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
-    "swiper": "^6.5.6"
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "swiper": "^6.8.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/register": "^7.12.10",
-    "autoprefixer": "^9.6.1",
-    "babel-loader": "^8.2.2",
-    "browser-sync": "^2.26.14",
-    "cross-env": "^5.2.0",
-    "del": "^5.0.0",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-changed": "^4.0.0",
-    "gulp-gh-pages": "^0.5.4",
-    "gulp-if": "^3.0.0",
-    "gulp-jsbeautifier": "^3.0.1",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.1.1",
-    "gulp-sourcemaps": "^2.6.5",
-    "node-notifier": "^5.4.0",
-    "sass": "^1.41.0",
-    "svg-spritemap-webpack-plugin": "^3.9.1",
-    "webpack": "^4.38.0",
-    "webpack-notifier": "^1.8.0",
-    "webpack-stream": "^5.2.1"
-  },
-  "browserslist": [
-    "defaults"
-  ],
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ]
-    ]
-  },
-  "main": "index.js",
-  "license": "MIT"
+    "glob": "^8.1.0",
+    "sass": "^1.57.1",
+    "vite": "^4.0.4"
+  }
 }

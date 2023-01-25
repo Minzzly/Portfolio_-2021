@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Audrey Langlois | Cora | Projets | Portfolio</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Comfortaa:wght@400;700&family=Telex&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="shortcut icon"
+            type="image/jpg"
+            href="./assets/images/Logo.png"
+        />
+
+        <!--Imports a model-viewer JavaScript code -->
+        <!--It helps to handle how the 3D Object would be displayed -->
+        <script
+            type="module"
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+        ></script>
+
+        <link rel="stylesheet" href="styles/main.scss" />
+        <script type="module" src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header" data-component="Header">
+            <nav class="navPrincipal">
+                <div class="navPrincipal__logo">
+                    <img src="assets/images/decorations/DecoNav.png" alt="" />
+                    <a href="index.html"
+                        ><img src="assets/images/Logo.png" alt=""
+                    /></a>
+                </div>
+                <ul class="navPrincipal__liste">
+                    <a href="apropos.html">
+                        <li>À propos</li>
+                    </a>
+                    <li class="navPoint"></li>
+                    <a href="projets.html">
+                        <li>Projets</li>
+                    </a>
+                    <li class="navPoint"></li>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                    <li class="navPoint"></li>
+                    <a href="https://youtu.be/0DNykAPC0gw">
+                        <li>Voir ma Vidéo</li>
+                    </a>
+                </ul>
+
+                <img
+                    class="navPrincipal__decorDroite"
+                    src="assets/images/decorations/DecoNav.png"
+                    alt=""
+                />
+            </nav>
+
+            <nav class="navMobile">
+                <div class="hamburgerEtLogo wrapper">
+                    <a href="index.html"
+                        ><img src="assets/images/Logo.png" alt=""
+                    /></a>
+                    <div class="menu-hamburger js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <nav class="mobileModal">
+                    <div class="wrapper">
+                        <ul class="navPrincipal__liste">
+                            <a href="apropos.html">
+                                <li>À propos</li>
+                            </a>
+                            <li class="navPoint"></li>
+                            <a href="projets.html">
+                                <li>Projets</li>
+                            </a>
+                            <li class="navPoint"></li>
+                            <a href="contact.html">
+                                <li>Contact</li>
+                            </a>
+                            <li class="navPoint"></li>
+                            <a href="https://youtu.be/0DNykAPC0gw">
+                                <li>Voir ma Vidéo</li>
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+            </nav>
+        </header>
+
+        <section class="cora">
+            <article class="cora__hero">
+                <div class="outer">
+                    <div class="inner">
+                        <i class="top left"></i>
+                        <i class="top right"></i>
+                        <div class="content">
+                            <a
+                                href="https://alanglois.dectim.ca/cours/pw/tp1/"
+                                target="blank"
+                            >
+                                <img
+                                    src="assets/images/singleCora/mockupCora.png"
+                                    alt=""
+                                />
+                            </a>
+
+                            <div class="content__text">
+                                <h1>Chez Cora</h1>
+                                <div class="description">
+                                    <p class="description__projet">
+                                        Un projet scolaire en équipe avec:
+                                        <br />
+                                        <a href="https://romeogirard.com/"
+                                            >Roméo Girard</a
+                                        >
+                                    </p>
+                                    <p class="description__projet">
+                                        Description du projet :
+                                    </p>
+                                    <p class="description__nom">
+                                        Le but de ce projet est de recréer un
+                                        site web et de le programmer grâce au
+                                        HTML, Css, JavaScript et PHP
+                                        (Wordpress).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="bottom right"></i>
+                        <i class="bottom left"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cora__design">
+                <div class="outer">
+                    <div class="inner">
+                        <i class="top left"></i>
+                        <i class="top right"></i>
+                        <div class="content">
+                            <div class="wrapper">
+                                <h2>Étape 1: Design</h2>
+
+                                <h3>Design fait par:</h3>
+                                <a href="https://romeogirard.com/"
+                                    >Roméo Girard</a
+                                >
+                                <p class="description">
+                                    Pour <span>commencer</span> le projet, nous
+                                    avons eu besoin de faire un design pour
+                                    chaque membre de l'équipe. À la fin, celle
+                                    de mon co-équipier a été choisie.
+                                    <br /><span
+                                        >Pour voir le design complet, clickez
+                                        sur l'image ci-dessous.</span
+                                    >
+                                </p>
+
+                                <a
+                                    href="https://www.behance.net/gallery/127242441/Cora"
+                                    target="blank"
+                                    ><img
+                                        src="assets/images/singleCora/RomeoGirardBehance.png"
+                                        alt=""
+                                /></a>
+                            </div>
+                        </div>
+                        <i class="bottom right"></i>
+                        <i class="bottom left"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cora__prog">
+                <div class="outer">
+                    <div class="inner">
+                        <i class="top left"></i>
+                        <i class="top right"></i>
+                        <div class="content">
+                            <div class="content__text">
+                                <h2>Étape 2: Programmation</h2>
+
+                                <h3 class="soustitre__prog">
+                                    Donner de l'interactivité à notre design:
+                                </h3>
+                                <p class="description__nom">
+                                    Les tâches ont été attribué grâce à
+                                    <a
+                                        href="https://trello.com/invite/b/a7FsKGoS/304b8c6f5576747240616872b4ae808c/1011chezcora"
+                                        target="blank"
+                                        ><span>Trello</span></a
+                                    >
+                                    pour que les deux membres de l'équipe aient
+                                    la même charge de travail. De mon côté, j'ai
+                                    travaillé sur le<span>Html</span> de la
+                                    navigation, l'accueil, les héros et
+                                    partiellement le footer. J'ai ensuite fait
+                                    le <span>Css</span> de la navigation, le
+                                    menu, la moitié de tous les pages de contenu
+                                    et le responsive et le footer. Finalement,
+                                    le <span>JavaScript</span> nous a été
+                                    fourni, mais je me suis occupé de faire la
+                                    liaison entre le code HTML pour créer des
+                                    effets comme le Carousel.
+                                </p>
+                                <div
+                                    class="swiper-container"
+                                    data-component="Carousel"
+                                    data-carousel="coverflow"
+                                >
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="description__html">
+                                                <p class="type__prog">HTML</p>
+                                                <img
+                                                    src="assets/images/singleCora/html.png"
+                                                    alt=""
+                                                    data-component="Modal"
+                                                    data-modal-id="tpl-modal-images"
+                                                    data-modal-source="assets/images/singleCora/html.png"
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="description__css">
+                                                <p class="type__prog">CSS</p>
+                                                <img
+                                                    src="assets/images/singleCora/css.png"
+                                                    alt=""
+                                                    data-component="Modal"
+                                                    data-modal-id="tpl-modal-images"
+                                                    data-modal-source="assets/images/singleCora/css.png"
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="description__js">
+                                                <p class="type__prog">JS</p>
+                                                <img
+                                                    src="assets/images/singleCora/js.png"
+                                                    alt=""
+                                                    data-component="Modal"
+                                                    data-modal-id="tpl-modal-images"
+                                                    data-modal-source="assets/images/singleCora/js.png"
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="description__js">
+                                                <p class="type__prog">
+                                                    PHP (Wordpress)
+                                                </p>
+                                                <img
+                                                    src="assets/images/singleCora/php.png"
+                                                    alt=""
+                                                    data-component="Modal"
+                                                    data-modal-id="tpl-modal-images"
+                                                    data-modal-source="assets/images/singleCora/php.png"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+
+                                <a
+                                    href="https://github.com/tim-a21-pw/pw-a21-refonte-1011_chez_cora"
+                                >
+                                    <button class="bouttonCora">
+                                        Voir le code complet<img
+                                            src="assets/images/decorations/BouttonAccueil.png"
+                                            alt=""
+                                        />
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <i class="bottom right"></i>
+                        <i class="bottom left"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="Cora_Site">
+                <div class="outer">
+                    <div class="inner">
+                        <i class="top left"></i>
+                        <i class="top right"></i>
+                        <div class="content">
+                            <div class="wrapper">
+                                <h2>
+                                    Étape 3: Où sommes-nous <br />
+                                    rendu
+                                </h2>
+
+                                <h3>Quel est la prochaine étape?</h3>
+                                <p class="description">
+                                    Il nous reste donc a faire nos
+                                    <span>gabarits</span> PHP pour créer un site
+                                    web <span>Wordpress</span> pour laisser le
+                                    <span>client</span> ajouter des articles
+                                    dans leurs menus ou des nouvelles pages.
+                                </p>
+
+                                <a
+                                    href="https://alanglois.dectim.ca/cours/pw/tp1/"
+                                >
+                                    <button class="bouttonCora">
+                                        Voir le site terminé<img
+                                            src="assets/images/decorations/BouttonAccueil.png"
+                                            alt=""
+                                        />
+                                    </button>
+                                </a>
+
+                                <img
+                                    src="assets/images/singleCora/mockupCora.png"
+                                    alt=""
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-images"
+                                    data-modal-source="assets/images/singleCora/mockupCora.png"
+                                />
+                            </div>
+                        </div>
+                        <i class="bottom right"></i>
+                        <i class="bottom left"></i>
+                    </div>
+                </div>
+            </article>
+
+            <div class="loader-wrapper" data-component="Loader">
+                <div class="loader-42"></div>
+            </div>
+
+            <footer class="footer">
+                <p class="">AudreyLanglois©2021</p>
+            </footer>
+
+            <template id="tpl-modal-images">
+                <div class="modal">
+                    <div class="modal_scrim js-close"></div>
+                    <div class="modal_box" id="contentModal">
+                        <img src="{{source}}" alt="Image d'un logo" />
+                    </div>
+                </div>
+            </template>
+        </section>
+    </body>
+</html>
